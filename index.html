@@ -17,6 +17,28 @@
 </head>
 <body class="background">
 
+	<button class="c-hamburger c-hamburger--rot">
+  		<span>toggle menu</span>
+	</button>
+
+	<script>
+		(function() {
+
+		  "use strict";
+
+		  var toggles = document.querySelectorAll(".c-hamburger");
+		  toggleHandler(toggles[0]);
+
+		  function toggleHandler(toggle) {
+		    toggle.addEventListener( "click", function(e) {
+		      e.preventDefault();
+		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		    });
+		  }
+
+		})();
+	</script>
+
 	<div class="title">Anthony Tam</div>
 
 		<div class="body1">
