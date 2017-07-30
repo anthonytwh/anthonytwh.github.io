@@ -1,5 +1,9 @@
 .background {
-	background-image: url(background.jpg) no-repeat center center fixed;
+	background-image: url(https://raw.githubusercontent.com/anthonytwh/anthonytwh.github.io/master/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: #FFFFFF;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
