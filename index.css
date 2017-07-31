@@ -2,7 +2,7 @@
 		Mainpage 
 						*/
 .background {
-	background-image: url(https://anthonytwh.github.io/background.jpg);
+	background-image: url("background.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
