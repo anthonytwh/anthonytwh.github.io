@@ -17,28 +17,45 @@
 </head>
 <body class="background">
 
+
+	<!--                      -->
+	<!-- Dropdown Menu & Icon -->
+	<div class="dropdown">
 	<button class="c-hamburger c-hamburger--rot">
-  		<span>toggle menu</span>
+		<span>toggle menu</span>
 	</button>
+		<div id="myDropdown" class="dropdown-content">
+			<a href="#">About Me</a>
+			<a href="#">Contact</a>
+		</div>
+	</div>
 
 	<script>
 		(function() {
-
 		  "use strict";
-
 		  var toggles = document.querySelectorAll(".c-hamburger");
 		  toggleHandler(toggles[0]);
+
 
 		  function toggleHandler(toggle) {
 		    toggle.addEventListener( "click", function(e) {
 		      e.preventDefault();
 		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		      myFunction();
 		    });
 		  }
-
 		})();
+
+
+		function myFunction() {
+	    	document.getElementById("myDropdown").classList.toggle("show");
+		}
+
 	</script>
 
+
+	<!--          -->
+	<!-- Mainpage -->
 	<div class="title">Anthony Tam</div>
 
 		<div class="body1">
@@ -63,4 +80,4 @@
 		</div>
 
 </body>
-</html>
+</html> 
