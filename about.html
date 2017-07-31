@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<title>Anthony Tam: About</title>
+
+<link rel="stylesheet" type="text/css" href="index.css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body class="background">
+
+	<!--                      -->
+	<!-- Dropdown Menu & Icon -->
+	<div class="dropdown">
+		<button class="c-hamburger c-hamburger--rot">
+			<span>toggle menu</span>
+		</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="https://anthonytwh.github.io">Home</a>
+				<a href="#">About Me</a>
+			</div>
+	</div>
+
+	<script>
+		(function() {
+		  "use strict";
+		  var toggles = document.querySelectorAll(".c-hamburger");
+		  toggleHandler(toggles[0]);
+
+
+		  function toggleHandler(toggle) {
+		    toggle.addEventListener( "click", function(e) {
+		      e.preventDefault();
+		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		      myFunction();
+		    });
+		  }
+		})();
+
+
+		function myFunction() {
+	    	document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+	</script>
+
+
+	<div class="heading1">About Me
+		<p><!-- linespace--></p> 
+		<p><!-- linespace--></p> 
+	</div>
+
+		<hr width="75%">
+		<p><!-- linespace--></p>
+			<div class="body1">
+				<img src="https://anthonytwh.github.io/profile-round.png" width="293" height="238" />
+				<p><!-- linespace--></p>
+			</div>
+
+				<div class="body2">
+					<p><!-- linespace--></p>
+					<p align="justify"> 
+						Anthony is a recent graduate of the Engineering & Management program at McMaster University in Mechanical Engineering with a secondary focus in finance, and he is actively seeking a business/finanial analyst  or related role in financial services or technology company/start-up.
+					</p>
+					<p><!-- linespace--></p>
+				</div>
+
+
+</body>
+</html> 

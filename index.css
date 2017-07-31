@@ -22,9 +22,26 @@
 	margin-top: 10%;
 }
 
+.heading1 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 1000;
+	text-align: center;
+	font-size: 250%;
+	color: #212121;
+	margin-top: 5%;
+}
+
 .body1{
 	font-family: "Raleway", sans-serif;
 	text-align: center;
+}
+
+.body2{
+	font-family: "Raleway", sans-serif;
+	font-size: 125%;
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 .icons {
@@ -33,6 +50,16 @@
 	margin-right: 15px;
 	margin-top: 2.5%;
 }
+
+.hr { 
+    display: block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+
+} 
 
 
 
@@ -145,3 +172,101 @@
 .dropdown a:click {background-color: #f1f1f1}
 
 .show {display:block;}
+
+
+
+/* 
+		Page Transition: Components
+										*/
+html, body { height: 100%; }
+
+.pt-perspective {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.pt-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.pt-page-current,
+.no-js .pt-page {
+	visibility: visible;
+	z-index: 1;
+}
+
+.no-js body {
+	overflow: auto;
+}
+
+.pt-page-ontop {
+	z-index: 999;
+}
+
+
+
+/* 
+		Page Transition: Animation
+										*/
+
+/*		Fade 		*/
+.pt-page-fade {
+	-webkit-animation: fade .7s ease both;
+	animation: fade .7s ease both;
+}
+
+.pt-page-moveToTopFade {
+	-webkit-animation: moveToTopFade .7s ease both;
+	animation: moveToTopFade .7s ease both;
+}
+
+.pt-page-moveFromBottomFade {
+	-webkit-animation: moveFromBottomFade .7s ease both;
+	animation: moveFromBottomFade .7s ease both;
+}
+
+
+/*		Keyframes		*/
+@-webkit-keyframes fade {
+	from { }
+	to { opacity: 0.3; }
+}
+@keyframes fade {
+	from { }
+	to { opacity: 0.3; }
+}
+
+@-webkit-keyframes moveToTopFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateY(-100%); }
+}
+@keyframes moveToTopFade {
+	from { }
+	to { opacity: 0.3; -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveFromBottomFade {
+	from { opacity: 0.3; -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottomFade {
+	from { opacity: 0.3; -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
