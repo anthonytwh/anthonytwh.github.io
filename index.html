@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 
-<!-- This is Squarespace. -->
 
+<!-- This is Squarespace. -->
+<!-- Web Meta data -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel"canonical" href="http://anthonyt.ca/" data-ajax-meta="binded">
 <meta property="og:site_name" content="Anthony Tam" data-ajax-meta="binded">
@@ -24,8 +25,10 @@
 <meta name="google-site-verification" content="mlqoR6-dAEcwfhThjVfqQ4e-hV0aUijIy1iP0c78fJc" />
 <meta name="google" content="nositelinkssearchbox" />
 <meta name="google" content="notranslate" />
+<!-- End Web Meta data -->
 
 
+<!-- Style Resources -->
 <title>Anthony Tam</title>
 
 <link rel="stylesheet" type="text/css" href="index.css"/>
@@ -34,27 +37,42 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <link rel="shortcut icon" href="favicon.png">
-
+<!-- End Style Resources -->
 
 
 <!-- Google Analytics -->
 <script> 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-103818876-1', 'auto');
-  ga('send', 'pageview');
+	/**
+	* Function that tracks a click on an outbound link in Analytics.
+	* This function takes a valid URL string as an argument, and uses that URL string
+	* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+	* using 'navigator.sendBeacon' in browser that support it.
+	*/
+	var trackOutboundLink = function(url) {
+   		ga('send', 'event', 'outbound', 'click', url, {
+ 			'transport': 'beacon',
+ 			'hitCallback': function(){document.location = url;}
+		});
+	}
+
+	ga('create', 'UA-103818876-1', 'auto');
+	ga('send', 'pageview');
 
 </script>
+<!-- End Google Analytics -->
+
 
 
 </head>
+<!-- Web Content -->
 <body class="background">
 
 
-	<!--                      -->
 	<!-- Dropdown Menu & Icon -->
 	<div class="dropdown">
 		<button class="c-hamburger c-hamburger--rot">
@@ -88,32 +106,35 @@
 		}
 
 	</script>
+	<!-- End Dropdown Menu & Icon -->
 
 
-	<!--          -->
-	<!-- Mainpage -->
+	<!-- Mainpage Content -->
 	<div class="title">Anthony Tam</div>
 
 		<div class="body1">
 			<span>
 
-				<a href="https://www.facebook.com/anthonyy.tam" aria-label="Facebook">
+				<a href="https://www.facebook.com/anthonyy.tam" aria-label="Facebook" onclick="trackOutboundLink('https://www.facebook.com/anthonyy.tam'); return false;">
 					<i class="icons fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
 
-				<a href="https://www.linkedin.com/in/anthony-tam" aria-label="Linkedin">
+				<a href="https://www.linkedin.com/in/anthony-tam" aria-label="Linkedin" onclick="trackOutboundLink('https://www.linkedin.com/in/anthony-tam'); return false;">
 					<i class="icons fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
 
-				<a href="https://github.com/anthonytwh" aria-label="Github">
+				<a href="https://github.com/anthonytwh" aria-label="Github" onclick="trackOutboundLink('https://github.com/anthonytwh'); return false;">
 					<i class="icons fa fa-github fa-3x" aria-hidden="true"></i></a>
 
-				<a href="AnthonyTam_Resume.pdf" aria-label="Anthony Resume">
+				<a href="AnthonyTam_Resume.pdf" aria-label="Anthony Resume" onclick="trackOutboundLink('AnthonyTam_Resume.pdf'); return false;">
 					<i class="icons fa fa-file-text fa-3x" aria-hidden="true"></i></a>
 
-				<a href="mailto:tam.anthonywh@gmail.com" aria-label="E-mail">
+				<a href="mailto:tam.anthonywh@gmail.com" aria-label="E-mail" onclick="trackOutboundLink('mailto:tam.anthonywh@gmail.com'); return false;">
 					<i class="icons fa fa-envelope fa-3x" aria-hidden="true"></i></a>
 		
 			</span>
 		</div>
+	<!-- Mainpage Content -->
+
 
 </body>
-</html> 
+<!-- End Web Content -->
+</html>
