@@ -49,16 +49,31 @@
 
 .icons {
 	color: #027ec9;
+	border: none;
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 2.5%;
 	text-shadow: 0.5px 0.5px 0.25px #757575;
+	transition: 0.25s;
+	cursor: pointer;
 	/* 
 	Color Pallete:
 		Original - 0277BD
 		Blues - 008adb, 1b82dd, 24a1e2, 3399ff, 0091ea, 6CA0DC, 00B9FF, 7FCFFF, 027ec9
 		Grays- c4bdae, d1cbb6, b7c1c1
 	*/
+}
+
+.iconsPar:hover .icons{
+	opacity: 0.2;
+}
+
+.iconsPar .icons:hover{
+	background-color: none;
+	opacity: 2;
+	-ms-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
 }
 
 .hr { 
