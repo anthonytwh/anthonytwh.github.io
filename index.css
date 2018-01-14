@@ -90,7 +90,7 @@
 
 .iconsPar .icons:hover{
 	background-color: none;
-	opacity: 2;
+	opacity: 1;
 	-ms-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
@@ -167,7 +167,8 @@
 }
 
 .c-hamburger--rot {
-  background-color: #ECEFF1; /* swap with menu open color */
+  background-color: #ECE9E6;/* #ECEFF1; swap with menu open color */
+  opacity: 0.8;
 }
 
 .c-hamburger--rot span {
@@ -176,7 +177,8 @@
 
 /* active state, i.e. menu open */
 .c-hamburger--rot.is-active {
-  background-color: #455A64; /* swap with menu closed color */
+  background-color: #027ec9;/* #455A64; swap with menu closed color */
+  opacity: 0.2;
 }
 
 .c-hamburger--rot.is-active span {
