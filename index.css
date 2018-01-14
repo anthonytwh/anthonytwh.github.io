@@ -13,6 +13,20 @@
 	background-size: cover;
 }
 
+.header {
+	padding-bottom: 10%;
+}
+
+.logo {
+	font-family: 'Poiret One';
+	font-weight: 1000;
+	text-align: right;
+	font-size: 150%;
+	color: #1E1E1E;
+	margin-top: 0%;
+	float: right;
+}
+
 .title {
 	font-family: "Raleway", sans-serif;
 	font-weight: 1000;
@@ -21,6 +35,7 @@
 	color: #212121;
 	margin-top: 10%;
 }
+
 
 .heading1 {
 	font-family: "Raleway", sans-serif;
@@ -171,6 +186,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    float: left;
 }
 
 .dropdown-content {

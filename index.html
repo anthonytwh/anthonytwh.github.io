@@ -36,9 +36,9 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:100|Poiret+One|Poppins:200" rel="stylesheet" type="text/css"> 
 <!--  CSS: font-family: "Raleway", sans-serif; font-family: 'Poiret One', cursive; font-family: 'Poppins', sans-serif; -->
 
-<!-- FONT TESTING FOR LOGO: placement of logo in top right of homepage.-->
-<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight|Megrim|Orbitron" rel="stylesheet">
-<!--  CSS: &&Poiret+One; font-family: 'Zilla Slab Highlight', cursive; font-family: 'Megrim', cursive; font-family: 'Orbitron', sans-serif; (400,500,700,900)  -->
+<!-- Logo Fonts:-->
+<link href="https://fonts.googleapis.com/css?family=Megrim|Orbitron" rel="stylesheet">
+<!--  CSS: font-family: 'Megrim', cursive; font-family: 'Orbitron', sans-serif; (400,500,700,900)  -->
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -78,42 +78,44 @@
 <!-- Web Content -->
 <body class="background">
 
+	<div class="header">
+		<div class="logo">at.</div>
 
-	<!-- Dropdown Menu & Icon -->
-	<div class="dropdown">
-		<button class="c-hamburger c-hamburger--rot">
-			<span></span>
-		</button>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="index.html">Home</a>
-				<a href="about.html">About Me</a>
-			</div>
+		<!-- Dropdown Menu & Icon -->
+		<div class="dropdown">
+			<button class="c-hamburger c-hamburger--rot">
+				<span></span>
+			</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Me</a>
+				</div>
+		</div>
+
+		<script>
+			(function() {
+			  "use strict";
+			  var toggles = document.querySelectorAll(".c-hamburger");
+			  toggleHandler(toggles[0]);
+
+
+			  function toggleHandler(toggle) {
+			    toggle.addEventListener( "click", function(e) {
+			      e.preventDefault();
+			      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+			      myFunction();
+			    });
+			  }
+			})();
+
+
+			function myFunction() {
+		    	document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+		</script>
+		<!-- End Dropdown Menu & Icon -->
 	</div>
-
-	<script>
-		(function() {
-		  "use strict";
-		  var toggles = document.querySelectorAll(".c-hamburger");
-		  toggleHandler(toggles[0]);
-
-
-		  function toggleHandler(toggle) {
-		    toggle.addEventListener( "click", function(e) {
-		      e.preventDefault();
-		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-		      myFunction();
-		    });
-		  }
-		})();
-
-
-		function myFunction() {
-	    	document.getElementById("myDropdown").classList.toggle("show");
-		}
-
-	</script>
-	<!-- End Dropdown Menu & Icon -->
-
 
 	<!-- Mainpage Content -->
 	<div class="title">Anthony Tam</div>
