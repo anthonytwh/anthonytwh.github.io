@@ -7,8 +7,7 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	overflow: auto;
-	min-height: 100%;
+	height: vh;
 }
 
 .header {
