@@ -131,7 +131,13 @@
 }
 
 .c-hamburger:focus {
-  outline: none;
+ 	outline: none;
+}
+
+.c-hamburger:hover{
+	background-color: #027ec9;
+	color: #027ec9;
+	cursor: pointer;
 }
 
 .c-hamburger span {
@@ -167,7 +173,7 @@
 
 .c-hamburger--rot {
   background-color: #ECE9E6;
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .c-hamburger--rot span {
@@ -190,6 +196,11 @@
     position: relative;
     display: inline-block;
     float: left;
+}
+
+.dropdown-content:hover {
+	background-color: #027ec9;
+	opacity: 0.2;
 }
 
 .dropdown-content {
