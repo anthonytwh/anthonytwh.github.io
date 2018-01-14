@@ -2,7 +2,8 @@
 /*		Mainpage	  */
 
 .background {
-	background: url("background.jpg") no-repeat center fixed;
+	background: url("background.jpg") no-repeat center center;
+	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
