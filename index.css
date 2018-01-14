@@ -201,7 +201,7 @@
 
 .c-hamburger--rot.is-active { /* active state, i.e. menu open */
 	background-color: #027ec9;
-	opacity: 0.2;
+	opacity: 0.8;
 }
 
 .c-hamburger--rot.is-active span {
@@ -210,9 +210,6 @@
 
 	
 /*		Dropdown Menu	  */
-
-.dropdown-content:hover {
-}
 
 .dropdown-content {
     display: none;
@@ -227,12 +224,12 @@
 }
 
 .dropdown-content a {
+    display: block;
 	font-family: "Raleway", sans-serif;
 	text-align: center;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
     transition: background 0.2s
 }
 
