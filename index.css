@@ -1,20 +1,16 @@
-/* 
-		Mainpage 
-						*/
+
+/*		Mainpage	  */
+
 .background {
-	background-image: url("background.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-color: #FFFFFF;
-	background-size: cover;
+	background: url("background.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-attachment: fixed;
-	overflow: hidden;
+	background-size: cover;
 }
 
 .header {
+
 }
 
 .logo {
@@ -28,6 +24,7 @@
 }
 
 .mainpage {
+
 }
 
 .title {
@@ -47,12 +44,14 @@
 	font-size: 250%;
 	color: #212121;
 	padding-top: 5%;
+	float: center;
 }
 
 .body1{
 	font-family: "Raleway", sans-serif;
 	text-align: center;
 	padding-top: 0.5%;
+	overflow: auto;
 }
 
 .body2{
@@ -63,6 +62,7 @@
 	color: #212121;
 	margin-left: 20%;
 	margin-right: 20%;
+	overflow: auto;
 }
 
 .icons {
@@ -105,13 +105,11 @@
 } 
 
 
+/*		Dropdown Menu Icon  	*/
 
-/* 
-		Dropdown Menu Icon
-								*/
 .c-hamburger {
   display: block;
-  text-align: left; /* keep top-left */
+  text-align: left;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -165,7 +163,7 @@
 }
 
 .c-hamburger--rot {
-  background-color: #ECE9E6;/* #ECEFF1; swap with menu open color */
+  background-color: #ECE9E6;
   opacity: 0.8;
 }
 
@@ -173,9 +171,8 @@
   transition: transform 0.2s;
 }
 
-/* active state, i.e. menu open */
-.c-hamburger--rot.is-active {
-  background-color: #027ec9;/* #455A64; swap with menu closed color */
+.c-hamburger--rot.is-active { /* active state, i.e. menu open */
+  background-color: #027ec9;
   opacity: 0.2;
 }
 
@@ -183,11 +180,9 @@
   transform: rotate(90deg);
 }
 
+	
+/*		Dropdown Menu	  */
 
-
-/* 
-		Dropdown Menu
-							*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -215,83 +210,17 @@
     transition: background 0.75s
 }
 
-.dropdown a:click {background-color: #f1f1f1}
-
-.show {display:block;}
-
-
-
-/* 
-		Page Transition: Components
-										*/
-html, body { height: 100%; }
-
-.pt-perspective {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	-webkit-perspective: 1200px;
-	-moz-perspective: 1200px;
-	perspective: 1200px;
+.dropdown a:click {
+	background-color: #f1f1f1
 }
 
-.pt-page {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	visibility: hidden;
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-
-.pt-page-current,
-.no-js .pt-page {
-	visibility: visible;
-	z-index: 1;
-}
-
-.no-js body {
-	overflow: auto;
-}
-
-.pt-page-ontop {
-	z-index: 999;
-}
-
-
-
-/* 
-		Page Transition: Animation
-										*/
-
-/*		Fade 		*/
-.pt-page-fade {
-	-webkit-animation: fade .7s ease both;
-	animation: fade .7s ease both;
-}
-
-.pt-page-moveToTopFade {
-	-webkit-animation: moveToTopFade .7s ease both;
-	animation: moveToTopFade .7s ease both;
-}
-
-.pt-page-moveFromBottomFade {
-	-webkit-animation: moveFromBottomFade .7s ease both;
-	animation: moveFromBottomFade .7s ease both;
+.show {
+	display:block;
 }
 
 
 /*		Keyframes		*/
+
 @-webkit-keyframes fade {
 	from { }
 	to { opacity: 0.3; }
