@@ -7,10 +7,12 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	overflow: auto;
 }
 
 .header {
-
+	float: center;
+	text-align: center;
 }
 
 .logo {
@@ -24,7 +26,9 @@
 }
 
 .mainpage {
-
+	padding-top: 0%;
+	float: center;
+	text-align: center;
 }
 
 .title {
