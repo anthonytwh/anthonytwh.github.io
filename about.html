@@ -12,7 +12,13 @@
 
 <link rel="stylesheet" type="text/css" href="index.css"/>
 
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100|Poiret+One|Poppins:200" rel="stylesheet" type="text/css"> 
+<!--  CSS: font-family: "Raleway", sans-serif; font-family: 'Poiret One', cursive; font-family: 'Poppins', sans-serif; -->
+
+<!-- Logo Fonts:-->
+<link href="https://fonts.googleapis.com/css?family=Megrim|Orbitron" rel="stylesheet">
+<!--  CSS: font-family: 'Megrim', cursive; font-family: 'Orbitron', sans-serif; (400,500,700,900)  -->
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <link rel="shortcut icon" href="favicon.png">
@@ -32,70 +38,75 @@
 </head>
 <body class="background">
 
-	<!--                      -->
-	<!-- Dropdown Menu & Icon -->
-	<div class="dropdown">
-		<button class="c-hamburger c-hamburger--rot">
-			<span>toggle menu</span>
-		</button>
-			<div id="myDropdown" class="dropdown-content">
-				<a href="index.html">Home</a>
-				<a href="about.html">About Me</a>
-			</div>
-	</div>
 
-	<script>
-		(function() {
-		  "use strict";
-		  var toggles = document.querySelectorAll(".c-hamburger");
-		  toggleHandler(toggles[0]);
+	<div class="header">
+		<div class="logo">at.</div>
 
-
-		  function toggleHandler(toggle) {
-		    toggle.addEventListener( "click", function(e) {
-		      e.preventDefault();
-		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-		      myFunction();
-		    });
-		  }
-		})();
-
-
-		function myFunction() {
-	    	document.getElementById("myDropdown").classList.toggle("show");
-		}
-
-	</script>
-
-
-	<div class="heading1">About Me
-		<p><!-- linespace--></p> 
-		<p><!-- linespace--></p> 
-	</div>
-
-		<hr width="65%">
-
-			<div class="body1">
-				<p><!-- linespace--></p>	
-				<img src="profile-round.png" width="293" height="238" />
-			</div>
-
-				<div class="body2">
-					<p><!-- linespace--></p>
-					<p align="justify"> 
-						Anthony is a recent graduate of the Mechanical Engineering & Management program at McMaster University, a joint 5-year program with Degroote School of Business with an engineering specialization in Mechanics and Design, and business specialization in finance. In 2014, he studied abroad as an exchange student at Nanyang Technological University in Singapore for 10 months taking a courses in the School of Mechanical and Aerospace Engineering, Nanyang Business School, and School of Art, Design and Media, while exploring the exciting cultures across South East Asia. His experience abroad inspired him to pursue a career with global outreach and impact in the fields of finance or technology. 
-
-					</p>
-					<p><!-- linespace--></br></p>
-					<p align-"justify">
-						Anthony is currently actively seeking a business/financial analyst  or related role in financial services or technology company/start-up. Feel free to reach out
-						about new opportunities!
-
-					</p>
-					<p><!-- linespace--></br></p>
-					<p><!-- linespace--></br></p>
-					<p><!-- linespace--></br></p>
+		<!-- Dropdown Menu & Icon -->
+		<div class="dropdown">
+			<button class="c-hamburger c-hamburger--rot">
+				<span>toggle menu</span>
+			</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="index.html">Home</a>
+					<a href="about.html">About Me</a>
 				</div>
+		</div>
+
+		<script>
+			(function() {
+			  "use strict";
+			  var toggles = document.querySelectorAll(".c-hamburger");
+			  toggleHandler(toggles[0]);
+
+
+			  function toggleHandler(toggle) {
+			    toggle.addEventListener( "click", function(e) {
+			      e.preventDefault();
+			      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+			      myFunction();
+			    });
+			  }
+			})();
+
+
+			function myFunction() {
+		    	document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+		</script>
+	</div>
+
+	<div class="mainpage">
+		<div class="heading1">About Me
+			<p><!-- linespace--></p> 
+			<p><!-- linespace--></p> 
+		</div>
+
+			<hr width="65%">
+
+				<div class="body1">
+					<p><!-- linespace--></p>	
+					<img src="profile-round.png" width="293" height="238" />
+				</div>
+
+					<div class="body2">
+						<p><!-- linespace--></p>
+						<p align="justify"> 
+							Anthony is a recent graduate of the Mechanical Engineering & Management program at McMaster University, a joint 5-year program with Degroote School of Business with an engineering specialization in Mechanics and Design, and business specialization in finance. In 2014, he studied abroad as an exchange student at Nanyang Technological University in Singapore for 10 months taking a courses in the School of Mechanical and Aerospace Engineering, Nanyang Business School, and School of Art, Design and Media, while exploring the exciting cultures across South East Asia. His experience abroad inspired him to pursue a career with global outreach and impact in the fields of finance or technology. 
+
+						</p>
+						<p><!-- linespace--></br></p>
+						<p align-"justify">
+							Anthony is currently actively seeking a business/financial analyst  or related role in financial services or technology company/start-up. Feel free to reach out
+							about new opportunities!
+
+						</p>
+						<p><!-- linespace--></br></p>
+						<p><!-- linespace--></br></p>
+						<p><!-- linespace--></br></p>
+					</div>
+	</div>
 
 
 </body>

@@ -27,10 +27,7 @@
 	float: right;
 }
 
-.mainbody {
-	position: relative;
-	top: 50%;
-	left: 50%;
+.mainpage {
 }
 
 .title {
@@ -49,7 +46,7 @@
 	text-align: center;
 	font-size: 250%;
 	color: #212121;
-	margin-top: 5%;
+	padding-top: 5%;
 }
 
 .body1{
@@ -61,6 +58,7 @@
 .body2{
 	font-family: "Raleway", sans-serif;
 	font-size: 110%;
+	font-weight: bold;
 	text-align: left;
 	color: #212121;
 	margin-left: 20%;
