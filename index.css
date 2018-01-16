@@ -118,8 +118,65 @@
     float: left;
 }
 
-.dropdown:hover .c-hamburger {
+.dropdown:hover .menu-hamburger {
 	background-color: #027ec9;
+	color: #027ec9;
+	opacity: 0.8;
+}
+
+.dropdown:hover .menu-hamburger span {
+	top: 35px;
+	left: 13px;
+	width: 45%;
+	opacity: 0.95;
+}
+
+.dropdown:hover .menu-hamburger span::before {
+	/* top patty */
+	top: -8px; /* + up, -down */
+	left: 12px; /* + right, -left */
+	width: 75%;
+  	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	-o-transform: rotate(90deg);
+ 	transform: rotate(90deg);
+ 	opacity: 0.95;
+}
+
+.dropdown:hover .menu-hamburger span::after {
+	/* bottom patty */
+	top: -8px;
+	left: -6px;
+	width: 75%;
+  	-webkit-transform: rotate(90deg);
+  	-moz-transform: rotate(90deg);
+  	-o-transform: rotate(90deg);
+ 	transform: rotate(90deg);
+ 	opacity: 0.95;
+}
+
+.dropdown:hover .menu-hamburger::before {
+	/* animated roof right*/
+	width: 45%;
+	top: 15px; /* + down, -up */
+	left: 20px; /* + right, -left */
+  	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+ 	transform: rotate(45deg);
+ 	opacity: 0.95;
+}
+
+.dropdown:hover .menu-hamburger::after {
+	/* animated roofs left */
+	width: 45%;
+	top: 15px;
+	left: 6px;
+  	-webkit-transform: rotate(-45deg);
+  	-moz-transform: rotate(-45deg);
+  	-o-transform: rotate(-45deg);
+ 	transform: rotate(-45deg);
+ 	opacity: 0.95;
 }
 
 .dropdown:hover .dropdown-content {
@@ -129,7 +186,7 @@
 
 /*		Dropdown Menu Icon  	*/
 
-.c-hamburger {
+.menu-hamburger {
 	display: block;
 	text-align: left;
 	border-radius: 5px;
@@ -147,19 +204,19 @@
 	border: none;
 	cursor: pointer;
 	transition: background 0.2s;
+ 	-webkit-transition: .2s;
+  	-moz-transition: .2s;
+  	-o-transition: .2s;
+  	transition: .2s;
 }
 
-.c-hamburger:focus {
+.menu-hamburger:focus {
  	outline: none;
 }
 
-.c-hamburger:hover{
-	background-color: #027ec9;
-	color: #027ec9;
-	cursor: pointer;
-}
-
-.c-hamburger span {
+.menu-hamburger::before,
+.menu-hamburger::after {
+	/* animated roofs */
 	display: block;
 	border-radius: 1.5px;
 	position: absolute;
@@ -168,47 +225,58 @@
 	right: 10px;
 	height: 4px;
 	background: #FFFFFF;
+	content: "";
+ 	-webkit-transition: .2s;
+  	-moz-transition: .2s;
+  	-o-transition: .2s;
+  	transition: .2s;
+  	opacity: 0;
 }
 
-.c-hamburger span::before,
-.c-hamburger span::after {
+.menu-hamburger span {
+	/* middle patty */
+	display: block;
+	border-radius: 1.5px;
+	position: absolute;
+	top: 22px;
+	left: 10px;
+	right: 10px;
+	height: 4px;
+	background: #FFFFFF;
+ 	-webkit-transition: .2s;
+  	-moz-transition: .2s;
+  	-o-transition: .2s;
+  	transition: .2s;
+}
+
+.menu-hamburger span::before,
+.menu-hamburger span::after {
+	/* top & bottom patties */
 	position: absolute;
 	display: block;
 	border-radius: 1.5px;
-	left: 0;
+	left: 0px;
 	width: 100%;
 	height: 4px;
 	background-color: #FFFFFF;
 	content: "";
+ 	-webkit-transition: .2s;
+  	-moz-transition: .2s;
+  	-o-transition: .2s;
+  	transition: .2s;
 }
 
-.c-hamburger span::before {
+.menu-hamburger span::before {
+	/* top patty */
 	top: -10px;	
 }
 
-.c-hamburger span::after {
+.menu-hamburger span::after {
+	/* bottom patty */
 	bottom: -10px;
 }
 
-.c-hamburger--rot {
-	background-color: #ECE9E6;
-	opacity: .8;
-}
 
-.c-hamburger--rot span {
-	transition: transform 0.2s;
-}
-
-.c-hamburger--rot.is-active { /* active state, i.e. menu open */
-	background-color: #027ec9;
-	opacity: 0.8;
-}
-
-.c-hamburger--rot.is-active span {
-	transform: rotate(90deg);
-}
-
-	
 /*		Dropdown Menu	  */
 
 .dropdown-content {
@@ -217,10 +285,16 @@
     background-color: #F9F9F9;
     font-weight: bold;
     min-width: 160px;
+    left: 10px;
     overflow: auto;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
     z-index: 1;
     transition: background 0.2s;
+ 	-webkit-transition: .2s;
+  	-moz-transition: .2s;
+  	-o-transition: .2s;
+  	transition: .2s;
+
 }
 
 .dropdown-content a {
@@ -238,10 +312,6 @@
 	font-weight: bold;
 	color: #FFFFFF;
 	opacity: 0.8;
-}
-
-.dropdown a:click {
-	background-color: #f1f1f1
 }
 
 .show {
