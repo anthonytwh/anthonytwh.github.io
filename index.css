@@ -1,6 +1,5 @@
 
 /*		Mainpage	  */
-
 .background {
 	background: url("background.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -70,6 +69,11 @@
 	overflow: auto;
 }
 
+.iconsPar {
+	/* prevent 100% width (div) */
+	display: inline-block; 
+}
+
 .icons {
 	color: #027ec9;
 	border: none;
@@ -87,11 +91,11 @@
 	*/
 }
 
-.iconsPar:hover .icons{
+.iconsPar:hover .icons {
 	opacity: 0.2;
 }
 
-.iconsPar .icons:hover{
+.iconsPar .icons:hover {
 	background-color: none;
 	opacity: 1;
 	-ms-transform: scale(1.15);
@@ -133,8 +137,8 @@
 }
 
 .dropdown:hover .menu-hamburger span::before {
-	/* top patty */
-	top: -8px; /* + up, -down */
+	/* top patty - relative to mid*/
+	top: -8px; /* + up, -down*/
 	left: 12px; /* + right, -left */
 	width: 75%;
   	-webkit-transform: rotate(90deg);
@@ -145,7 +149,7 @@
 }
 
 .dropdown:hover .menu-hamburger span::after {
-	/* bottom patty */
+	/* bottom patty - relative to mid*/
 	top: -8px;
 	left: -6px;
 	width: 75%;
