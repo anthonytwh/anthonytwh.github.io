@@ -1,5 +1,8 @@
+@charset "UTF-8";
+
 
 /*		Mainpage	  */
+
 .background {
 	background: url("background.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -11,6 +14,7 @@
 
 .header {
 	float: center;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -27,6 +31,7 @@
 .mainpage {
 	padding-top: 0%;
 	float: center;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -133,7 +138,7 @@
 	top: 35px;
 	left: 13px;
 	width: 45%;
-	opacity: 0.95;
+	opacity: 1;
 }
 
 .dropdown:hover .menu-hamburger span::before {
@@ -145,7 +150,7 @@
   	-moz-transform: rotate(90deg);
   	-o-transform: rotate(90deg);
  	transform: rotate(90deg);
- 	opacity: 0.95;
+ 	opacity: 1;
 }
 
 .dropdown:hover .menu-hamburger span::after {
@@ -157,7 +162,7 @@
   	-moz-transform: rotate(90deg);
   	-o-transform: rotate(90deg);
  	transform: rotate(90deg);
- 	opacity: 0.95;
+ 	opacity: 1;
 }
 
 .dropdown:hover .menu-hamburger::before {
@@ -169,7 +174,7 @@
   	-moz-transform: rotate(45deg);
   	-o-transform: rotate(45deg);
  	transform: rotate(45deg);
- 	opacity: 0.95;
+ 	opacity: 1;
 }
 
 .dropdown:hover .menu-hamburger::after {
@@ -181,7 +186,7 @@
   	-moz-transform: rotate(-45deg);
   	-o-transform: rotate(-45deg);
  	transform: rotate(-45deg);
- 	opacity: 0.95;
+ 	opacity: 1;
 }
 
 .dropdown:hover .dropdown-content {
