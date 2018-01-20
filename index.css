@@ -125,6 +125,7 @@
     position: relative;
     display: inline-block;
     float: left;
+    cursor: pointer;
 }
 
 .dropdown:hover .menu-hamburger {
