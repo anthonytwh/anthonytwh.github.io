@@ -200,24 +200,24 @@
 .menu-hamburger {
 	display: block;
 	background-color: #BFB5AB;
-	opacity: 0.5;
+	opacity: 0.4;
 	text-align: left;
 	border-radius: 5px;
 	position: relative;
-	overflow: hidden;
 	margin: 10px;
 	padding: 0;
 	width: 48px;
 	height: 48px;
 	font-size: 0;
+	content: "";
 	box-shadow: none;
 	border: none;
 	cursor: pointer;
 	transition: background 0.25s;
- 	-webkit-transition: .25s;
-  	-moz-transition: .25s;
-  	-o-transition: .25s;
-  	transition: .25s;
+ 	-webkit-transition: 0.25s;
+  	-moz-transition: 0.25s;
+  	-o-transition: 0.25s;
+  	transition: 0.25s;
 }
 
 .menu-hamburger:focus {
@@ -236,10 +236,10 @@
 	height: 4px;
 	background: #FFFFFF;
 	content: "";
- 	-webkit-transition: .25s;
-  	-moz-transition: .25s;
-  	-o-transition: .25s;
-  	transition: .25s;
+ 	-webkit-transition: 0.25s;
+  	-moz-transition: 0.25s;
+  	-o-transition: 0.25s;
+  	transition: 0.25s;
   	opacity: 0;
 }
 
