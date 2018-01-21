@@ -199,6 +199,8 @@
 
 .menu-hamburger {
 	display: block;
+	background-color: #BFB5AB;
+	opacity: 0.5;
 	text-align: left;
 	border-radius: 5px;
 	position: relative;
