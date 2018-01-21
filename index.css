@@ -134,7 +134,7 @@
 	opacity: 0.8;
 }
 
-.dropdown:hover .menu-hamburger a {
+.dropdown:hover .menu-hamburger span {
 	/* middle patty */
 	top: 35px;
 	left: 13px;
@@ -142,7 +142,7 @@
 	opacity: 1;
 }
 
-.dropdown:hover .menu-hamburger a::before {
+.dropdown:hover .menu-hamburger span::before {
 	/* top patty - relative to mid*/
 	top: -8px; /* + up, -down*/
 	left: 12px; /* + right, -left */
@@ -154,7 +154,7 @@
  	opacity: 1;
 }
 
-.dropdown:hover .menu-hamburger a::after {
+.dropdown:hover .menu-hamburger span::after {
 	/* bottom patty - relative to mid*/
 	top: -8px;
 	left: -6px;
@@ -241,7 +241,7 @@
   	opacity: 0;
 }
 
-.menu-hamburger a {
+.menu-hamburger span {
 	/* middle patty */
 	display: block;
 	border-radius: 1.5px;
@@ -257,8 +257,8 @@
   	transition: .25s;
 }
 
-.menu-hamburger a::before,
-.menu-hamburger a::after {
+.menu-hamburger span::before,
+.menu-hamburger span::after {
 	/* top & bottom patties */
 	position: absolute;
 	display: block;
@@ -274,12 +274,12 @@
   	transition: .25s;
 }
 
-.menu-hamburger a::before {
+.menu-hamburger span::before {
 	/* top patty */
 	top: -10px;	
 }
 
-.menu-hamburger a::after {
+.menu-hamburger span::after {
 	/* bottom patty */
 	bottom: -10px;
 }
