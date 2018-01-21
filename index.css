@@ -76,7 +76,8 @@
 
 .iconsPar {
 	/* prevent 100% width (div) */
-	display: inline-block; 
+	display: inline-block;
+	opacity: 0.8;
 }
 
 .icons {
