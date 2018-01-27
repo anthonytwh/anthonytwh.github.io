@@ -96,7 +96,7 @@
 .iconsPar {
 	/* prevent 100% width (div) */
 	display: inline-block;
-	opacity: 0.8;
+	opacity: 0.85;
 }
 
 .icons {
@@ -151,7 +151,7 @@
 .dropdown:hover .menu-hamburger {
 	background-color: #027ec9;
 	color: #027ec9;
-	opacity: 0.8;
+	opacity: 0.85;
 }
 
 .dropdown:hover .menu-hamburger span {
