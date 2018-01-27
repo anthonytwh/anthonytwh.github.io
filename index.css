@@ -69,8 +69,11 @@
 	font-weight: bold;
 	text-align: left;
 	color: #212121;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding-left: 20%;
+	padding-right: 20%;
+	border: none;
 	overflow: auto;
 }
 
