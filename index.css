@@ -85,6 +85,11 @@
 	overflow: auto;
 }
 
+.hyperlinktext{
+	color: black;
+	text-decoration: none;
+}
+
 .iconsPar {
 	/* prevent 100% width (div) */
 	display: inline-block;
