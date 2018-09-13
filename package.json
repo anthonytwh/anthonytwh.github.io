@@ -2,7 +2,9 @@
   "name": "anthonytwh.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://anthonyt.ca",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-scripts": "1.1.5"
