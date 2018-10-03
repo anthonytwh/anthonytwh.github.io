@@ -27,6 +27,11 @@
   background: none;
 }
 
+/* Mid Section */
+.Mid-bg {
+  background: url("mid-section.png");
+}
+
 
 /* Footer */
 .Footer {

@@ -21,6 +21,8 @@ class App extends Component {
 					<Main />
 					<Button className="test-button" color="danger">Danger!</Button>
 				</div>
+				<div>
+				</div>
 				<div className="Footer">
 					<Footer />
 				</div>
