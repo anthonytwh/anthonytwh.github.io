@@ -1,29 +1,36 @@
+/* App */
 .App {
-  text-align: center;
+  background: url("background2.png");
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.test-button {
+  background-color: #ff5722;
+  border-color: #ff5722;
+
 }
 
-.App-header-old {
-  background-color: lightgrey;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* Header */
+.Header-header {
+  background-color: none;
 }
 
-.App-header {
-  background-color: black;
-}
-
-.App-title {
+.Header-title {
   font-size: 1.5em;
 }
 
-.App-intro {
+.Header-intro {
   font-size: large;
+}
+
+/* Main */
+.Main-jumbo {
+  background: none;
+}
+
+
+/* Footer */
+.Footer {
+  text-align: center;
 }
 
 .App-footer {
@@ -38,9 +45,20 @@
 }
 
 .App-footer-body{
+  text-align: center;
   background-color: #313131;
   color: white;
 
+}
+
+.Footer-blank {
+  color: #313131;
+
+}
+
+.Footer-icons {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .App-footer-foot {
@@ -49,7 +67,8 @@
   color: grey;
 }
 
+/*
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/

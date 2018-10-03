@@ -3,7 +3,7 @@ import { Button } from 'reactstrap';
 
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
-import logo from './logo.svg';
+import Main from './components/Main.jsx'
 import './assets/styles.css';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
@@ -15,16 +15,15 @@ import './assets/styles.css';
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<Header/>
-					<header className="App-header-old">
-						<img src={logo} className="App-logo" alt="logo" />
-						<h1 className="App-title">Welcome to React</h1>
-					</header>
-					<p></p>
-				<Button color="danger">Danger!</Button>
-
-				<Footer />
+			<div>
+				<div className="App">
+					<Header/>
+					<Main />
+					<Button className="test-button" color="danger">Danger!</Button>
+				</div>
+				<div className="Footer">
+					<Footer />
+				</div>
 			</div>
 		);
 	}
