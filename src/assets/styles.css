@@ -33,18 +33,18 @@
   text-align: center;
 }
 
-.App-footer {
+.Footer-div {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.App-footer-head {
+.Footer-head {
 
 }
 
-.App-footer-body{
+.Footer-body{
   text-align: center;
   background-color: #313131;
   color: white;
@@ -61,7 +61,7 @@
   padding-right: 0;
 }
 
-.App-footer-foot {
+.Footer-foot {
   background-color: #262626;
   font-size: 7pt;
   color: grey;

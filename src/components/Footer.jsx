@@ -15,13 +15,13 @@ class Footer extends Component {
 
 	render() {
 		return (
-			<div className="App-footer">
+			<div className="Footer-div">
 				<Card>
-					<CardBody className="App-footer-body">
+					<CardBody className="Footer-body">
 						<Row> 
 							<Col>
 								<CardTitle>Connect With Me!</CardTitle>
-								<CardText><p> Social media --> </p></CardText>
+								<CardText><p> See my social media on the right</p></CardText>
 							</Col>
 							<Col>
 								<CardTitle></CardTitle>
@@ -39,7 +39,7 @@ class Footer extends Component {
 							</Col>
 						</Row>
 					</CardBody>
-					<CardFooter className="App-footer-foot"> (C) anthonyt.ca </CardFooter>
+					<CardFooter className="Footer-foot"> (C) anthonyt.ca </CardFooter>
 				</Card>
 			</div>
 			)
