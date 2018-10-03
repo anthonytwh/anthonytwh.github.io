@@ -12,15 +12,10 @@ class Main extends Component {
 
 	render () {
 		return (
-	    <div>
-			<Jumbotron className="Main-jumbo">
+	    <div className="Main-jumbo">
 				<h1 className="display-3">Hello!</h1>
 					<p className="lead">Welcome to my website! </p>
-							<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-							<p className="lead">
-							<Button color="primary">Learn More</Button>
-				</p>
-			</Jumbotron>
+					<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 	    </div>
 			)
 	}

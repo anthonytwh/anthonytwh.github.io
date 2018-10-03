@@ -1,12 +1,11 @@
-/* App */
-.App {
-  background: url("background2.png");
+/* Title */
+.Title {
+  text-align: center;
 }
 
 .test-button {
   background-color: #ff5722;
   border-color: #ff5722;
-
 }
 
 /* Header */
@@ -23,13 +22,30 @@
 }
 
 /* Main */
+.Main {
+  background: url("background2.png");
+  text-align: center;
+}
+
 .Main-jumbo {
   background: none;
 }
 
 /* Mid Section */
-.Mid-bg {
+.Mid{
   background: url("mid-section.png");
+  color: white;
+  text-align: center;
+}
+
+.Mid-title {
+  font-size: 45px;
+  font-weight: 100;
+}
+
+.Mid-sub {
+  font-size: 20px;
+  font-weight: 100;
 }
 
 
@@ -61,19 +77,8 @@
 
 }
 
-.Footer-icons {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .Footer-foot {
   background-color: #262626;
   font-size: 7pt;
   color: grey;
 }
-
-/*
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}*/
