@@ -22,7 +22,7 @@ class App extends Component {
 					<br></br>
 					<br></br>
 				</div>
-				<div className="Mid">
+				<div className="About">
 					<br></br>
 					<About />
 					<br></br>

@@ -38,20 +38,38 @@
 }
 
 /* Mid Section (About) */
-.Mid {
+.About {
   background: #444;
   color: white;
   text-align: center;
 }
 
-.Mid-title {
+.About-title {
   font-size: 45px;
   font-weight: 100;
 }
 
-.Mid-sub {
+.About-header {
   font-size: 20px;
   font-weight: 100;
+  text-align: left;
+}
+
+.About-body {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.About-body-left {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.About-body-right {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: right;
 }
 
 /* Content Section (TBD) */
