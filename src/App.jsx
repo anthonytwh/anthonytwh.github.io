@@ -9,12 +9,6 @@ import Content from './components/Content.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import './assets/styles.css';
 
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// library.add(faGithub, faLinkedin, faInstagram, faEnvelope)
-
-
-
 class App extends Component {
 	render() {
 		return (
