@@ -30,6 +30,7 @@
 
 .Main-jumbo {
   background: none;
+  /*text-align: left;*/
 }
 
 /* Mid Section (About) */
@@ -76,7 +77,7 @@
 
 /* Portfolio */
 .Portfolio {
-  background: #333;
+  background: #555;
   text-align: center;
   overflow: auto;
 }
@@ -99,7 +100,9 @@
 /* Footer */
 .Footer {
   text-align: center;
-  
+  background: url("mid-section.png");
+  color: white;
+  text-align: center;
 }
 
 .Footer-div {
@@ -110,25 +113,25 @@
 }
 
 .Footer-head {
-
+  font-size: 20px;
+  font-weight: 100;
 }
 
-.Footer-body{
-  text-align: center;
-  background: url("mid-section.png");
-  /*background-color: #313131;*/
+.Footer-body{  
+  font-size: 12px;
+  font-weight: 120;
+}
+
+.Footer-icons {
   color: white;
-
 }
 
-.Footer-blank {
-  color: #313131;
-
+.Footer-icons:hover {
+  color: lightgreen;
 }
 
 .Footer-foot {
-  /*background-color: #262626;*/
-  background-color: #202020;
+  background-color: #262626;
   font-size: 7pt;
   color: grey;
 }
