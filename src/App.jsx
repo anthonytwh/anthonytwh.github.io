@@ -5,6 +5,8 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Main from './components/Main.jsx'
 import About from './components/About.jsx'
+import Content from './components/Content.jsx'
+import Portfolio from './components/Portfolio.jsx'
 import './assets/styles.css';
 
 // import { library } from '@fortawesome/fontawesome-svg-core'
@@ -29,6 +31,16 @@ class App extends Component {
 				<div className="Mid">
 					<br></br>
 					<About />
+					<br></br>
+				</div>
+				<div className="Content">
+					<br></br>
+					<Content />
+					<br></br>
+				</div>
+				<div className="Portfolio">
+					<br></br>
+					<Portfolio />
 					<br></br>
 				</div>
 				<div className="Footer">

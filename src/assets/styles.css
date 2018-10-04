@@ -1,6 +1,7 @@
 /* Title */
 .Title {
   text-align: center;
+  overflow: auto;
 }
 
 .test-button {
@@ -31,9 +32,9 @@
   background: none;
 }
 
-/* Mid Section */
-.Mid{
-  background: url("mid-section.png");
+/* Mid Section (About) */
+.Mid {
+  background: #444;
   color: white;
   text-align: center;
 }
@@ -48,14 +49,61 @@
   font-weight: 100;
 }
 
+/* Content Section (TBD) */
+.Content {
+  background: #BABABA;
+  text-align: left;
+  padding-left: 5em;
+
+}
+
+.Content-title {
+  color: black;
+  font-size: 25px;
+  font-weight: 100;
+
+}
+
+.Content-header {
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.Content-body{
+
+}
+
+/* Portfolio */
+.Portfolio {
+  background: #333;
+  text-align: center;
+  overflow: auto;
+}
+
+.Portfolio-title {
+  color: white;
+
+}
+
+.Portfolio-header {
+  color: white;
+
+}
+
+.Portfolio-body {
+  color: white;
+
+}
 
 /* Footer */
 .Footer {
   text-align: center;
+  
 }
 
 .Footer-div {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -67,7 +115,8 @@
 
 .Footer-body{
   text-align: center;
-  background-color: #313131;
+  background: url("mid-section.png");
+  /*background-color: #313131;*/
   color: white;
 
 }
@@ -78,7 +127,8 @@
 }
 
 .Footer-foot {
-  background-color: #262626;
+  /*background-color: #262626;*/
+  background-color: #202020;
   font-size: 7pt;
   color: grey;
 }
