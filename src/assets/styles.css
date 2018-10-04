@@ -18,6 +18,10 @@
   font-size: 1.5em;
 }
 
+.Header-icon {
+  color: grey;
+}
+
 .Header-intro {
   font-size: large;
 }

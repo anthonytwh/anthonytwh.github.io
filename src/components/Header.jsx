@@ -1,6 +1,9 @@
 import React, { Component} from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
+
 import '../assets/styles.css';
 
 
@@ -21,7 +24,7 @@ class Header extends Component {
 		return(
 			<div>
 				<Navbar className="Header-header" light expand="md"> 
-					<NavbarBrand href='/'>Anthony Tam </NavbarBrand>
+					<NavbarBrand href='/'> <a className="Header-icon"><FontAwesomeIcon icon={faUserAstronaut} size="lg"/></a> </NavbarBrand>
 					<NavbarToggler onCLick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className='ml-auto' navbar>

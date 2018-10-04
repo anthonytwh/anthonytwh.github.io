@@ -5,7 +5,6 @@ import '../assets/styles.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faInstagram, faMedium} from '@fortawesome/free-brands-svg-icons'
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 class Footer extends Component {
 
