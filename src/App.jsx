@@ -13,12 +13,14 @@ class App extends Component {
 	render() {
 		return (
 			<div className="Title">
-				<div className="Main">
+				<div className="Header">
 					<Header/>
+				</div>
 					<br></br>
+				<div className="Main">	
 					<Main />
 					<br></br>
-					<Button className="test-button" color="danger">Danger! </Button>
+					<Button className="test-button" color="danger"> Danger! </Button>
 					<br></br>
 					<br></br>
 				</div>

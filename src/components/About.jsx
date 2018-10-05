@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import { Jumbotron, Container } from 'reactstrap';
 
 import '../assets/styles.css';
+import photo from '../assets/profilephoto.jpg';
 
 
 class About extends Component {
@@ -14,24 +15,38 @@ class About extends Component {
 		return (
 	    <div>
 				<Container fluid>
-					<br></br>
-					<br></br>
 					<h1 className="About-title">About Me</h1>
 
-					<br></br>
-					<p className="About-header">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+					
+					<div className="About-header">
+						<br></br>
+						<div className="About-animate">
+							<span> <p> Engineering </p> </span>
+							<span> <p> Product Design </p> </span>
+							<span> <p> Finance & Investing </p>  </span>
+							<span> <p> Food & Coffee </p> </span>
+							<span> <p> Travelling </p> </span>
+						</div>
+					</div>
 
-					<br></br>
 					<div className="About-body-left">
-						<p> Things about me, blah blah blah. </p>
+						<br></br>
+						<br></br>
+						<p> Anthony is an Engineering Management Graduate with a </p>
+						<p> passion for product design, software development, and </p>
+						<p> finance. He loves to collaborate on developing new ideas </p>
+						<p> to create user-oriented products and solutions with the </p>
+						<p> latest technologies. With a background in both engineering </p>
+						<p> and business disciplines, he is always seeking new </p>
+						<p> challenges and opportunities to grow and develop his </p>
+						<p> skill set.</p>
 					</div>
 
 					<div className="About-body-right">
-						<p> Things about me, blah blah blah. </p>
+						<br></br>
+						<br></br>
+						<img src={photo} width="300" height="240"/>
 					</div>
-
-					<br></br>
-					<br></br>
 				</Container>
 	    </div>
 			)

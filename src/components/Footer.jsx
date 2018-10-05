@@ -15,8 +15,6 @@ class Footer extends Component {
 	render() {
 		return (
 			<div className="Footer-div">
-			<br></br>
-			<br></br>
 				<Row> 
 					<Col>
 						<h1 className="Footer-head"> Connect with me! </h1>
@@ -49,9 +47,10 @@ class Footer extends Component {
 					</Col>
 				</Row>
 				<br></br>
-				<br></br>
-			<div className="Footer-foot"> (C) anthonyt.ca </div>
-			</div>
+				<div className="Footer-foot"> 
+					(C) anthonyt.ca 
+				</div>
+			</div>	
 			)
 	}
 }

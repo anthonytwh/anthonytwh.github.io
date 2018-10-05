@@ -1,7 +1,8 @@
 /* Title */
 .Title {
+  background: url("background2.png");
   text-align: center;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .test-button {
@@ -10,8 +11,12 @@
 }
 
 /* Header */
+.Header {
+
+}
+
 .Header-header {
-  background-color: none;
+  
 }
 
 .Header-title {
@@ -28,8 +33,9 @@
 
 /* Main */
 .Main {
-  background: url("background2.png");
   text-align: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
 }
 
 .Main-jumbo {
@@ -42,10 +48,17 @@
   background: #444;
   color: white;
   text-align: center;
+  overflow: auto;
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+
+.About:after {
+    clear: both;
 }
 
 .About-title {
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 100;
 }
 
@@ -53,6 +66,7 @@
   font-size: 20px;
   font-weight: 100;
   text-align: left;
+  padding-left: 10%;
 }
 
 .About-body {
@@ -63,17 +77,65 @@
 .About-body-left {
   font-size: 15px;
   font-weight: 100;
+
+  float: left;
   text-align: left;
+  padding-left: 10%;
+
 }
 
 .About-body-right {
   font-size: 15px;
   font-weight: 100;
-  text-align: right;
+
+  float: right;
+  padding-right: 10%;
+}
+
+.About-animate {
+  display: inline;
+}
+
+.About-animate span {
+  letter-spacing: 0.2em;
+  animation: Aboutimate 10s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+
+}
+
+.About-animate span:nth-child(2){
+  animation-delay: 2s;
+}
+
+.About-animate span:nth-child(3){
+  animation-delay: 4s;
+}
+
+.About-animate span:nth-child(4){
+  animation-delay: 6s;
+}
+
+.About-animate span:nth-child(5){
+  animation-delay: 8s;
+}
+
+@keyframes Aboutimate {
+  0% { opacity: 0; }
+  5% { opacity: 0; transform: translateX(-50px); }
+  10% { opacity: 1; transform: translateX(0px); }
+  25% { opacity: 1; transform: translateX(0px); }
+  30% { opacity: 0; transform: translateX(50px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 /* Content Section (TBD) */
 .Content {
+  clear: both;
+  padding-top: 10%;
+  padding-bottom: 20%;
   background: #BABABA;
   text-align: left;
   padding-left: 5em;
@@ -100,20 +162,21 @@
 /* Portfolio */
 .Portfolio {
   background: #555;
+  padding-top: 10%;
+  padding-bottom: 20%;
   text-align: center;
-  overflow: auto;
 }
 
 .Portfolio-title {
   color: white;
+  font-size: 25px;
   font-weight: 100;
-
 }
 
 .Portfolio-header {
   color: white;
+  font-size: 20px;
   font-weight: 100;
-
 }
 
 .Portfolio-body {
@@ -124,10 +187,10 @@
 
 /* Footer */
 .Footer {
-  text-align: center;
   background: url("mid-section.png");
   color: white;
   text-align: center;
+  padding-top: 5%;
 }
 
 .Footer-div {
@@ -143,7 +206,7 @@
 }
 
 .Footer-body{  
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 120;
 }
 
@@ -156,7 +219,9 @@
 }
 
 .Footer-foot {
-  background-color: #262626;
-  font-size: 7pt;
+  background-color: #292929;
+  font-size: 5pt;
   color: grey;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
