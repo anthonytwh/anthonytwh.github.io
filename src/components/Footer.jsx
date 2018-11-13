@@ -19,7 +19,7 @@ class Footer extends Component {
 					<Col>
 						<h1 className="Footer-head"> Connect with me! </h1>
 						<br></br>
-						<p className="Footer-body"> hello[at]anthonyt.ca </p>
+						<p className="Footer-body"> hello@anthonyt[.]ca </p>
 					</Col>
 					<Col>
 						<br></br>
