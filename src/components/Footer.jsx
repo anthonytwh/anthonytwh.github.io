@@ -48,7 +48,7 @@ class Footer extends Component {
 				</Row>
 				<br></br>
 				<div className="Footer-foot"> 
-					(C) anthonyt.ca 
+					(c) anthonyt.ca 
 				</div>
 			</div>	
 			)

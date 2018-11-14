@@ -46,10 +46,7 @@
 /* Mid Section (About) */
 .About {
   background: 
-    linear-gradient(175deg, 
-      rgb(0,0,0,0), rgb(0,0,0,0) 15%, 
-      #444 15.05%, #444 75%, 
-      #FFF 75.05%, #FFF);
+    linear-gradient(175deg, transparent 14.9%, #444 15.1%, #444 74.9%, #FFF 75.1%);
   color: white;
   text-align: center;
   overflow: auto;
@@ -141,10 +138,6 @@
   padding-top: 10%;
   padding-bottom: 20%;
   background: #FFF;
-/*  background: 
-    linear-gradient(175deg, 
-      #FFF, #FFF 80%, 
-      #555 80.03%, #555);*/
   text-align: left;
   padding-left: 10%;
 
@@ -171,9 +164,7 @@
 .Portfolio {
   /*background: #555;*/
   background: 
-    linear-gradient(185deg, 
-      #FFF 10%, 
-      #555 10.05%, #555);
+    linear-gradient(185deg, #FFF 10.9%, #555 11.1%);
   padding-top: 10%;
   padding-bottom: 20%;
   text-align: center;
