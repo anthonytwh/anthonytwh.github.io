@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
@@ -22,25 +23,27 @@ class Header extends Component {
 
 	render() {
 		return(
-			<div>
-				<Navbar className="Header-header" light expand="md"> 
-					<NavbarBrand href='/'> <a className="Header-icon"><FontAwesomeIcon icon={faUserAstronaut} size="lg"/></a> </NavbarBrand>
-					<NavbarToggler onCLick={this.toggle} />
-					<Collapse isOpen={this.state.isOpen} navbar>
-						<Nav className='ml-auto' navbar>
-							<NavItem>
-								<NavLink href='/About'> About </NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink href='/Portfolio'> Portfolio </NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink href='/Contact'> Contact </NavLink>
-							</NavItem>
-						</Nav>
-					</Collapse>
-				</Navbar>
-			</div>
+			<Router>
+				<div>
+					<Navbar className="Header-header" light expand="md"> 
+						<NavbarBrand href='/'> <a className="Header-icon"><FontAwesomeIcon icon={faUserAstronaut} size="lg"/></a> </NavbarBrand>
+						<NavbarToggler onCLick={this.toggle} />
+						<Collapse isOpen={this.state.isOpen} navbar>
+							<Nav className='ml-auto' navbar>
+								<NavItem>
+									<Link to='/About'><NavLink> About </NavLink></Link>
+								</NavItem>
+								<NavItem>
+									<Link to='/Portfolio'><NavLink> Portfolio </NavLink></Link>
+								</NavItem>
+								<NavItem>
+									<Link to='/Contact'><NavLink> Contact </NavLink></Link>
+								</NavItem>
+							</Nav>
+						</Collapse>
+					</Navbar>
+				</div>
+			</Router>
 			)
 	}
 }

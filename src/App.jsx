@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 
 import Header from './components/Header.jsx'
@@ -10,39 +11,50 @@ import Portfolio from './components/Portfolio.jsx'
 import './assets/styles.css';
 
 class App extends Component {
+	constructor (props) {
+		super(props);
+	}
+
 	render() {
 		return (
-			<div className="Title">
-				<div className="Header">
-					<Header/>
+			<Router>
+				<div className="Title">
+					<div className="Header">
+						<Header/>
+					</div>
+						<br></br>
+					<div className="Main">	
+						<Main />
+						<br></br>
+						<Button className="test-button" color="danger"> Danger! </Button>
+						<br></br>
+						<br></br>
+					</div>
+					<div className="About">
+						<br></br>
+						<About />
+						<br></br>
+					</div>
+					<div className="Content">
+						<br></br>
+						<Content />
+						<br></br>
+					</div>
+					<div className="Portfolio">
+						<br></br>
+						<Portfolio />
+						<br></br>
+					</div>
+					<div className="Footer">
+						<Footer />
+					</div>
+
+					<Route path='/About' component={About} />
+					<Route path='/Portfolio' component={Portfolio} />
+					<Route path='/Contact' component={Footer} />
+
 				</div>
-					<br></br>
-				<div className="Main">	
-					<Main />
-					<br></br>
-					<Button className="test-button" color="danger"> Danger! </Button>
-					<br></br>
-					<br></br>
-				</div>
-				<div className="About">
-					<br></br>
-					<About />
-					<br></br>
-				</div>
-				<div className="Content">
-					<br></br>
-					<Content />
-					<br></br>
-				</div>
-				<div className="Portfolio">
-					<br></br>
-					<Portfolio />
-					<br></br>
-				</div>
-				<div className="Footer">
-					<Footer />
-				</div>
-			</div>
+			</Router>
 		);
 	}
 }
