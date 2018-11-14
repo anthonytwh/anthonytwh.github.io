@@ -48,11 +48,6 @@ class App extends Component {
 					<div className="Footer">
 						<Footer />
 					</div>
-
-					<Route path='/About' component={About} />
-					<Route path='/Portfolio' component={Portfolio} />
-					<Route path='/Contact' component={Footer} />
-
 				</div>
 			</Router>
 		);
