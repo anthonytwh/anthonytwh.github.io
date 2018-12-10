@@ -8,6 +8,8 @@ import Main from './components/Main.jsx'
 import About from './components/About.jsx'
 import Content from './components/Content.jsx'
 import Portfolio from './components/Portfolio.jsx'
+
+import Routes from './routes/Routes.jsx'
 import './assets/styles.css';
 
 class App extends Component {
@@ -16,6 +18,7 @@ class App extends Component {
 	}
 
 	render() {
+		<Routes />
 		return (
 			<Router>
 				<div className="Title">

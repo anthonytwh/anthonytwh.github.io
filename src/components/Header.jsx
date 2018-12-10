@@ -26,18 +26,20 @@ class Header extends Component {
 			<Router>
 				<div>
 					<Navbar className="Header-header" light expand="md"> 
-						<NavbarBrand href='/'> <a className="Header-icon"><FontAwesomeIcon icon={faUserAstronaut} size="lg"/></a> </NavbarBrand>
+						<NavbarBrand> 
+							<Link to='/' className="Header-icon" ><FontAwesomeIcon icon={faUserAstronaut} size="lg"/></Link>
+						</NavbarBrand>
 						<NavbarToggler onCLick={this.toggle} />
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav className='ml-auto' navbar>
 								<NavItem>
-									<Link to='/About'><NavLink> About </NavLink></Link>
+									<Link to='/About' className="Header-link"><NavLink> About </NavLink></Link>
 								</NavItem>
 								<NavItem>
-									<Link to='/Portfolio'><NavLink> Portfolio </NavLink></Link>
+									<Link to='/Portfolio' className="Header-link"><NavLink> Portfolio </NavLink></Link>
 								</NavItem>
 								<NavItem>
-									<Link to='/Contact'><NavLink> Contact </NavLink></Link>
+									<Link to='/Contact' className="Header-link"><NavLink> Contact </NavLink></Link>
 								</NavItem>
 							</Nav>
 						</Collapse>
