@@ -25,11 +25,15 @@ class App extends Component {
 					<div className="Header">
 						<Header/>
 					</div>
-						<br></br>
 					<div className="Main">	
 						<Main />
 						<br></br>
-						<Button className="test-button" color="danger"> Danger! </Button>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
+						<br></br>
 						<br></br>
 						<br></br>
 					</div>

@@ -12,10 +12,11 @@
 
 /* Header */
 .Header {
-
+  /* ClassName*/
 }
 
-.Header-header {
+.Header-header {    
+  /* Controls both Icon and Links */
   
 }
 
@@ -24,20 +25,21 @@
 }
 
 .Header-icon {
-  color: black;
+  color: rgb(116, 123, 255, 0.75);
+
 }
 
 .Header-icon:hover {
-  color: hotpink;
+  color: rgb(116, 123, 255, 0.95);
 }
 
 .Header-link {
-
-
+  color: rgb(42, 45, 48, 0.75);
 }
 
 .Header-link:hover {
   text-decoration: none;
+  color: rgb(42, 45, 48, 0.95);
 }
 
 .Header-intro {
