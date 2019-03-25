@@ -12,14 +12,13 @@ class Content extends Component {
 	render () {
 		return (
 		    <div>
-					<Container fluid>
-						<h1 className="Content-title">Content</h1>
-						<p className="Content-header">Some more random content</p>
-					</Container>
+				<Container fluid>
+					<h1 className="Content-title">Content</h1>
+					<p className="Content-header">Some more random content</p>
+				</Container>
 		    </div>
-			)
+		)
 	}
-
 }
 
 export default Content;

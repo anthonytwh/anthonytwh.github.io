@@ -46,8 +46,7 @@ class Header extends Component {
 					</Navbar>
 				</div>
 			</Router>
-
-			)
+		)
 	}
 }
 

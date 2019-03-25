@@ -13,45 +13,36 @@ class About extends Component {
 
 	render () {
 		return (
-	    <div>
+		    <div>
 				<Container fluid>
 					<h1 className="About-title">About Me</h1>
-
-					
-					<div className="About-header">
-						<br></br>
-						<div className="About-animate">
-							<span> <p> Engineering </p> </span>
-							<span> <p> Product Design </p> </span>
-							<span> <p> Finance & Investing </p>  </span>
-							<span> <p> Food & Coffee </p> </span>
-							<span> <p> Travelling </p> </span>
-						</div>
+					<div className="About-animate">
+						<span> <p> Product Design & Development </p> </span>
+						<span> <p> Cyber Security & Privacy </p>  </span>
+						<span> <p> Business Development & Investments </p> </span>
+						<span> <p> World Traveller </p> </span>
 					</div>
-
 					<div className="About-body-left">
-						<br></br>
-						<br></br>
-						<p> Anthony is an Engineering Management Graduate with a </p>
-						<p> passion for product design, software development, and </p>
-						<p> finance. He loves to collaborate on developing new ideas </p>
-						<p> to create user-oriented products and solutions with the </p>
-						<p> latest technologies. With a background in both engineering </p>
-						<p> and business disciplines, he is always seeking new </p>
-						<p> challenges and opportunities to grow and develop his </p>
-						<p> skill set.</p>
+						<br></br><br></br>
+						<p className="About-body-paragraph"> 
+						Anthony is an Engineering & Management Graduate with a 		<br></br>
+						passion for product design and software development. He 	<br></br>
+						loves to collaborate with others to bring new ideas to 		<br></br>
+						light creating, user-oriented and well designed products	<br></br>
+						and solutions. With an engineering and management 			<br></br>
+						background, he is always seeking new opportunities in 		<br></br>
+						the tech and finance sectors to grow and develop with 		<br></br>
+						rising organizations and talent. Feel free to connect 		<br></br>
+						with me below! </p>
 					</div>
-
 					<div className="About-body-right">
-						<br></br>
-						<br></br>
+						<br></br><br></br>
 						<img src={photo} width="300" height="240"/>
 					</div>
 				</Container>
-	    </div>
-			)
+		    </div>
+	    )
 	}
-
 }
 
 export default About;

@@ -22,14 +22,11 @@ class Footer extends Component {
 						<p className="Footer-body"> hello@anthonyt[.]ca </p>
 					</Col>
 					<Col>
-						<br></br>
-						<br></br>
+						<br></br><br></br>
 					</Col>
 					<Col>
-						<br></br>
-						<br></br>
-						<p>
-							<Row>
+						<br></br><br></br>
+						<p><Row>
 								<Col xs={{ size: 'auto', offset: 4 }}>
 									<a className="Footer-icons" href="https://github.com/anthonytwh">
 										<FontAwesomeIcon icon={faGithub} size="lg" /></a></Col>
@@ -42,13 +39,12 @@ class Footer extends Component {
 								<Col xs={{ size: 'auto', offset: 0 }}>
 									<a className="Footer-icons" href="https://medium.com/@AnthonyTam">
 										<FontAwesomeIcon icon={faMedium} size="lg" /></a></Col>
-							</Row>
-						</p>
+							</Row></p>
 					</Col>
 				</Row>
 				<br></br>
 				<div className="Footer-foot"> 
-					(c) anthonyt.ca 
+					© 2017-2019, Anthonyt.ca
 				</div>
 			</div>	
 			)

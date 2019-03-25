@@ -12,14 +12,12 @@ class Main extends Component {
 
 	render () {
 		return (
-	    <div className="Main-jumbo">
-				<h1 className="display-3">Hello!</h1>
-					<p className="lead">Welcome to my website! </p>
-					<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-	    </div>
-			)
+		    <div className="Main-jumbo">
+					<h1 className="Main-title">Anthony Tam</h1>
+						<p className="Main-subtitle">Hello and welcome to my website! </p>
+		    </div>
+		)
 	}
-
 }
 
 export default Main;

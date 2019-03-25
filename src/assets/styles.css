@@ -5,14 +5,9 @@
   overflow: hidden;
 }
 
-.test-button {
-  background-color: #ff5722;
-  border-color: #ff5722;
-}
-
 /* Header */
 .Header {
-  /* ClassName*/
+  /* ClassName Placeholder */
 }
 
 .Header-header {    
@@ -26,7 +21,10 @@
 
 .Header-icon {
   color: rgb(116, 123, 255, 0.75);
-
+  /* 
+  TODO:
+    - replace with [AT] icon ~ personal logo/initials
+   */
 }
 
 .Header-icon:hover {
@@ -55,15 +53,30 @@
 
 .Main-jumbo {
   background: none;
-  /*text-align: left;*/
 }
 
-/* Mid Section (About) */
+.Main-title {
+  font-size: 100px;
+  font-weight: 100;
+}
+
+.Main-subtitle {
+  /* place holder*/
+}
+
+.Main-icons {
+  /* 
+  TODO DESIGN:
+    - migrate icon design from legacy website
+    - add animated scroll down arrows {>>} to indicate scrollable page
+  */
+}
+
+/* About Me */
 .About {
   background: 
     linear-gradient(175deg, transparent 14.9%, #333 15.1%, #333 74.9%, #f5f5f5 75.1%);
   color: white;
-  text-align: center;
   overflow: auto;
   padding-top: 20%;
   padding-bottom: 30%;
@@ -74,46 +87,25 @@
 }
 
 .About-title {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 100;
-}
-
-.About-header {
-  font-size: 20px;
-  font-weight: 100;
-  text-align: left;
-  padding-left: 10%;
-}
-
-.About-body {
-  font-size: 15px;
-  font-weight: 100;
-}
-
-.About-body-left {
-  font-size: 15px;
-  font-weight: 100;
-
-  float: left;
-  text-align: left;
-  padding-left: 10%;
-
-}
-
-.About-body-right {
-  font-size: 15px;
-  font-weight: 100;
-
-  float: right;
-  padding-right: 10%;
+  letter-spacing: 0.15em;
+  padding-bottom: 2.5%;
 }
 
 .About-animate {
+  font-size: 20px;
+  font-weight: 100;
+  color: lightgrey;
+  float: left;
+  padding-left: 10%;
   display: inline;
 }
 
 .About-animate span {
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
+  font-weight: 100;
+  font-size: 25px;
   animation: Aboutimate 10s linear infinite 0s;
   opacity: 0;
   overflow: hidden;
@@ -147,7 +139,27 @@
   100% { opacity: 0; }
 }
 
-/* Content Section (TBD) */
+.About-body-left {
+  font-size: 15px;
+  font-weight: 100;
+  float: left;
+  padding-left: 10%;
+
+}
+
+.About-body-paragraph {
+  letter-spacing: 0.05em;
+  text-align: justify;
+}
+
+.About-body-right {
+  font-size: 15px;
+  float: right;
+  padding-right: 10%;
+}
+
+
+/* Content */
 .Content {
   clear: both;
   padding-top: 20%;
@@ -238,8 +250,8 @@
 
 .Footer-foot {
   background-color: #292929;
-  font-size: 5pt;
+  font-size: 8pt;
   color: grey;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
