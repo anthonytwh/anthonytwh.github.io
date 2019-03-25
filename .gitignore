@@ -13,6 +13,9 @@ https://github.com/anthonytwh/anthonytwh.github.io/commits/master/resume.pdf
 
 # misc
 .DS_Store
+/.DS_Store
+*/.DS_Store
+**/.DS_Store
 .env.local
 .env.development.local
 .env.test.local
