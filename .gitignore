@@ -5,3 +5,6 @@ https://github.com/anthonytwh/anthonytwh.github.io/commits/master/resume.pdf
 /.DS_Store
 */.DS_Store
 **/.DS_Store
+
+/node_modules
+node_modules
