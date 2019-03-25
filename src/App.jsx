@@ -22,39 +22,12 @@ class App extends Component {
 		return (
 			<Router>
 				<div className="Title">
-					<div className="Header">
-						<Header/>
-					</div>
-					<div className="Main">	
-						<Main />
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-						<br></br>
-					</div>
-					<div className="About">
-						<br></br>
-						<About />
-						<br></br>
-					</div>
-					<div className="Content">
-						<br></br>
-						<Content />
-						<br></br>
-					</div>
-					<div className="Portfolio">
-						<br></br>
-						<Portfolio />
-						<br></br>
-					</div>
-					<div className="Footer">
-						<Footer />
-					</div>
+					<div className="Header"><Header/></div>
+					<div className="Main"><Main /></div>
+					<div className="About"><About /></div>
+					<div className="Content"><Content /></div>
+					<div className="Portfolio"><Portfolio /></div>
+					<div className="Footer"><Footer /></div>
 				</div>
 			</Router>
 		);
