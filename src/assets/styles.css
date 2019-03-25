@@ -158,6 +158,10 @@
   padding-right: 10%;
 }
 
+.About-body-photo {
+  box-shadow: 5px 5px 5px #222;
+}
+
 
 /* Content */
 .Content {

@@ -18,7 +18,6 @@ class App extends Component {
 	}
 
 	render() {
-		<Routes />
 		return (
 			<Router>
 				<div className="Title">

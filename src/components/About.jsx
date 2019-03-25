@@ -18,9 +18,9 @@ class About extends Component {
 					<h1 className="About-title">About Me</h1>
 					<div className="About-animate">
 						<span> <p> Product Design & Development </p> </span>
-						<span> <p> Cyber Security & Privacy </p>  </span>
-						<span> <p> Business Development & Investments </p> </span>
-						<span> <p> World Traveller </p> </span>
+						<span> <p> Application Security & Privacy </p>  </span>
+						<span> <p> Global Finance & Investing </p> </span>
+						<span> <p> Food + Travel </p> </span>
 					</div>
 					<div className="About-body-left">
 						<br></br><br></br>
@@ -36,8 +36,7 @@ class About extends Component {
 						with me below! </p>
 					</div>
 					<div className="About-body-right">
-						<br></br><br></br>
-						<img src={photo} width="300" height="240"/>
+						<br></br><img src={photo} width="320" height="256" className="About-body-photo" />
 					</div>
 				</Container>
 		    </div>
