@@ -13,8 +13,8 @@ class Main extends Component {
 	render () {
 		return (
 		    <div className="Main-jumbo">
-					<h1 className="Main-title">Anthony Tam</h1>
-						<p className="Main-subtitle">Hello and welcome to my website! </p>
+					<h1 className="Main-title">Title</h1>
+						<p className="Main-subtitle">Subtitle</p>
 		    </div>
 		)
 	}

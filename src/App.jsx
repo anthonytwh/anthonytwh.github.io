@@ -20,12 +20,16 @@ class App extends Component {
 	render() {
 		return (
 			<Router>
-				<div className="Title">
-					<div className="Header"><Header/></div>
-					<div className="Main"><Main /></div>
-					<div className="About"><About /></div>
-					<div className="Content"><Content /></div>
-					<div className="Portfolio"><Portfolio /></div>
+				<div className="Global">
+					<div className="BG-1">
+						<div className="Header"><Header/></div>
+						<div className="Main"><Main /></div>
+						<div className="About"><About /></div>
+					</div>
+					<div className="BG-2">
+						<div className="Content"><Content /></div>
+						<div className="Portfolio"><Portfolio /></div>
+					</div>
 					<div className="Footer"><Footer /></div>
 				</div>
 			</Router>
