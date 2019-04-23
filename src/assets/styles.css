@@ -229,10 +229,10 @@ Text-Body == size: 15px
 .Portfolio-card {
   background-color: #333;
   border-color: #111;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   box-shadow: 5px 10px 2px #111;
 }
 
@@ -274,27 +274,30 @@ Text-Body == size: 15px
 .Footer {
   background: url("mid-section.png");
   color: white;
-  letter-spacing: 0.1em;
   text-align: center;
   padding-top: 2.5%;
 
 }
 
-.Footer-div {
+/*.Footer-div {
   position: relative;
   right: 0;
   bottom: 0;
   left: 0;
 }
+*/
 
 .Footer-head {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 100;
+  letter-spacing: 0.05em;
 }
 
 .Footer-body{  
+  color: white;
   font-size: 15px;
-  font-weight: 120;
+  letter-spacing: 0.05em;
+  font-weight: 100;
 }
 
 .Footer-icons {
@@ -302,7 +305,7 @@ Text-Body == size: 15px
 }
 
 .Footer-icons:hover {
-  color: lightgreen;
+  color: lightblue;
 }
 
 .Footer-foot {

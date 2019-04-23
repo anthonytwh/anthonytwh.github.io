@@ -14,12 +14,12 @@ class Footer extends Component {
 
 	render() {
 		return (
-			<div className="Footer-div">
+			<div>
 				<Row> 
 					<Col>
 						<h1 className="Footer-head"> Connect with me! </h1>
 						<br></br>
-						<p className="Footer-body"> hello@anthonyt[.]ca </p>
+						<p><a className="Footer-body" href="#"> hello@anthonyt[.]ca </a></p>
 					</Col>
 					<Col>
 						<br></br><br></br>
