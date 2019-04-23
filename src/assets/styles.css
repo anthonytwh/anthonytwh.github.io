@@ -99,7 +99,7 @@ Text-Body == size: 15px
     linear-gradient(175deg, transparent 14.9%, #333 15.1%, #333 74.9%, #333 75.1%);
   color: white;
   overflow: auto;
-  padding-top: 20%;
+  padding-top: 25%;
   padding-bottom: 20%;
 }
 
@@ -187,11 +187,11 @@ Text-Body == size: 15px
 /* Content */
 .Content {
   clear: both;
-  color: white;
-  padding-top: 20%;
-  padding-bottom: 30%;
+  color: black;
+  padding-top: 25%;
+  padding-bottom: 20%;
   background: 
-    linear-gradient(185deg, rgba(51, 51, 51, 1) 14.9%, rgb(117, 117, 117, 0.5) 15.1%) /*, transparent 3%, transparent 97%,rgba(10, 10, 10, 0.25) 98%, rgb(51, 51, 51, 1) 99%)*/;
+    linear-gradient(185deg, rgba(51, 51, 51, 1) 14.9%, rgb(200, 200, 200, 0.5) 15.1%) /*, transparent 3%, transparent 97%,rgba(10, 10, 10, 0.25) 98%, rgb(51, 51, 51, 1) 99%)*/;
   text-align: right;
   padding-left: 10%;
   padding-right: 10%;
@@ -199,17 +199,20 @@ Text-Body == size: 15px
 }
 
 .Content-title {
-  font-size: 25px;
+  font-size: 35px;
+  letter-spacing: 0.15em;
   font-weight: 100;
 
 }
 
 .Content-header {
-  font-size: 20px;
+  font-size: 25px;
+  letter-spacing: 0.05em;
   font-weight: 100;
 }
 
 .Content-body{
+  font-size: 15px;
 
 }
 
@@ -223,8 +226,19 @@ Text-Body == size: 15px
   text-align: center;
 }
 
+.Portfolio-card {
+  background-color: #333;
+  border-color: #111;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-shadow: 5px 10px 2px #111;
+}
+
 .Portfolio-title {
   color: white;
+  text-shadow: 2px 2px #444;
   letter-spacing: 0.15em;
   font-size: 35px;
   font-weight: 100;
@@ -232,9 +246,9 @@ Text-Body == size: 15px
 
 .Portfolio-header {
   color: white;
+  text-shadow: 1px 1px #444;
   text-align: left;
   letter-spacing: 0.05em;
-  /*text-decoration-style: justify;*/
   font-size: 25px;
   font-weight: 100;
 }
@@ -250,6 +264,11 @@ Text-Body == size: 15px
   padding-top: 2%;
   padding-bottom: 2%;
 }
+
+.Portfolio-href {
+  color: lightblue;
+}
+
 
 /* Footer */
 .Footer {
