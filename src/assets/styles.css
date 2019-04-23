@@ -5,7 +5,7 @@
 Logo-Title == size: 100px, spacing: 0.15em
 Logo-Subtitle == size: 
 --
-Text-Title == size: 35px, spacing: 0.15em
+Text-Title == size: 50px, spacing: 0.15em
 Text-Header == size: 25px, spacing: 0.05em
 Text-Body == size: 15px
 --
@@ -71,7 +71,7 @@ H E A D E R
 }
 
 .Header-icon {
-  color: rgb(116, 123, 255, 0.75);
+  color: #3E8FE2; /*rgb(116, 123, 255, 0.75);*/
   /* 
   TODO:
     - replace with [AT] icon ~ personal logo/initials
@@ -79,7 +79,7 @@ H E A D E R
 }
 
 .Header-icon:hover {
-  color: rgb(116, 123, 255, 0.95);
+  color: lightblue; /*rgb(116, 123, 255, 0.95);*/
 }
 
 .Header-link {
@@ -154,7 +154,7 @@ A B O U T   M E
 }
 
 .About-title {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 100;
   letter-spacing: 0.15em;
   padding-bottom: 2.5%;
@@ -251,7 +251,7 @@ C O N T E N T
 }
 
 .Content-title {
-  font-size: 35px;
+  font-size: 50px;
   letter-spacing: 0.15em;
   font-weight: 100;
 
@@ -313,11 +313,13 @@ P O R T F O L I O
 }
 
 .Portfolio-badge:hover {
-  border-top-color: lightblue;
-  border-bottom-color: lightblue;
+  outline: none;
+  box-shadow: none;
   background: #333;
   border-color: #333;
   color: lightgrey;
+  border-top-color: lightblue;
+  border-bottom-color: lightblue;
   transform:scale(1.005);
 }
 
@@ -326,8 +328,9 @@ P O R T F O L I O
   box-shadow: none;
   background: #333;
   border-color: none;
-  border-top-color: #3E8FE2;
-  border-bottom-color: #3E8FE2;
+  color: lightgrey;
+  border-top-color: lightblue;
+  border-bottom-color: lightblue;
 }
 
 .Portfolio-card {
@@ -392,7 +395,6 @@ C O N T A C T
   align-items: center;
   margin: 0 auto;
   background-color: #333;
-  border-color: #111;
   box-shadow: 5px 10px 2px #111;
   width: 50em;
   padding-top: 2em;
@@ -428,11 +430,13 @@ C O N T A C T
 }
 
 .Contact-badge:hover {
-  border-top-color: lightblue;
-  border-bottom-color: lightblue;
+  outline: none;
+  box-shadow: none;
   background: #333;
   border-color: #333;
   color: lightgrey;
+  border-top-color: lightblue;
+  border-bottom-color: lightblue;
   transform:scale(1.005);
 }
 
@@ -441,8 +445,9 @@ C O N T A C T
   box-shadow: none;
   background: #333;
   border-color: none;
-  border-top-color: #3E8FE2;
-  border-bottom-color: #3E8FE2;
+  color: lightgrey;
+  border-top-color: lightblue;
+  border-bottom-color: lightblue;
 }
 
 .Contact-form {
@@ -497,7 +502,7 @@ C O N T A C T
 
 .Contact-button:hover {
   background-color: #666;
-  border-color: #666;
+  border-color: lightblue;
   color: white;
 }
 
@@ -530,7 +535,7 @@ F O O T E R
 }
 
 .Footer-body:hover {  
-  color: gold;
+  color: #3E8FE2;
   font-size: 15.5px;
   font-weight: 105;
   text-decoration: none;
@@ -541,7 +546,7 @@ F O O T E R
 }
 
 .Footer-icons:hover {
-  color: gold;
+  color: #3E8FE2;
   transform:scale(1.2);
 }
 

@@ -14,7 +14,6 @@ class Contact extends Component {
 		return (
 			<div>
 				<Card className="Contact">
-					<Label className="Contact-label"> Get in Touch </Label>
 					<Form className="Contact-form">
 						<Row form>
 							<Col>
