@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Card, Col, Row, Button, Form, FormGroup, Input, Label } from 'reactstrap';
+import { Card, Col, Row, Button, Form, FormGroup, Input, Label, Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 import '../assets/styles.css';
 
@@ -14,8 +14,8 @@ class Contact extends Component {
 		return (
 			<div>
 				<Card className="Contact">
+					<Label className="Contact-label"> Get in Touch </Label>
 					<Form className="Contact-form">
-						<Label className="Contact-label">Get in Touch!</Label>
 						<Row form>
 							<Col>
 								<FormGroup>
