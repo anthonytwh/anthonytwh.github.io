@@ -15,34 +15,33 @@ class Footer extends Component {
 	render() {
 		return (
 			<div>
-				<Row> 
-					<Col>
-						<h1 className="Footer-head"> Connect with me! </h1>
-						<br></br>
-						<p><a className="Footer-body" href="#"> hello@anthonyt[.]ca </a></p>
-					</Col>
-					<Col>
-						<br></br><br></br>
-					</Col>
-					<Col>
-						<br></br><br></br>
-						<p><Row>
-								<Col xs={{ size: 'auto', offset: 4 }}>
-									<a className="Footer-icons" href="https://github.com/anthonytwh">
-										<FontAwesomeIcon icon={faGithub} size="lg" /></a></Col>
-								<Col xs={{ size: 'auto', offset: 0 }}>
-									<a className="Footer-icons" href="https://www.linkedin.com/in/anthony-tam/">
-										<FontAwesomeIcon icon={faLinkedin} size="lg" /></a></Col>
-								<Col xs={{ size: 'auto', offset: 0 }}>
-									<a className="Footer-icons" href="https://www.instagram.com/anthonyytam/">
-										<FontAwesomeIcon icon={faInstagram} size="lg" /></a></Col>
-								<Col xs={{ size: 'auto', offset: 0 }}>
-									<a className="Footer-icons" href="https://medium.com/@AnthonyTam">
-										<FontAwesomeIcon icon={faMedium} size="lg" /></a></Col>
-							</Row></p>
-					</Col>
-				</Row>
-				<br></br>
+				<div className="Footer">
+					<Row> 
+						<Col>
+							<h1 className="Footer-head"> Connect with me! </h1>
+							<br></br>			
+							<p><a className="Footer-body" href="#"> hello@anthonyt[.]ca </a></p>
+						</Col>
+						<Col></Col>
+						<Col>
+							<br></br>
+							<p><Row>
+									<Col xs={{ size: 'auto', offset: 4 }}>
+										<a href="https://github.com/anthonytwh">
+											<FontAwesomeIcon className="Footer-icons" icon={faGithub} size="lg" /></a></Col>
+									<Col xs={{ size: 'auto', offset: 0 }}>
+										<a href="https://www.linkedin.com/in/anthony-tam/">
+											<FontAwesomeIcon className="Footer-icons" icon={faLinkedin} size="lg" /></a></Col>
+									<Col xs={{ size: 'auto', offset: 0 }}>
+										<a href="https://www.instagram.com/anthonyytam/">
+											<FontAwesomeIcon className="Footer-icons" icon={faInstagram} size="lg" /></a></Col>
+									<Col xs={{ size: 'auto', offset: 0 }}>
+										<a href="https://medium.com/@AnthonyTam">
+											<FontAwesomeIcon className="Footer-icons" icon={faMedium} size="lg" /></a></Col>
+								</Row></p>
+						</Col>
+					</Row>
+				</div>
 				<div className="Footer-foot"> 
 					© 2017-2019, Anthonyt.ca
 				</div>

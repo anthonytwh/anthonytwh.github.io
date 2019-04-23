@@ -1,6 +1,7 @@
 import React, { Component} from 'react';
-import { Card, Container, Row, Col } from 'reactstrap';
+import { Badge, UncontrolledCollapse, Card, Container, Row, Col } from 'reactstrap';
 
+import Contact from '../components/Contact.jsx'
 import '../assets/styles.css';
 
 
@@ -14,6 +15,9 @@ class Portfolio extends Component {
 		return (
 		    <div>
 				<Container className="Portfolio">
+
+		    	<Badge color="info" id="Employment"> My Employment </Badge>
+		    	<UncontrolledCollapse toggler="#Employment">
 					<Card className="Portfolio-card">
 						<Row >
 							<Col>
@@ -56,9 +60,14 @@ class Portfolio extends Component {
 							</Col>
 						</Row>
 					</Card>
+				</UncontrolledCollapse>
+
 					<br></br>
 					<br></br>
 					<br></br>
+
+		    	<Badge color="primary" id='Education'> My Education </Badge>
+		    	<UncontrolledCollapse toggler='#Education'>
 					<Card className="Portfolio-card">
 						<Row className="Portfolio-row">
 							<Col>
@@ -88,6 +97,16 @@ class Portfolio extends Component {
 							</Col>
 						</Row>
 					</Card>
+				</UncontrolledCollapse>
+
+					<br></br>
+					<br></br>
+					<br></br>
+
+		    	<Badge color="primary" id='Contact'> Contact </Badge>
+		    	<UncontrolledCollapse toggler='#Contact'>
+		    		<Contact />
+		    	</UncontrolledCollapse>
 				</Container>
 		    </div>
 			)

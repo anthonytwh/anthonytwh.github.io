@@ -11,13 +11,30 @@ Text-Body == size: 15px
 --
 */
 
-/* Global */
+
+
+/* 
+
+
+G L O B A L  
+
+
+*/
 .Global {
   text-align: center;
   overflow: hidden;
 }
 
-/* Backgrounds */
+
+
+
+/* 
+
+
+B A C K G R O U N D S 
+
+
+*/
 .BG-1 {
   background: url("background2.png");
   background-color: #999;
@@ -28,7 +45,16 @@ Text-Body == size: 15px
   /*background-color: #111;*/
 }
 
-/* Header */
+
+
+
+/* 
+
+
+H E A D E R  
+
+
+*/
 .Header {
   /* ClassName Placeholder */
 }
@@ -66,7 +92,16 @@ Text-Body == size: 15px
   font-size: large;
 }
 
-/* Main */
+
+
+
+/* 
+
+
+ M A I N 
+
+
+*/
 .Main {
   text-align: center;
   padding-top: 10%;
@@ -93,7 +128,15 @@ Text-Body == size: 15px
   */
 }
 
-/* About Me */
+
+
+/* 
+
+
+A B O U T   M E 
+
+
+*/
 .About {
   background:
     linear-gradient(175deg, transparent 14.9%, #333 15.1%, #333 74.9%, #333 75.1%);
@@ -131,7 +174,6 @@ Text-Body == size: 15px
   opacity: 0;
   overflow: hidden;
   position: absolute;
-
 }
 
 .About-animate span:nth-child(2){
@@ -184,7 +226,14 @@ Text-Body == size: 15px
 }
 
 
-/* Content */
+
+/* 
+
+
+C O N T E N T 
+
+
+*/
 .Content {
   clear: both;
   color: black;
@@ -216,7 +265,15 @@ Text-Body == size: 15px
 
 }
 
-/* Portfolio */
+
+
+/* 
+
+
+P O R T F O L I O
+
+
+*/
 .Portfolio {
   /*background: #555;*/
   background: rgb(34, 34, 34, 1)
@@ -228,12 +285,12 @@ Text-Body == size: 15px
 
 .Portfolio-card {
   background-color: #333;
-  border-color: #111;
+  border-color: lightgrey;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  box-shadow: 5px 10px 2px #111;
+  box-shadow: 5px 10px 2px lightgrey;
 }
 
 .Portfolio-title {
@@ -270,27 +327,25 @@ Text-Body == size: 15px
 }
 
 
-/* Footer */
+
+/* 
+
+
+F O O T E R
+
+
+*/
 .Footer {
   background: url("mid-section.png");
   color: white;
   text-align: center;
-  padding-top: 2.5%;
-
+  padding-top: 1%
 }
-
-/*.Footer-div {
-  position: relative;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-*/
 
 .Footer-head {
   font-size: 25px;
   font-weight: 100;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
 }
 
 .Footer-body{  
@@ -300,12 +355,20 @@ Text-Body == size: 15px
   font-weight: 100;
 }
 
+.Footer-body:hover {  
+  color: gold;
+  font-size: 15.5px;
+  font-weight: 105;
+  text-decoration: none;
+}
+
 .Footer-icons {
   color: white;
 }
 
 .Footer-icons:hover {
-  color: lightblue;
+  color: gold;
+  transform:scale(1.2);
 }
 
 .Footer-foot {
