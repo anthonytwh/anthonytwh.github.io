@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Badge, UncontrolledCollapse, Card, Container, Row, Col } from 'reactstrap';
+import { Button, UncontrolledCollapse, Card, Container, Row, Col } from 'reactstrap';
 
 import Contact from '../components/Contact.jsx'
 import '../assets/styles.css';
@@ -16,14 +16,9 @@ class Portfolio extends Component {
 		    <div>
 				<Container className="Portfolio">
 
-		    	<Badge color="info" id="Employment"> My Employment </Badge>
+		    	<Button className="Portfolio-badge" id="Employment"> Employment </Button>
 		    	<UncontrolledCollapse toggler="#Employment">
 					<Card className="Portfolio-card">
-						<Row >
-							<Col>
-							<h1 className="Portfolio-title"> Employment </h1>
-							</Col>
-						</Row>
 						<Row className="Portfolio-row">
 							<Col>
 								<p className="Portfolio-header"> Darktrace </p>
@@ -62,18 +57,9 @@ class Portfolio extends Component {
 					</Card>
 				</UncontrolledCollapse>
 
-					<br></br>
-					<br></br>
-					<br></br>
-
-		    	<Badge color="primary" id='Education'> My Education </Badge>
+		    	<Button className="Portfolio-badge" id='Education'> Education </Button>
 		    	<UncontrolledCollapse toggler='#Education'>
 					<Card className="Portfolio-card">
-						<Row className="Portfolio-row">
-							<Col>
-								<h1 className="Portfolio-title"> Education </h1>
-							</Col>
-						</Row>
 						<Row className="Portfolio-row">
 							<Col>
 								<p className="Portfolio-header"> McMaster University</p>
@@ -99,11 +85,7 @@ class Portfolio extends Component {
 					</Card>
 				</UncontrolledCollapse>
 
-					<br></br>
-					<br></br>
-					<br></br>
-
-		    	<Badge color="primary" id='Contact'> Contact </Badge>
+		    	<Button className="Contact-badge" id='Contact'> Contact </Button>
 		    	<UncontrolledCollapse toggler='#Contact'>
 		    		<Contact />
 		    	</UncontrolledCollapse>
