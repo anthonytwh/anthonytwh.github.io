@@ -329,8 +329,8 @@ P O R T F O L I O
   background: #333;
   border-color: none;
   color: lightgrey;
-  border-top-color: lightblue;
-  border-bottom-color: lightblue;
+  border-top-color: #3E8FE2;
+  border-bottom-color: #3E8FE2;
 }
 
 .Portfolio-card {
@@ -446,8 +446,8 @@ C O N T A C T
   background: #333;
   border-color: none;
   color: lightgrey;
-  border-top-color: lightblue;
-  border-bottom-color: lightblue;
+  border-top-color: #3E8FE2;
+  border-bottom-color: #3E8FE2;
 }
 
 .Contact-form {
