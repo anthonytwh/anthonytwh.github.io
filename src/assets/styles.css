@@ -144,7 +144,7 @@ A B O U T   M E
   background:
     linear-gradient(175deg, transparent 14.9%, #333 15.1%, #333 74.9%, #333 75.1%);
   color: white;
-  overflow: auto;
+  overflow: hidden;
   padding-top: 25%;
   padding-bottom: 20%;
 }
@@ -160,13 +160,34 @@ A B O U T   M E
   padding-bottom: 2.5%;
 }
 
+.About-title-row {
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.About-toast {
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 10em;
+  max-height: 40em;
+  max-width: 40em;
+  /*overflow: hidden;*/
+  box-shadow: -2px 2px 2px #222;
+  border-color: #333;
+}
+
 .About-animate {
   font-size: 20px;
   font-weight: 100;
-  color: lightgrey;
-  float: left;
-  padding-left: 10%;
-  display: inline;
+  color: #3E8FE2;
+  background: #333;
+  border-color: #3E8FE2;
+  height: 4em;
+  width: 100em;
+  padding-bottom: 2em;
+  padding-left: 2em; 
+  padding-right: 2em;
 }
 
 .About-animate span {
@@ -206,26 +227,32 @@ A B O U T   M E
 }
 
 .About-body-left {
-  font-size: 15px;
-  font-weight: 100;
-  float: left;
-  padding-left: 10%;
-
+  background: #333;
+  justify-content: left;
+  width: 100em;
+  padding-top: 1em;   
+  padding-bottom: 1em;
+  padding-left: 2em; 
+  padding-right: 2em;
 }
 
 .About-body-paragraph {
   letter-spacing: 0.05em;
   text-align: justify;
+  max-width: 35em;
 }
 
 .About-body-right {
   font-size: 15px;
   float: right;
-  padding-right: 10%;
+  margin-right: 10em;
 }
 
 .About-body-photo {
-  box-shadow: 5px 5px 5px #222;
+  border: 1px solid #222;
+  box-shadow: 2px 2px 2px #222;
+  width: 23.73em;
+  height: 19em;
 }
 
 
@@ -307,7 +334,7 @@ P O R T F O L I O
   font-weight: 100;
   font-style: italic;
 
-  width: 20em;
+  width: 10em;
   height: 5em;
   margin-top: 5em;
 }
@@ -315,18 +342,18 @@ P O R T F O L I O
 .Portfolio-badge:hover {
   outline: none;
   box-shadow: none;
-  background: #333;
-  border-color: #333;
+  background: #3E8FE2;
+  border-color: #272727;
   color: lightgrey;
-  border-top-color: lightblue;
-  border-bottom-color: lightblue;
-  transform:scale(1.005);
+  border-top-color: #3E8FE2;
+  border-bottom-color: #3E8FE2;
+  transform:scale(1.025);
 }
 
 .Portfolio-badge:focus {
   outline: none;
   box-shadow: none;
-  background: #333;
+  background: #272727;
   border-color: none;
   color: lightgrey;
   border-top-color: #3E8FE2;
@@ -340,7 +367,7 @@ P O R T F O L I O
   padding-bottom: 2.5%;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  box-shadow: 5px 10px 2px #111;
+  box-shadow: 5px 5px 2px #111;
   margin-top: 2em;
 }
 
@@ -418,13 +445,14 @@ C O N T A C T
   border-top-color: #3E8FE2;
   border-bottom-color: #3E8FE2;
   color: white;
+  font-weight: 100;
 
   font-size: 30px;
   letter-spacing: 0.2em;
   font-weight: 100;
   font-style: italic;
 
-  width: 15em;
+  width: 10em;
   height: 2em;
   margin-top: 10em;
 }
@@ -432,20 +460,20 @@ C O N T A C T
 .Contact-badge:hover {
   outline: none;
   box-shadow: none;
-  background: #333;
-  border-color: #333;
-  color: lightgrey;
-  border-top-color: lightblue;
-  border-bottom-color: lightblue;
-  transform:scale(1.005);
+  background: #3E8FE2;
+  border-color: #272727;
+  color: white;
+  border-top-color: #3E8FE2;
+  border-bottom-color: #3E8FE2;
+  transform:scale(1.025);
 }
 
 .Contact-badge:focus {
   outline: none;
   box-shadow: none;
-  background: #333;
+  background: #272727;
   border-color: none;
-  color: lightgrey;
+  color: white;
   border-top-color: #3E8FE2;
   border-bottom-color: #3E8FE2;
 }
@@ -474,6 +502,7 @@ C O N T A C T
   background-color: #333;
   border-color: #333;
   border-bottom-color: #3E8FE2;
+  color: white;
   font-weight: 100;
 }
 
@@ -493,16 +522,16 @@ C O N T A C T
 }
 
 .Contact-button {
-  background-color: #444;
+  background-color: #555;
   border-color: #3E8FE2;
-  color: #999;
+  color: rgb(110, 117, 124);
   height: 3em;
   width: 20em;
 }
 
 .Contact-button:hover {
-  background-color: #666;
-  border-color: lightblue;
+  background-color: #3E8FE2;
+  border-color: #3E8FE2;
   color: white;
 }
 
@@ -524,7 +553,7 @@ F O O T E R
 .Footer-head {
   font-size: 25px;
   font-weight: 100;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
 }
 
 .Footer-body{  

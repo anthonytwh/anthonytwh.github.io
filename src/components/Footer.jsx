@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Card, CardFooter, CardBody, CardTitle, CardText, Jumbotron, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 import '../assets/styles.css';
 
