@@ -1,17 +1,21 @@
 /*
---------------------------
-| Text Format Guidelines |
---------------------------
+---------------------
+| Text Format Guide |
+---------------------
 Logo-Title == size: 100px, spacing: 0.15em
 Logo-Subtitle == size: 
 --
 Text-Title == size: 50px, spacing: 0.15em
 Text-Header == size: 25px, spacing: 0.05em
 Text-Body == size: 15px
---
-
+---------------------
+| Color Theme Guide |
+---------------------
+Color Primary == black
+Color Secondary == white
 Subcolor Primary == #3E8FE2
-Subcolor Secondary == lightblue
+Background Primary = #222
+--
 */
 
 
@@ -59,11 +63,11 @@ H E A D E R
 
 */
 .Header {
-  /* ClassName Placeholder */
+  /*placeholder*/
 }
 
 .Header-header {    
-  /* Controls both Icon and Links */
+  /*placeholder*/
 }
 
 .Header-title {
@@ -72,10 +76,6 @@ H E A D E R
 
 .Header-icon {
   color: #3E8FE2; /*rgb(116, 123, 255, 0.75);*/
-  /* 
-  TODO:
-    - replace with [AT] icon ~ personal logo/initials
-   */
 }
 
 .Header-icon:hover {
@@ -87,8 +87,9 @@ H E A D E R
 }
 
 .Header-link:hover {
-  text-decoration: none;
-  color: rgb(42, 45, 48, 0.95);
+  color: #3E8FE2;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .Header-intro {
@@ -107,11 +108,16 @@ H E A D E R
 */
 .Main {
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 35%;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .Main-jumbo {
+  background: none;
+}
+
+.Main-heading {
+  /*placeholder*/
 }
 
 .Main-title {
@@ -120,15 +126,43 @@ H E A D E R
 }
 
 .Main-subtitle {
-  /* place holder*/
+  /*placeholder*/
+}
+
+.Main-body {
+  padding-top: 2em;
+  padding-bottom: 5em;
+  padding-left: 25em;
+  padding-right: 25em;
 }
 
 .Main-icons {
-  /* 
-  TODO DESIGN:
-    - migrate icon design from legacy website
-    - add animated scroll down arrows {>>} to indicate scrollable page
-  */
+  color: #333;
+  text-shadow: 1px 1px 1px black;
+}
+
+.Main-icons:hover {
+  color: #333;
+  transform:scale(1.1);
+}
+
+/* 
+
+TODO DESIGN:
+
+  - Scroll Down Arrow Animaion
+  - Scroll Down Arrow Fades with scrolling
+*/
+
+.Main-arrow {
+  background: none;
+  border: none;
+  margin-left: 25em;
+  margin-right: 25em;
+}
+
+.Main-arrow-icon {
+  color: #333;
 }
 
 
@@ -142,7 +176,7 @@ A B O U T   M E
 */
 .About {
   background:
-    linear-gradient(175deg, transparent 14.9%, #333 15.1%, #333 74.9%, #333 75.1%);
+    linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%);
   color: white;
   overflow: hidden;
   padding-top: 25%;
@@ -173,15 +207,15 @@ A B O U T   M E
   max-height: 40em;
   max-width: 40em;
   /*overflow: hidden;*/
-  box-shadow: -2px 2px 2px #222;
-  border-color: #333;
+  box-shadow: -2px 2px 5px #111;
+  border-color: #222;
 }
 
 .About-animate {
   font-size: 20px;
   font-weight: 100;
   color: #3E8FE2;
-  background: #333;
+  background: #222;
   border-color: #3E8FE2;
   height: 4em;
   width: 100em;
@@ -227,7 +261,7 @@ A B O U T   M E
 }
 
 .About-body-left {
-  background: #333;
+  background: #222;
   justify-content: left;
   width: 100em;
   padding-top: 1em;   
@@ -250,7 +284,7 @@ A B O U T   M E
 
 .About-body-photo {
   border: 1px solid #222;
-  box-shadow: 2px 2px 2px #222;
+  box-shadow: 2px 2px 5px #111;
   width: 23.73em;
   height: 19em;
 }
@@ -270,8 +304,8 @@ C O N T E N T
   padding-top: 25%;
   padding-bottom: 20%;
   background: 
-    linear-gradient(185deg, rgba(51, 51, 51, 1) 14.9%, rgb(200, 200, 200, 0.5) 15.1%) /*, transparent 3%, transparent 97%,rgba(10, 10, 10, 0.25) 98%, rgb(51, 51, 51, 1) 99%)*/;
-  text-align: right;
+    linear-gradient(185deg, #222 14.9%, rgb(200, 200, 200, 0.5) 15.1%) /* rgba(51, 51, 51, 1), transparent 3%, transparent 97%,rgba(10, 10, 10, 0.25) 98%, rgb(51, 51, 51, 1) 99%)*/;
+  text-align: center;
   padding-left: 10%;
   padding-right: 10%;
 
@@ -281,7 +315,6 @@ C O N T E N T
   font-size: 50px;
   letter-spacing: 0.15em;
   font-weight: 100;
-
 }
 
 .Content-header {
@@ -292,7 +325,7 @@ C O N T E N T
 
 .Content-body{
   font-size: 15px;
-
+  font-weight: 100;
 }
 
 
@@ -308,7 +341,7 @@ P O R T F O L I O
   /*background: #555;*/
   background: rgb(34, 34, 34, 1)
     /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
-  padding-top: 5em;
+  padding-top: 1em;
   padding-bottom: 10em;
   text-align: center;
   align-items: center;
@@ -325,7 +358,7 @@ P O R T F O L I O
   background: #222;
   border: 2px solid #222;
   border-color: #222;
-  border-top-color: #3E8FE2;
+  border-top-color: #222;
   border-bottom-color: #3E8FE2;
   color: white;
 
@@ -335,7 +368,7 @@ P O R T F O L I O
   font-style: italic;
 
   width: 10em;
-  height: 5em;
+  height: 2em;
   margin-top: 5em;
 }
 
@@ -345,7 +378,7 @@ P O R T F O L I O
   background: #3E8FE2;
   border-color: #272727;
   color: lightgrey;
-  border-top-color: #3E8FE2;
+  border-top-color: #222;
   border-bottom-color: #3E8FE2;
   transform:scale(1.025);
 }
@@ -356,7 +389,7 @@ P O R T F O L I O
   background: #272727;
   border-color: none;
   color: lightgrey;
-  border-top-color: #3E8FE2;
+  border-top-color: #222;
   border-bottom-color: #3E8FE2;
 }
 
@@ -367,7 +400,7 @@ P O R T F O L I O
   padding-bottom: 2.5%;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  box-shadow: 5px 5px 2px #111;
+  box-shadow: 0px 5px 5px #111;
   margin-top: 2em;
 }
 
@@ -422,7 +455,7 @@ C O N T A C T
   align-items: center;
   margin: 0 auto;
   background-color: #333;
-  box-shadow: 5px 10px 2px #111;
+  box-shadow: 0px 5px 5px #111;
   width: 50em;
   padding-top: 2em;
   padding-bottom: 3em;

@@ -2,10 +2,11 @@ import React, { Component} from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+import '../assets/styles.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 
-import '../assets/styles.css';
 
 
 class Header extends Component {
@@ -26,9 +27,6 @@ class Header extends Component {
 			<Router>
 				<div>
 					<Navbar className="Header-header" light expand="md"> 
-						<NavbarBrand className="Header-icon-col"> 
-								<Link to='/' tag='top' className="Header-icon" ><FontAwesomeIcon icon={faUserAstronaut} size="lg"/></Link>
-						</NavbarBrand>
 						<NavbarToggler onClick={this.toggle} />
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav className="ml-auto" navbar>

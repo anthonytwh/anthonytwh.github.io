@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Container, Card, Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
+import { Card, Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 import '../assets/styles.css';
 import photo from '../assets/profilephoto.jpg';

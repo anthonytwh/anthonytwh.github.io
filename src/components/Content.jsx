@@ -13,8 +13,8 @@ class Content extends Component {
 		return (
 		    <div>
 				<Container fluid>
-					<h1 className="Content-title">Content</h1>
-					<p className="Content-header">Some more random content</p>
+					<h1 className="Content-title"> Section in Progress ! </h1>
+					<p className="Content-header"> Please continue below. </p>
 				</Container>
 		    </div>
 		)
