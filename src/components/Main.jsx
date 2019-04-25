@@ -1,11 +1,11 @@
 import React, { Component} from 'react';
-import { Jumbotron, Card, Row, Col } from 'reactstrap';
+import { Jumbotron, Row, Col } from 'reactstrap';
 
 import '../assets/styles.css';
 import Resume from '../assets/Anthony_Resume.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileAlt, faEnvelope, faAngleDoubleDown} from '@fortawesome/free-solid-svg-icons'
+import { faFileAlt, faEnvelope, faAngleDoubleDown, faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 class Main extends Component {
@@ -16,7 +16,7 @@ class Main extends Component {
 
 	render () {
 		return (
-		    <div>
+		    <div className="Main">
 		    	<Jumbotron className="Main-jumbo">
 		    		<Row className="Main-heading">
 		    			<Col>
@@ -39,19 +39,6 @@ class Main extends Component {
 							<FontAwesomeIcon className="Main-icons" icon={faEnvelope} size="3x" /></a></Col>
 					</Row>
 				</Jumbotron>
-				<Card className="Main-arrow">
-					<Row>
-						<Col>
-							<p> Yoyoyoyoyo! </p>
-						</Col>
-					</Row>
-					<Row>
-						<Col>
-							<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
-						</Col>
-					</Row>
-
-				</Card>
 		    </div>
 		)
 	}

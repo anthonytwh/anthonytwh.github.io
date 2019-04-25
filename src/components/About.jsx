@@ -4,6 +4,9 @@ import { Card, Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
 import '../assets/styles.css';
 import photo from '../assets/profilephoto.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+
 
 class About extends Component {
 
@@ -14,6 +17,9 @@ class About extends Component {
 	render () {
 		return (
 		    <div>
+		    	<span className="Main-arrow">
+					<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
+				</span>
 				<Row className="About-title-row">
 					<h1 className="About-title">About Me</h1>
 				</Row>

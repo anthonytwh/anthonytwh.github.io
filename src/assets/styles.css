@@ -29,7 +29,7 @@ G L O B A L
 */
 .Global {
   text-align: center;
-  overflow: hidden;
+  /*overflow: initial;*/
 }
 
 
@@ -107,9 +107,8 @@ H E A D E R
 
 */
 .Main {
-  text-align: center;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  margin-top: 5em;  
+  margin-bottom: 5em;
 }
 
 .Main-jumbo {
@@ -155,14 +154,51 @@ TODO DESIGN:
 */
 
 .Main-arrow {
-  background: none;
-  border: none;
-  margin-left: 25em;
-  margin-right: 25em;
+  justify-content: center;
+  display: flex;
+  height: -5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
 }
 
 .Main-arrow-icon {
   color: #333;
+  -webkit-animation: FadeInOut 1.5s linear infinite, ZoomInOut 1.5s linear infinite;
+  animation: FadeInOut 1.5s linear infinite, ZoomInOut 1.5s linear infinite;
+  margin: 0;
+}
+
+@keyframes FadeInOut {
+  0%   { opacity:1; }
+  25%  { opacity:0.85;}
+  50%  { opacity:0.60;}
+  25%  { opacity:0.85;}
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes FadeInOut {
+  0%   { opacity:1; }
+  25%  { opacity:0.85;}
+  50%  { opacity:0.60;}
+  25%  { opacity:0.85;}
+  100% { opacity:1; }
+}
+
+@keyframes ZoomInOut {
+  0%  { transform:scale(1.0); }
+  25%  { transform:scale(0.75); }
+  50%  { transform:scale(0.6); }
+  75%  { transform:scale(0.80); }
+  100%  { transform:scale(1.1); }
+}
+
+@-webkit-keyframes ZoomInOut {
+  0%  { transform:scale(1.0); }
+  25%  { transform:scale(0.75); }
+  50%  { transform:scale(0.6); }
+  75%  { transform:scale(0.80); }
+  100%  { transform:scale(1.1); }
 }
 
 
@@ -178,9 +214,9 @@ A B O U T   M E
   background:
     linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%);
   color: white;
-  overflow: hidden;
-  padding-top: 25%;
-  padding-bottom: 20%;
+  /*overflow: hidden;*/
+  /*padding-top: 25%;*/
+  padding-bottom: 20em;
 }
 
 .About:after {
@@ -196,7 +232,7 @@ A B O U T   M E
 
 .About-title-row {
   justify-content: center;
-  padding-top: 2em;
+  padding-top: 27em;
   padding-bottom: 2em;
 }
 
@@ -230,7 +266,7 @@ A B O U T   M E
   font-size: 25px;
   animation: Aboutimate 10s linear infinite 0s;
   opacity: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: absolute;
 }
 
