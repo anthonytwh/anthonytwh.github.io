@@ -43,6 +43,7 @@ class Contact extends Component {
 						</Row>
 						<Row form>
 							<Col>
+							<br></br>
 								<Button className="Contact-button"> Send </Button>
 							</Col>
 						</Row>

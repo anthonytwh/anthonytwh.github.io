@@ -29,7 +29,7 @@ G L O B A L
 */
 .Global {
   text-align: center;
-  /*overflow: initial;*/
+  overflow: none;
 }
 
 
@@ -108,7 +108,7 @@ H E A D E R
 */
 .Main {
   margin-top: 5em;  
-  margin-bottom: 5em;
+  margin-bottom: 6em;
 }
 
 .Main-jumbo {
@@ -131,8 +131,8 @@ H E A D E R
 .Main-body {
   padding-top: 2em;
   padding-bottom: 5em;
-  padding-left: 25em;
-  padding-right: 25em;
+  margin-left: 25em;
+  margin-right: 25em;
 }
 
 .Main-icons {
@@ -250,7 +250,7 @@ A B O U T   M E
 .About-animate {
   font-size: 20px;
   font-weight: 100;
-  color: #3E8FE2;
+  color: white;
   background: #222;
   border-color: #3E8FE2;
   height: 4em;
@@ -401,7 +401,6 @@ P O R T F O L I O
   font-size: 50px;
   letter-spacing: 0.2em;
   font-weight: 100;
-  font-style: italic;
 
   width: 8em;
   height: 2em;
@@ -411,7 +410,7 @@ P O R T F O L I O
 .Portfolio-badge:hover {
   outline: none;
   box-shadow: none;
-  background: #3E8FE2;
+  background: #272727;
   border-color: #272727;
   color: lightgrey;
   border-top-color: #222;
@@ -475,8 +474,8 @@ P O R T F O L I O
 }
 
 .Portfolio-href:hover {
-  color: lightblue;
-  text-decoration: none;
+  color: #3E8FE2;
+  text-decoration: underline;
 }
 
 
@@ -512,7 +511,6 @@ C O N T A C T
   background: #222;
   border: 2px solid #222;
   border-color: #222;
-  /*border-top-color: #3E8FE2;*/
   border-bottom-color: #3E8FE2;
   color: white;
   font-weight: 100;
@@ -520,7 +518,6 @@ C O N T A C T
   font-size: 30px;
   letter-spacing: 0.2em;
   font-weight: 100;
-  font-style: italic;
 
   width: 5em;
   height: 2em;
@@ -530,10 +527,9 @@ C O N T A C T
 .Contact-badge:hover {
   outline: none;
   box-shadow: none;
-  background: #3E8FE2;
+  background: #272727;
   border-color: #272727;
   color: white;
-  /*border-top-color: #3E8FE2;*/
   border-bottom-color: #3E8FE2;
   transform:scale(1.025);
 }
@@ -549,8 +545,8 @@ C O N T A C T
 }
 
 .Contact-form {
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .Contact-label {
@@ -558,7 +554,6 @@ C O N T A C T
   font-size: 25px;
   color: white;
   letter-spacing: 0.05em;
-  font-style: italic;
   background-size: 0.5px 1em;
   box-shadow:
     inset 0 -0.8em #333,
@@ -580,7 +575,8 @@ C O N T A C T
   background: #444;
   color: white;
   border-color: #444;
-  border-bottom-color: lightblue;
+  border-top-color: #3E8FE2;
+  border-bottom-color: #3E8FE2;
   cursor: default;
   box-shadow: none;
   outline: none;
@@ -592,17 +588,20 @@ C O N T A C T
 }
 
 .Contact-button {
-  background-color: #555;
-  border-color: #3E8FE2;
-  color: rgb(110, 117, 124);
+  background-color: #333;
+  border-color: rgb(110, 117, 124);
+  color: white;
+  font-weight: 100;
   height: 3em;
-  width: 20em;
+  width: 10em;
 }
 
 .Contact-button:hover {
-  background-color: #3E8FE2;
+  background-color: #444;
   border-color: #3E8FE2;
   color: white;
+  font-weight: 100;
+  transform:scale(1.025);
 }
 
 
@@ -621,7 +620,7 @@ F O O T E R
 }
 
 .Footer-head {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
   letter-spacing: 0.1em;
 }

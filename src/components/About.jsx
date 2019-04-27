@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Card, Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
+import { Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 import '../assets/styles.css';
 import photo from '../assets/profilephoto.jpg';
@@ -50,10 +50,12 @@ class About extends Component {
 							</ToastHeader>
 							<ToastBody className="About-body-left">
 									<p className="About-body-paragraph"> 
-									Anthony is an Engineering & Management Graduate with a passion for product design and software development. 
-									He loves to collaborate with others to bring new ideas to light creating, user-oriented and well designed products and solutions. 
-									With an engineering and management background, he is always seeking new opportunities in the tech and finance sectors to grow and develop with rising organizations and talent. 
-									Feel free to reach out and connect with me! 
+									Anthony graduated from the Engineering & Management program at McMaster University. 
+									He is currently a Cyber Security/Threat Analyst at Darktrace, an AI cyber security company, based in the Toronto office. 
+									His primary role is to support the Canadian offices in pre sales, post sales and threat intelligence as the regional Subject Matter Expert. 
+									He has also developed internal tools and customer-facing software for improving custom integrations of the Darktrace product, and is always working on solutions to provide improvements in this product space. 
+									<br></br><br></br>
+									Anthony is always looking for new and exciting opportunities to learn more about product/software development. Feel free to reach out and connect!
 									</p>
 							</ToastBody>
 						</Toast>
@@ -61,7 +63,7 @@ class About extends Component {
 
 					<Col>
 						<div className="About-body-right">
-							<img src={photo} width="320" height="256" className="About-body-photo" />
+							<img src={photo} width="320" height="256" className="About-body-photo" alt="Anthony Tam" />
 						</div>
 					</Col>
 				</Row>

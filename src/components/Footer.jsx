@@ -38,7 +38,8 @@ class Footer extends Component {
 									<Col xs={{ size: 'auto', offset: 0 }}>
 										<a href="https://medium.com/@AnthonyTam">
 											<FontAwesomeIcon className="Footer-icons" icon={faMedium} size="lg" /></a></Col>
-								</Row></p>
+							</Row></p>
+							<br></br>
 						</Col>
 					</Row>
 				</div>
