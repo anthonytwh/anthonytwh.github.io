@@ -171,17 +171,17 @@ TODO DESIGN:
 
 @keyframes FadeInOut {
   0%   { opacity:1; }
-  25%  { opacity:0.85;}
-  50%  { opacity:0.60;}
-  25%  { opacity:0.85;}
+  25%  { opacity:0.90;}
+  50%  { opacity:0.80;}
+  25%  { opacity:0.90;}
   100% { opacity:1; }
 }
 
 @-webkit-keyframes FadeInOut {
   0%   { opacity:1; }
-  25%  { opacity:0.85;}
-  50%  { opacity:0.60;}
-  25%  { opacity:0.85;}
+  25%  { opacity:0.90;}
+  50%  { opacity:0.80;}
+  25%  { opacity:0.90;}
   100% { opacity:1; }
 }
 

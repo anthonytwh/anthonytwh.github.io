@@ -12,12 +12,28 @@ class About extends Component {
 
 	constructor (props){
 		super(props);
+		this.state = { currOpacity: 1 };
+	}
+
+	componentDidMount () { 
+		window.onscroll =()=>{ 
+			if (window.scrollY < 750){
+				this.setState({currOpacity: 1})
+			}
+			if (750 <= window.scrollY){
+				const newOpacity = (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200;
+				this.setState({currOpacity: newOpacity})
+			}
+		}
 	}
 
 	render () {
+		const opacity = Math.min(this.state.currOpacity, 1);
+		// console.log("scrollY", window.scrollY, (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200)
+		// console.log("opacity:", opacity)
 		return (
 		    <div>
-		    	<span className="Main-arrow">
+		    	<span className="Main-arrow" style={{ opacity }}>
 					<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
 				</span>
 				<Row className="About-title-row">
