@@ -18,9 +18,9 @@ class Footer extends Component {
 				<div className="Footer">
 					<Row> 
 						<Col>
+							<br></br>
 							<h1 className="Footer-head"> Connect with me! </h1>
 							<br></br>			
-							<p><a className="Footer-body" href="#"> contact@anthonyt[.]ca </a></p>
 						</Col>
 						<Col></Col>
 						<Col>

@@ -403,7 +403,7 @@ P O R T F O L I O
   font-weight: 100;
   font-style: italic;
 
-  width: 10em;
+  width: 8em;
   height: 2em;
   margin-top: 5em;
 }
@@ -426,6 +426,7 @@ P O R T F O L I O
   border-color: none;
   color: lightgrey;
   border-top-color: #222;
+  border-top-color: #3E8FE2;
   border-bottom-color: #3E8FE2;
 }
 
@@ -511,7 +512,7 @@ C O N T A C T
   background: #222;
   border: 2px solid #222;
   border-color: #222;
-  border-top-color: #3E8FE2;
+  /*border-top-color: #3E8FE2;*/
   border-bottom-color: #3E8FE2;
   color: white;
   font-weight: 100;
@@ -521,7 +522,7 @@ C O N T A C T
   font-weight: 100;
   font-style: italic;
 
-  width: 10em;
+  width: 5em;
   height: 2em;
   margin-top: 10em;
 }
@@ -532,7 +533,7 @@ C O N T A C T
   background: #3E8FE2;
   border-color: #272727;
   color: white;
-  border-top-color: #3E8FE2;
+  /*border-top-color: #3E8FE2;*/
   border-bottom-color: #3E8FE2;
   transform:scale(1.025);
 }
@@ -635,7 +636,7 @@ F O O T E R
 .Footer-body:hover {  
   color: #3E8FE2;
   font-size: 15.5px;
-  font-weight: 105;
+  font-weight: 10;
   text-decoration: none;
 }
 
@@ -649,9 +650,10 @@ F O O T E R
 }
 
 .Footer-foot {
-  background-color: rgb(37, 37, 37) /*#292929*/;
+  background-color: rgb(53, 53, 53) /* rgb(37, 37, 37) #292929;*/;
   font-size: 8pt;
-  color: rgb(100, 100, 100);
+  color: #888/*rgb(100, 100, 100)*/;
+  font-weight: 100;
   bottom: 0;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
