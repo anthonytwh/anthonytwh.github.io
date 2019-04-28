@@ -29,7 +29,11 @@ G L O B A L
 */
 .Global {
   text-align: center;
-  overflow: none;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -214,7 +218,6 @@ A B O U T   M E
   background:
     linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%);
   color: white;
-  /*overflow: hidden;*/
   /*padding-top: 25%;*/
   padding-bottom: 20em;
 }
@@ -231,6 +234,7 @@ A B O U T   M E
 }
 
 .About-title-row {
+  overflow: hidden;
   justify-content: center;
   padding-top: 27em;
   padding-bottom: 2em;
@@ -242,7 +246,7 @@ A B O U T   M E
   margin-left: 10em;
   max-height: 40em;
   max-width: 40em;
-  /*overflow: hidden;*/
+  overflow: hidden;
   box-shadow: -2px 2px 5px #111;
   border-color: #222;
 }
@@ -254,7 +258,7 @@ A B O U T   M E
   background: #222;
   border-color: #3E8FE2;
   height: 4em;
-  width: 100em;
+  width: 50em;
   padding-bottom: 2em;
   padding-left: 2em; 
   padding-right: 2em;
@@ -266,7 +270,7 @@ A B O U T   M E
   font-size: 25px;
   animation: Aboutimate 10s linear infinite 0s;
   opacity: 0;
-  /*overflow: hidden;*/
+  overflow: hidden;
   position: absolute;
 }
 
