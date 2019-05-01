@@ -1,46 +1,64 @@
 import React, { Component} from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 import '../assets/styles.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons'
 
-
-
 class Header extends Component {
 
 	constructor (props){
 		super(props);
-
-		this.toggle = this.toggle.bind(this);
-		this.state = { isOpen: false };
+		// this.toggle = this.toggle.bind(this);
+		// this.state = { isOpen: false };
 	}
 
-	toggle() {
-		this.setState({ isOpen: !this.state.isOpen });
+	// toggle() {
+	// 	this.setState({ isOpen: !this.state.isOpen });
+	// }
+
+	// componentDidUpdate() {
+	// 	let hash = this.state.location.hash.replace('#', '');
+	// 	if (hash) {
+	// 		let node = React.findDOMNode(this.refs[hash]);
+	// 		if (node) {
+	// 			node.scrollIntoView();
+	// 		}
+	// 	}
+	// }
+
+	click = (link) => {
+		window.location = link;
 	}
 
 	render() {
+		// function handleScroll(e) {
+		// 	e.preventDefault();
+		// 	const main = this.props.ref();
+		// 	window.scrollTo({
+		// 		top: main.offsetTop,
+		// 		left: 0,
+		// 		behavior: "instant"
+		// 	});
+		// };
+
 		return(
 			<Router>
 				<div>
 					<Navbar className="Header-header" light expand="md"> 
-						<NavbarToggler onClick={this.toggle} />
-						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav className="ml-auto" navbar>
 								<NavItem>
-									<NavLink to='/About' tag='about' href='/About' className="Header-link"> About </NavLink>
+									<Link to='/#about' className="Header-link" onClick={() => this.click('/#about')}><NavLink> About </NavLink></Link>
 								</NavItem>
 								<NavItem>
-									<NavLink to='/Portfolio' tag='portfolio' href='/Portfolio' className="Header-link"> Portfolio </NavLink>
+									<Link to='/#portfolio' className="Header-link" onClick={() => this.click('/#portfolio')}><NavLink> Portfolio </NavLink></Link>
 								</NavItem>
 								<NavItem>
-									<NavLink to='/Contact' tag='contact' href='/Contact' className="Header-link"> Contact </NavLink>
+									<Link to='/#contact' className="Header-link" onClick={() => this.click('/#contact')}><NavLink> Contact </NavLink></Link>
 								</NavItem>
 							</Nav>
-						</Collapse>
 					</Navbar>
 				</div>
 			</Router>

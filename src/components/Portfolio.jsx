@@ -14,7 +14,7 @@ class Portfolio extends Component {
 	render () {
 		return (
 		    <div>
-				<Container className="Portfolio">
+				<Container className="Portfolio" id="portfolio">
 
 			    	<Button className="Portfolio-badge" id="Employment"> Employment </Button>
 			    	<UncontrolledCollapse toggler="#Employment">
@@ -85,9 +85,9 @@ class Portfolio extends Component {
 						</Card>
 					</UncontrolledCollapse>
 
-			    	<Button className="Contact-badge" id='Contact'> Contact </Button>
-			    	<UncontrolledCollapse toggler='#Contact'>
-			    		<Contact />
+			    	<Button className="Contact-badge" id='ContactMe'> Contact </Button>
+			    	<UncontrolledCollapse toggler='#ContactMe'>
+			    		<Contact/>
 			    	</UncontrolledCollapse>
 				</Container>
 		    </div>

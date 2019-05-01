@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Card, Col, Row, Button, Form, FormGroup, Input } from 'reactstrap';
+import { Container, Card, Col, Row, Button, Form, FormGroup, Input } from 'reactstrap';
 
 import '../assets/styles.css';
 

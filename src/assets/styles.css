@@ -163,7 +163,7 @@ TODO DESIGN:
   height: -5em;
   position: -webkit-sticky;
   position: sticky;
-  top: 2em;
+  top: 0em;
 }
 
 .Main-arrow-icon {

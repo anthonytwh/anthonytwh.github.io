@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import { Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 import '../assets/styles.css';
@@ -37,7 +37,7 @@ class About extends Component {
 					<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
 				</span>
 				<Row className="About-title-row">
-					<h1 className="About-title">About Me</h1>
+					<h1 className="About-title" id="about">About Me</h1>
 				</Row>
 				<Row>
 					<Col>

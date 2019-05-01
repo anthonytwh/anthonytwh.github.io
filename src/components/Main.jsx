@@ -5,7 +5,7 @@ import '../assets/styles.css';
 import Resume from '../assets/Anthony_Resume.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileAlt, faEnvelope, faAngleDoubleDown, faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 class Main extends Component {

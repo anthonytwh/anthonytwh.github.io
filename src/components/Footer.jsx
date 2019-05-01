@@ -15,7 +15,7 @@ class Footer extends Component {
 	render() {
 		return (
 			<div>
-				<div className="Footer">
+				<div className="Footer" id="contact">
 					<Row> 
 						<Col>
 							<br></br>
