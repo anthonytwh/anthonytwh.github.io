@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component, createRef } from 'react';
 import { Button, UncontrolledCollapse, Card, Container, Row, Col } from 'reactstrap';
 
 import Contact from '../components/Contact.jsx'
@@ -9,12 +9,13 @@ class Portfolio extends Component {
 
 	constructor (props){
 		super(props);
+		this.clickref = createRef();
 	}
 
 	render () {
 		return (
 		    <div>
-				<Container className="Portfolio" id="portfolio">
+				<Container className="Portfolio" id="portfolio" ref={this.clickref}>
 
 			    	<Button className="Portfolio-badge" id="Employment"> Employment </Button>
 			    	<UncontrolledCollapse toggler="#Employment">

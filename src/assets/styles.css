@@ -88,11 +88,29 @@ H E A D E R
 
 .Header-link {
   color: rgb(42, 45, 48, 0.75);
+  content: '';
+  display: block;
+  /*width: 25%;*/
+  /*padding: .75rem 0;*/
+  /*margin: 0;*/
+  text-decoration: none;
 }
+
+/*.Header-Link:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 0.05em;
+  margin-top: 0em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}*/
 
 .Header-link:hover {
   color: #3E8FE2;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -389,6 +407,7 @@ P O R T F O L I O
 
 .Portfolio-badge {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -399,10 +418,10 @@ P O R T F O L I O
   border: 2px solid #222;
   border-color: #222;
   border-top-color: #222;
-  border-bottom-color: #3E8FE2;
-  color: white;
+  /*border-bottom-color: #3E8FE2;*/
+  color: lightgrey;
 
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 0.2em;
   font-weight: 100;
 
@@ -411,15 +430,31 @@ P O R T F O L I O
   margin-top: 5em;
 }
 
+.Portfolio-badge:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 0.05em;
+  margin-top: 1em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
 .Portfolio-badge:hover {
   outline: none;
   box-shadow: none;
   background: #272727;
   border-color: #272727;
-  color: lightgrey;
   border-top-color: #222;
-  border-bottom-color: #3E8FE2;
   transform:scale(1.025);
+}
+
+.Portfolio-badge:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3E8FE2;
 }
 
 .Portfolio-badge:focus {
@@ -515,7 +550,7 @@ C O N T A C T
   background: #222;
   border: 2px solid #222;
   border-color: #222;
-  border-bottom-color: #3E8FE2;
+  /*border-bottom-color: #3E8FE2;*/
   color: white;
   font-weight: 100;
 

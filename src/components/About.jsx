@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import { Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 import '../assets/styles.css';
@@ -12,6 +12,7 @@ class About extends Component {
 
 	constructor (props){
 		super(props);
+		this.about = createRef();
 		this.state = { currOpacity: 1 };
 	}
 
@@ -24,7 +25,9 @@ class About extends Component {
 				const newOpacity = (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200;
 				this.setState({currOpacity: newOpacity})
 			}
-		}
+		};
+		console.log("did this log?")
+		// this.clickAbout.scrollIntoView();
 	}
 
 	render () {
@@ -37,16 +40,16 @@ class About extends Component {
 					<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
 				</span>
 				<Row className="About-title-row">
-					<h1 className="About-title" id="about">About Me</h1>
+					<h1 className="About-title" id="about" ref={this.about}>About Me</h1>
 				</Row>
 				<Row>
 					<Col>
 						<Toast className="About-toast">
 							<ToastHeader className="About-animate">
-								<span> <p> Product Design & Software Development </p> </span>
-								<span> <p> Application Security & Cyber Security </p>  </span>
-								<span> <p> Global Finance & Investing </p> </span>
-								<span> <p> Food + Travel </p> </span>
+								<span> <p> Product Design & Software Development </p></span>
+								<span> <p> Application Security & Security Research </p></span>
+								<span> <p> Global Finance & Investing </p></span>
+								<span> <p> Food + Travel </p></span>
 							</ToastHeader>
 							<ToastBody className="About-body-left">
 									<p className="About-body-paragraph"> 
