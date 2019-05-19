@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Container, Card, Col, Row, Button, Form, FormGroup, Input, Popover, PopoverBody } from 'reactstrap';
+import { Container, Card, Col, Row, Button, Form, FormGroup, Input, Tooltip } from 'reactstrap';
 
 import '../assets/styles.css';
 
@@ -53,9 +53,9 @@ class Contact extends Component {
 							<Col>
 							<br></br>
 								<Button className="Contact-button" id="temp_popover" type="button"> Send </Button>
-								<Popover className="Contact-popover" placement="bottom" isOpen={this.state.popoverOpen} target="temp_popover" toggle={this.toggle}>
-									<PopoverBody>** Contact Form still in progress! ** </PopoverBody>
-								</Popover>
+								<Tooltip placement="right" isOpen={this.state.popoverOpen} target="temp_popover" toggle={this.toggle}>
+									** Form still in progress! ** 
+								</Tooltip>
 							</Col>
 						</Row>
 					</Form>
