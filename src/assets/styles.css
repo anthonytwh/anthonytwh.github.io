@@ -163,8 +163,8 @@ H E A D E R
 }
 
 .Main-icons:hover {
-  color: #333;
-  transform:scale(1.1);
+  color: #3E8FE2;
+  transform:scale(1.075);
 }
 
 /* 
@@ -370,20 +370,49 @@ C O N T E N T
 }
 
 .Content-title {
+  text-align: left;
   font-size: 50px;
   letter-spacing: 0.15em;
   font-weight: 100;
 }
 
 .Content-header {
+  text-align: left;
   font-size: 25px;
   letter-spacing: 0.05em;
   font-weight: 100;
 }
 
-.Content-body{
+.Content-subheader {
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  font-weight: 100;
+}
+
+.Content-content{
   font-size: 15px;
   font-weight: 100;
+  text-align: left;
+}
+
+.Content-podcastimg{
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-weight: 100;
+  text-align: left;
+  text-decoration: none;
+  text-decoration-style: none;
+  box-shadow: 2px 2px #999;
+}
+
+.Content-podcastimg:hover{
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-weight: 100;
+  text-align: left;
+  transform:scale(1.025);
+  opacity: 0.9;
 }
 
 
@@ -687,7 +716,8 @@ F O O T E R
 
 .Footer-icons:hover {
   color: #3E8FE2;
-  transform:scale(1.2);
+  transform:scale(1.1);
+  opacity: 0.9;
 }
 
 .Footer-foot {
