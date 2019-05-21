@@ -13,17 +13,23 @@ class Content extends Component {
 		return (
 		    <div>
 				<Container fluid>
-					<h1 className="Content-title"> Personal interests: </h1>
-					<p className="Content-header"> Section in Progress! </p>
+					<Row>
+						<h1 className="Content-title"> Personal interests</h1>
+					</Row>
+					<br></br>
+					<br></br>
 					<Row>
 						<Col>
 
 							<p className="Content-subheader"> Reading List: </p>
 								<p className="Content-content">
 								<Row>
-									<Button id="pop-principles" className="Content-nobutton" active color="none"><img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41cEbWztZYL._SX331_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
-									<Button id="pop-algorithms" className="Content-nobutton" active color="none"><img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41dPThoPwEL._SX331_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
-									<Button id="pop-gdp" className="Content-nobutton" active color="none"><img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41sf%2BYuyYGL.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
+									<Button id="pop-principles" className="Content-nobutton" active color="none" href="https://www.principles.com/">
+										<img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41cEbWztZYL._SX331_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
+									<Button id="pop-algorithms" className="Content-nobutton" active color="none" href="http://algorithmstoliveby.com/">
+										<img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41dPThoPwEL._SX331_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
+									<Button id="pop-gdp" className="Content-nobutton" active color="none" href="https://press.princeton.edu/titles/10598.html">
+										<img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41sf%2BYuyYGL.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
 								</Row>
 								</p>
 								<UncontrolledPopover trigger="hover" placement="top" target="pop-principles">
@@ -42,11 +48,26 @@ class Content extends Component {
 							<p className="Content-subheader"> Favourite Books: </p>
 								<p className="Content-content"> 
 									<Row>
-										<a href="https://www.npr.org/podcasts/510289/planet-money/"><img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41TE9jNriUL._SX329_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></a> 
-										<a href="https://www.npr.org/podcasts/510289/planet-money/"><img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/511LZBXbRpL._SX329_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></a>
-										<a href="https://www.npr.org/podcasts/510289/planet-money/"><img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41IMsG2QaEL._SX319_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></a>
+										<Button id="pop-flashboys" className="Content-nobutton" active color="none" href="https://en.wikipedia.org/wiki/Flash_Boys">
+											<img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41TE9jNriUL._SX329_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button> 
+										<Button id="pop-everybodylies" className="Content-nobutton" active color="none" href="http://sethsd.com/everybodylies">
+											<img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/511LZBXbRpL._SX329_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
+										<Button id="pop-creativityinc" className="Content-nobutton" active color="none" href="http://www.creativityincbook.com/">
+											<img className="Content-bookimg" src="https://images-na.ssl-images-amazon.com/images/I/41IMsG2QaEL._SX319_BO1,204,203,200_.jpg" alt="Planet Money by NPR" width="90" height="125"/></Button>
 									</Row>
 								</p>
+								<UncontrolledPopover trigger="hover" placement="top" target="pop-flashboys">
+									<PopoverHeader>Flash Boys: A Wall Street Revolt</PopoverHeader>
+									<PopoverBody>Michael Lewis</PopoverBody>
+								</UncontrolledPopover>
+								<UncontrolledPopover trigger="hover" placement="top" target="pop-everybodylies">
+									<PopoverHeader>Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are</PopoverHeader>
+									<PopoverBody>Seth Stephens-Davidowitz</PopoverBody>
+								</UncontrolledPopover>
+								<UncontrolledPopover trigger="hover" placement="top" target="pop-creativityinc">
+									<PopoverHeader>Creativity Inc.: Overcoming the Unseen Forces That Stand in the Way of True Inspiration</PopoverHeader>
+									<PopoverBody>Ed Catmull, with Amy Wallace</PopoverBody>
+								</UncontrolledPopover>
 						</Col>
 						<Col>
 							<p className="Content-subheader"> My Podcasts: </p>

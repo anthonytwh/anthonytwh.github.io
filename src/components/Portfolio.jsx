@@ -16,7 +16,9 @@ class Portfolio extends Component {
 		return (
 		    <div>
 				<Container className="Portfolio" id="portfolio" ref={this.clickref}>
-
+					<Row>
+						<h1 className="Portfolio-title">Portfolio</h1>
+					</Row>
 			    	<Button className="Portfolio-badge" id="Employment"> Employment </Button>
 			    	<UncontrolledCollapse toggler="#Employment">
 						<Card className="Portfolio-card">
