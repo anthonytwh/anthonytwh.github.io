@@ -403,19 +403,38 @@ C O N T E N T
   text-align: left;
   text-decoration: none;
   text-decoration-style: none;
-  box-shadow: 2px 2px #999;
+  box-shadow: 1px 1px #999;
 }
 
 .Content-podcastimg:hover{
-  margin-left: 0.25em;
-  margin-right: 0.25em;
   font-weight: 100;
   text-align: left;
   transform:scale(1.025);
   opacity: 0.9;
+  box-shadow: 2px 2px #999;
 }
 
+.Content-bookimg{
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  font-weight: 100;
+  text-align: left;
+  text-decoration: none;
+  text-decoration-style: none;
+  box-shadow: 1px 1px #999;
+}
 
+.Content-bookimg:hover{
+  font-weight: 100;
+  text-align: left;
+  transform:scale(1.025);
+  opacity: 0.9;
+  box-shadow: 2px 2px #999;
+}
+
+.Content-nobutton:focus{
+  box-shadow: none;
+}
 
 /* 
 
