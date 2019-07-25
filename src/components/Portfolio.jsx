@@ -29,7 +29,7 @@ class Portfolio extends Component {
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Cyber Security Analyst </p></Col>
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%", textAlign: "right" }}> Toronto/Remote, 2018 - Present</p></Col>
 									</Row>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Supported the Canadian Darktrace offices as the lead cyber security analyst and regional subject matter expert for pre/post sales cycle. </p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Subject matter expert and lead analyst, supporting strategic accounts and pre/post sale proof of values as a technical advisor.</p>
 									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developed and maintained the Darktrace Python library, improving custom integrations for enhanced analysis and reporting. </p>
 									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Researched active and potential threats on client networks, developing threat intelligence reports for contract customers. </p>
 									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Improved detection of various threat models by reducing false positives and increasing alert accuracy. </p>

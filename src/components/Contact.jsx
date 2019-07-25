@@ -22,8 +22,11 @@ class Contact extends Component {
 		return (
 			<div>
 				<Card className="Contact">
-					<Form className="Contact-form">
+					<Form className="Contact-form" method="POST" action="https://formspree.io/contact@anthonyt.ca">
 						<Row form>
+							<FormGroup>
+								<Input className="Contact-honey" type="text" name="_gotcha" id="pre-text" placeholder="Text"/>
+							</FormGroup>
 							<Col>
 								<FormGroup>
 									<Input className="Contact-input" type="name" name="name" id="contactName" placeholder="Name" />
@@ -52,10 +55,7 @@ class Contact extends Component {
 						<Row form>
 							<Col>
 							<br></br>
-								<Button className="Contact-button" id="temp_popover" type="button"> Send </Button>
-								<Tooltip placement="right" isOpen={this.state.popoverOpen} target="temp_popover" toggle={this.toggle}>
-									** Form still in progress! ** 
-								</Tooltip>
+								<Button className="Contact-button" type="submit"> Send </Button>
 							</Col>
 						</Row>
 					</Form>
