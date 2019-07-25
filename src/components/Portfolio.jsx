@@ -26,13 +26,14 @@ class Portfolio extends Component {
 								<Col>
 									<p className="Portfolio-header"> Darktrace </p>
 									<Row>
-										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Cyber Security Analyst </p></Col>
+										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Cyber Threat Analyst </p></Col>
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%", textAlign: "right" }}> Toronto/Remote, 2018 - Present</p></Col>
 									</Row>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Subject matter expert and lead analyst, supporting strategic accounts and pre/post sale proof of values as a technical advisor.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developed and maintained the Darktrace Python library, improving custom integrations for enhanced analysis and reporting. </p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Researched active and potential threats on client networks, developing threat intelligence reports for contract customers. </p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Improved detection of various threat models by reducing false positives and increasing alert accuracy. </p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Subject matter expert and lead analyst, supporting regional strategic accounts in pre/post sale proof of values as a technical advisor.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developed and maintained the Darktrace Python wrapper/library for the Darktrace REST API.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Created new threat models to extend product capabiltiies, and improved alerting accurracy of stock models using Gitlab CI/CD.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Investigated and researched active threats on client networks, compiling threat intelligence reports for global customers.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Contributed to the internal threat intelligence feed, providing threat analysis and research for over 50 IOC's.</p>
 								</Col>
 							</Row>
 							<Row className="Portfolio-row">
@@ -41,9 +42,10 @@ class Portfolio extends Component {
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Cyber Security Engineer </p></Col>
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%", textAlign: "right" }}> Toronto, 2017 - 2018 </p></Col>
 									</Row>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Managed enterprise integrations of Darktrace products for pre/post sale clients of all infrastructure sizes and technologies. </p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Developed an internal SSH management tool to improve workflow and operational security for global technology teams. </p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Create technical documentation for internal training and for the Client Customer Portal. </p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Managed enterprise integrations of Darktrace products for pre/post sale clients of all infrastructure sizes and technologies.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Developed an internal SSH management tool to improve workflow and operational security for global technology teams.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Traveled weekly to lead onsite technical integrations with the customer IT/security teams, managers and executives.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Created technical training documentation for virtual and cloud deployments for internal training and the Darktrace Customer Portal.</p>
 								</Col>
 							</Row>
 							<Row className="Portfolio-row">
@@ -53,8 +55,9 @@ class Portfolio extends Component {
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Category Management Analyst (Co-op) </p></Col>
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%", textAlign: "right" }}> Mississauga, Summer 2016 </p></Col>
 									</Row>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}> • Led RFP/RFQ project with electrical and semiconductor suppliers to create cost-savings in tail-spend.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}> • Developed internal VBA/Excel dashboard for internal team to improve financial and operational risk analysis and report quality. </p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}> • Led RFQ/RFP exercise with key vendors to consolidate and reduce cost on tail-spend semiconductor components.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}> • Created a dynamic Excel/VBA dashboard to automate monthly analysis and reports of vendor operational and financial risk.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}> • Provided training to global and regional teams to utilize the newly developed tools to improve the quality of monthly risk reports.</p>
 								</Col>
 							</Row>
 						</Card>
