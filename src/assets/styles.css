@@ -160,6 +160,8 @@ H E A D E R
 .Main-icons {
   color: #333;
   text-shadow: 1px 1px 1px black;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
 }
 
 .Main-icons:hover {
@@ -356,7 +358,7 @@ C O N T E N T
 
 
 */
-.Content {
+.Content{
   clear: both;
   color: black;
   padding-top: 20%;
@@ -364,26 +366,30 @@ C O N T E N T
   background: 
     linear-gradient(185deg, #222 14.9%, rgb(200, 200, 200, 0.5) 15.1%) /* rgba(51, 51, 51, 1), transparent 3%, transparent 97%,rgba(10, 10, 10, 0.25) 98%, rgb(51, 51, 51, 1) 99%)*/;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 
 }
 
-.Content-title {
+.Content-title{
   text-align: left;
   font-size: 50px;
   letter-spacing: 0.15em;
   font-weight: 100;
 }
 
-.Content-header {
+.Content-header{
   text-align: left;
   font-size: 25px;
   letter-spacing: 0.05em;
   font-weight: 100;
 }
 
-.Content-subheader {
+.Content-column{
+  height: 15em;
+}
+
+.Content-subheader{
   text-align: left;
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -394,6 +400,20 @@ C O N T E N T
   font-size: 15px;
   font-weight: 100;
   text-align: left;
+}
+
+.Content-popoverHeader{
+  background: #333;
+  color: white;
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.Content-popoverBody{
+  background: #444;
+  color: white;
+  font-size: 8px;
+  font-weight: 100;
 }
 
 .Content-podcastimg{
@@ -415,8 +435,8 @@ C O N T E N T
 }
 
 .Content-bookimg{
-  margin-left: 0.25em;
-  margin-right: 0.25em;
+  margin-left: 0.15em;
+  margin-right: 0.15em;
   font-weight: 100;
   text-align: left;
   text-decoration: none;
@@ -509,6 +529,8 @@ P O R T F O L I O
   border-color: #272727;
   border-top-color: #222;
   transform:scale(1.025);
+  -webkit-transform:scale(1.025);
+
 }
 
 .Portfolio-badge:hover:after {
@@ -538,14 +560,6 @@ P O R T F O L I O
   box-shadow: 0px 5px 5px #111;
   margin-top: 2em;
 }
-
-/*.Portfolio-title {
-  color: white;
-  text-shadow: 2px 2px #444;
-  letter-spacing: 0.15em;
-  font-size: 35px;
-  font-weight: 100;
-}*/
 
 .Portfolio-header {
   color: white;
