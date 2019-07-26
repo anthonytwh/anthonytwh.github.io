@@ -1,5 +1,5 @@
-import React, { Component, createRef } from 'react';
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import React, { Component } from 'react';
+import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 import '../assets/styles.css';

@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Button, Col, Card, Container, Row, UncontrolledCollapse, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { Button, Col, Container, Row, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
 
 import '../assets/styles.css';
 

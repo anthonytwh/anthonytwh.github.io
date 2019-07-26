@@ -32,7 +32,7 @@ class Main extends Component {
 							<a href="https://github.com/anthonytwh">
 							<FontAwesomeIcon className="Main-icons" icon={faGithub} size="3x" /></a></Col>
 						<Col>
-							<a href= {Resume} target = "_blank">
+							<a href= {Resume}>
 							<FontAwesomeIcon className="Main-icons" icon={faFileAlt} size="3x" /></a></Col>
 						<Col>
 							<a href="mailto:contact@anthonyt.ca">
