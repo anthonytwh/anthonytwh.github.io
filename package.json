@@ -2,7 +2,7 @@
   "name": "anthonytwh.github.io",
   "version": "0.2.0",
   "private": true,
-  "homepage": "https://anthonyt.ca",
+  "homepage": "https://anthonytwh.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
