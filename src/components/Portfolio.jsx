@@ -29,9 +29,9 @@ class Portfolio extends Component {
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Cyber Threat Analyst </p></Col>
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%", textAlign: "right" }}> Toronto/Remote, 2018 - Present</p></Col>
 									</Row>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Canadian lead analyst and subject matter expert, supporting regional strategic accounts in pre/post sale cycles.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developed and maintained the Darktrace Python wrapper/library for the Darktrace REST API.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Created new threat models to extend product capabilties and improved alerting accuracy of various stock models using Gitlab CI/CD.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Lead Canadian analyst, supporting strategic accounts with technical expertise in pre-sale proof-of-value trials.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developed and maintained the Python Darktrace API library, greatly simplifying the use of the Darktrace REST API.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Created and improved threat models, increasing detection capability and accuracy using CI/CD and experimental deployments.</p>
 									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Researched and investigated active threats on client networks, compiling threat intelligence reports for global customers.</p>
 									<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Contributed over 50 IOC's to the internal Darktrace threat intelligence feed from threat research activities.</p>
 								</Col>
@@ -42,10 +42,11 @@ class Portfolio extends Component {
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%" }}> Cyber Security Engineer </p></Col>
 										<Col><p className="Portfolio-body" style={{ textIndent: "2.5%", textAlign: "right" }}> Toronto, 2017 - 2018 </p></Col>
 									</Row>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Managed enterprise integrations of Darktrace products for pre/post sale clients across virtual, cloud, ICS and SaaS environments.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Developed an SSH management tool to improve workflow and operational security for internal technology teams.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Traveled weekly to lead onsite technical integrations with the customer IT/security teams, managers and executives.</p>
-									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Created technical training documentation for virtual and cloud deployments for internal training and the Darktrace Customer Portal.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Managed Darktrace enterprise integrations for customers across virtual, cloud, and ICS/SCADA environments.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Developed an SSH management tool, improving workflow speed and operational security for internal technology teams.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Traveled weekly to lead onsite technical integrations with the customer security teams, managers and executives.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Created technical documentation for virtual and cloud deployments for internal and customer training.</p>
+									<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Contributed to over 30% growth of the Canadian customer base from proof-of-value customer trials.</p>
 								</Col>
 							</Row>
 							<Row className="Portfolio-row">
