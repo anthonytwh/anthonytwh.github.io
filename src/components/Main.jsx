@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 import { Jumbotron, Row, Col } from 'reactstrap';
 
 import '../assets/styles.css';
-import Resume from '../assets/Anthony_Resume.pdf';
+import Resume from '../resources/Anthony_Resume.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
