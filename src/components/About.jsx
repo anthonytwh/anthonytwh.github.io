@@ -46,19 +46,21 @@ class About extends Component {
 					<Col>
 						<Toast className="About-toast">
 							<ToastHeader className="About-animate">
-								<span> <p> Product Design & Software Development </p></span>
-								<span> <p> Application Security & Security Research </p></span>
-								<span> <p> Global Finance & Investing </p></span>
+								<span> <p> Product Design and Software Development </p></span>
+								<span> <p> Cyber Security and analytics</p></span>
+								<span> <p> Finance and Investing </p></span>
 								<span> <p> Food + Travel </p></span>
 							</ToastHeader>
 							<ToastBody className="About-body-left">
 									<p className="About-body-paragraph"> 
-									Anthony graduated from the Engineering & Management program at McMaster University. 
-									He is currently a Cyber Security/Threat Analyst at Darktrace, an AI cyber security company, based in the Toronto office. 
-									His primary role is to support the Canadian offices in pre sales, post sales and threat intelligence as the regional Subject Matter Expert. 
-									He has also developed internal tools and customer-facing software for improving custom integrations of the Darktrace product, and is always working on solutions to provide improvements in this product space. 
+									Anthony is currently a Cyber Security Threat Analyst and Developer at Darktrace, an AI/ML cyber security company, based in Toronto. 
 									<br></br><br></br>
-									Anthony is always looking for new and exciting opportunities to learn more about product/software development. Feel free to reach out and connect!
+									His primary role is to support the Canadian offices in pre sales, post sales and threat intelligence as the lead analyst, and North 
+									American operations as the lead model developer.
+									He has also worked on multiple internal tools and customer-facing software for improving integrations and custom use-cases of the Darktrace 
+									product for strategic accounts. He is always working on solutions to provide improvements in this product space.
+									<br></br><br></br>
+									Anthony is always open to learning about new and exciting opportunities in the tech and fintech fields. Please feel free to reach out and connect! 
 									</p>
 							</ToastBody>
 						</Toast>
@@ -66,6 +68,7 @@ class About extends Component {
 
 					<Col>
 						<div className="About-body-right">
+							<br></br><br></br>
 							<img src={photo} width="320" height="256" className="About-body-photo" alt="Anthony Tam" />
 						</div>
 					</Col>

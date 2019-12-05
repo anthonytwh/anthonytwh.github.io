@@ -22,7 +22,7 @@ class Content extends Component {
 						<Col>
 							<Row>
 								<Col className="Content-column" xs="15">
-									<p className="Content-subheader"> Reading List: </p>
+									<p className="Content-subheader"> <u><b> Current Reading List: </b></u> </p>
 										<p className="Content-content">
 										<Row>
 											<Button id="pop-principles" className="Content-nobutton" active color="none" href="https://www.principles.com/">
@@ -50,7 +50,7 @@ class Content extends Component {
 
 							<Row>
 								<Col className="Content-column" xs="15">
-									<p className="Content-subheader"> Book Recommendations: </p>
+									<p className="Content-subheader"> <u><b> Favourite Books: </b></u> </p>
 										<p className="Content-content"> 
 											<Row>
 												<Button id="pop-flashboys" className="Content-nobutton" active color="none" href="https://en.wikipedia.org/wiki/Flash_Boys">
@@ -80,7 +80,7 @@ class Content extends Component {
 						<Col>
 							<Row>
 								<Col className="Content-column" xs="15">
-									<p className="Content-subheader"> Podcasts: </p>
+									<p className="Content-subheader"> <u><b> Go-to Podcasts: </b></u> </p>
 										<p className="Content-content"> 
 										<Row>
 											<a href="https://www.npr.org/podcasts/510325/the-indicator-from-planet-money"><img className="Content-podcastimg" src="https://media.npr.org/assets/img/2018/08/03/npr_theindicatorpm_podcasttile_sq-2b1d594a6a7d6c70618924796b4ffd778e9d33a8.jpg?s=1400" alt="The Indicator from Planet Money" width="100" height="100"/></a>
@@ -95,10 +95,10 @@ class Content extends Component {
 
 							<Row>
 								<Col className="Content-column" xs="15">
-									<p className="Content-subheader"> Hobbies: </p>
-										<Row><p className="Content-content"> • Rock Climbing (see my climbing blog <a href="https://www.instagram.com/anthonyclimbs/">here!</a>)</p></Row>
-										<p className="Content-content"> • Traveling </p>
-										<Row><p className="Content-content"> • Coffee </p></Row>
+									<p className="Content-subheader"> <u><b> Hobbies I enjoy: </b></u> </p>
+										<Row><p className="Content-content"> • Rock Climbing (see my <a href="https://www.instagram.com/anthonyclimbs/">climbing blog here</a>)</p></Row>
+										<p className="Content-content"> • Traveling and immersing in local cultures </p>
+										<Row><p className="Content-content"> • Eating delicious food and drinking great coffee </p></Row>
 								</Col>
 							</Row>
 
