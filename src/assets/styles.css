@@ -624,7 +624,7 @@ C O N T A C T
   background: #222;
   border: 2px solid #222;
   border-color: #222;
-  /*border-bottom-color: #3E8FE2;*/
+  border-bottom-color: #3E8FE2;
   color: white;
   font-weight: 100;
 
@@ -632,29 +632,9 @@ C O N T A C T
   letter-spacing: 0.2em;
   font-weight: 100;
 
-  width: 5em;
+  width: 10em;
   height: 2em;
   margin-top: 5em;
-}
-
-.Contact-badge:hover {
-  outline: none;
-  box-shadow: none;
-  background: #272727;
-  border-color: #272727;
-  color: white;
-  border-bottom-color: #3E8FE2;
-  transform:scale(1.025);
-}
-
-.Contact-badge:focus {
-  outline: none;
-  box-shadow: none;
-  background: #272727;
-  border-color: none;
-  color: white;
-  border-top-color: #3E8FE2;
-  border-bottom-color: #3E8FE2;
 }
 
 .Contact-form {
@@ -710,11 +690,11 @@ C O N T A C T
 }
 
 .Contact-button:hover {
-  background-color: #444;
+  background-color: #333;
   border-color: #3E8FE2;
-  color: white;
+  color: #3E8FE2;
   font-weight: 100;
-  transform:scale(1.025);
+  transform:scale(1.01);
 }
 
 .Contact-honey{

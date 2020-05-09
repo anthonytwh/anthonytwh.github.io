@@ -93,9 +93,6 @@ class Header extends Component {
 									<NavLink><Link className="Header-link" onClick={() => this.click('/#about')}> About </Link></NavLink>
 								</NavItem>
 								<NavItem>
-									<NavLink><Link to='/#portfolio' className="Header-link" onClick={() => this.click('/#portfolio')}> Portfolio </Link></NavLink>
-								</NavItem>
-								<NavItem>
 									<NavLink><Link to='/#contact' className="Header-link" onClick={() => this.click('/#contact')}> Contact </Link></NavLink>
 								</NavItem>
 							</Nav>

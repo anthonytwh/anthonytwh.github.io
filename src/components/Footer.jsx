@@ -33,7 +33,7 @@ class Footer extends Component {
 										<a href="https://www.linkedin.com/in/anthony-tam/">
 											<FontAwesomeIcon className="Footer-icons" icon={faLinkedin} size="lg" /></a></Col>
 									<Col xs={{ size: 'auto', offset: 0 }}>
-										<a href="https://www.instagram.com/anthonyytam/">
+										<a href="https://www.instagram.com/anthonyclimbs/">
 											<FontAwesomeIcon className="Footer-icons" icon={faInstagram} size="lg" /></a></Col>
 									<Col xs={{ size: 'auto', offset: 0 }}>
 										<a href="https://medium.com/@AnthonyTam">
@@ -44,7 +44,7 @@ class Footer extends Component {
 					</Row>
 				</div>
 				<div className="Footer-foot"> 
-					© 2017-2019, Anthonyt.ca
+					© 2017-2020, AnthonyT.ca
 				</div>
 			</div>	
 			)

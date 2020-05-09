@@ -26,7 +26,6 @@ class App extends Component {
 					</div>
 
 					<div className="BG-2">
-						<div className="Content"><Content/></div>
 						<div className="Portfolio"><Portfolio/></div>
 					</div>
 					<div className="Footer"><Footer /></div>
