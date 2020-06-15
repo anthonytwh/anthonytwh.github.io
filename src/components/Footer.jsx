@@ -15,37 +15,25 @@ class Footer extends Component {
 	render() {
 		return (
 			<div>
-				<div className="Footer" id="contact">
-					<Row> 
-						<Col>
-							<br></br>
-							<h1 className="Footer-head"> Connect with me! </h1>
-							<br></br>			
-						</Col>
-						<Col></Col>
-						<Col>
-							<br></br>
-							<p><Row>
-									<Col xs={{ size: 'auto', offset: 4 }}>
-										<a href="https://github.com/anthonytwh">
-											<FontAwesomeIcon className="Footer-icons" icon={faGithub} size="lg" /></a></Col>
-									<Col xs={{ size: 'auto', offset: 0 }}>
-										<a href="https://www.linkedin.com/in/anthony-tam/">
-											<FontAwesomeIcon className="Footer-icons" icon={faLinkedin} size="lg" /></a></Col>
-									<Col xs={{ size: 'auto', offset: 0 }}>
-										<a href="https://www.instagram.com/anthonyclimbs/">
-											<FontAwesomeIcon className="Footer-icons" icon={faInstagram} size="lg" /></a></Col>
-									<Col xs={{ size: 'auto', offset: 0 }}>
-										<a href="https://medium.com/@AnthonyTam">
-											<FontAwesomeIcon className="Footer-icons" icon={faMedium} size="lg" /></a></Col>
-							</Row></p>
-							<br></br>
-						</Col>
+				<Col xs="auto" >
+					<Row className="Footer" id="contact">
+						<Col xs={{ size: 'auto', offset: 4 }}>
+							<a href="https://github.com/anthonytwh">
+								<FontAwesomeIcon className="Footer-icons" icon={faGithub} size="lg" /></a></Col>
+						<Col xs={{ size: 'auto', offset: 0 }}>
+							<a href="https://www.linkedin.com/in/anthony-tam/">
+								<FontAwesomeIcon className="Footer-icons" icon={faLinkedin} size="lg" /></a></Col>
+						<Col xs={{ size: 'auto', offset: 0 }}>
+							<a href="https://www.instagram.com/anthonyclimbs/">
+								<FontAwesomeIcon className="Footer-icons" icon={faInstagram} size="lg" /></a></Col>
+						<Col xs={{ size: 'auto', offset: 0 }}>
+							<a href="https://medium.com/@AnthonyTam">
+								<FontAwesomeIcon className="Footer-icons" icon={faMedium} size="lg" /></a></Col>
 					</Row>
-				</div>
-				<div className="Footer-foot"> 
-					© 2017-2020, AnthonyT.ca
-				</div>
+					<Row className="Footer-foot"> 
+						© 2017-2020, AnthonyT.ca
+					</Row>
+				</Col>
 			</div>	
 			)
 	}

@@ -41,7 +41,7 @@ class About extends Component {
 				</span>
 				<Row className="About-title-row" id="about" ref={this.about}>
 				</Row>
-				<Row>
+				<Row xs="4">
 					<Col>
 						<Toast className="About-toast">
 							<ToastHeader className="About-animate">
@@ -62,10 +62,15 @@ class About extends Component {
 						</Toast>
 					</Col>
 
-					<Col>
+					<Col xs="6">
 						<Row>
-							<Button className="Portfolio-badge" id="Employment"> Employment </Button>
-							<UncontrolledCollapse toggler="#Employment">
+							<Button className="Portfolio-badge" id="Employment"> <p> Employment </p> </Button>
+							<Button className="Portfolio-badge" id='Education'> <p> Education </p> </Button>
+							
+						</Row>
+						<Row>
+
+						<UncontrolledCollapse toggler="#Employment">
 								<Card className="Portfolio-card">
 									<Row className="Portfolio-row">
 										<Col>
@@ -110,9 +115,6 @@ class About extends Component {
 									</Row>
 								</Card>
 							</UncontrolledCollapse>
-						</Row>
-						<Row>
-							<Button className="Portfolio-badge" id='Education'> Education </Button>
 							<UncontrolledCollapse toggler='#Education'>
 								<Card className="Portfolio-card">
 									<Row className="Portfolio-row">

@@ -238,8 +238,12 @@ A B O U T   M E
   background:
     linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%);
   color: white;
-  /*padding-top: 25%;*/
-  padding-bottom: 20em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.About-col {
+  justify-content: center;
 }
 
 .About:after {
@@ -263,7 +267,7 @@ A B O U T   M E
 .About-toast {
   font-size: 15px;
   font-weight: 100;
-  margin-left: 10em;
+  /* margin-left: 10em; */
   max-height: 40em;
   max-width: 40em;
   overflow: hidden;
@@ -326,28 +330,28 @@ A B O U T   M E
   width: 100em;
   padding-top: 1em;   
   padding-bottom: 1em;
-  padding-left: 2em; 
-  padding-right: 2em;
+  padding-left: 1em; 
+  padding-right: 1em;
 }
 
 .About-body-paragraph {
   letter-spacing: 0.05em;
   text-align: justify;
-  max-width: 35em;
+  max-width: 38em;
 }
 
-.About-body-right {
+/* .About-body-right {
   font-size: 15px;
   float: right;
   margin-right: 10em;
-}
+} */
 
-.About-body-photo {
+/* .About-body-photo {
   border: 1px solid #222;
   box-shadow: 2px 2px 5px #111;
   width: 23.73em;
   height: 19em;
-}
+} */
 
 
 
@@ -467,13 +471,13 @@ P O R T F O L I O
   /*background: #555;*/
   background: rgb(34, 34, 34, 1)
     /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
-  padding-top: 2em;
-  padding-bottom: 10em;
+  padding-top: 5em;
+  padding-bottom: 5em;
   text-align: center;
   align-items: center;
 }
 
-.Portfolio-title{
+/* .Portfolio-title{
   color: lightgrey;
   font-size: 50px;
   letter-spacing: 0.2em;
@@ -483,38 +487,35 @@ P O R T F O L I O
   text-align: right;
   display: flex;
   position: relative;
-}
+} */
 
 .Portfolio-badge {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  /* text-align: right; */
   cursor: pointer;
   margin: 0 auto;
 
   background: #222;
-  border: 2px solid #222;
   border-color: #222;
-  border-top-color: #222;
-  /*border-bottom-color: #3E8FE2;*/
-  color: lightgrey;
+  color: white;
 
-  font-size: 40px;
-  letter-spacing: 0.2em;
+  font-size: 25px;
+  letter-spacing: 0.05em;
   font-weight: 100;
 
   width: 8em;
-  height: 2em;
-  margin-top: 3em;
+  height: 3em;
+  /* margin-top: 1em; */
 }
 
 .Portfolio-badge:after {
   position: absolute;
   content: '';
-  width: 0em; height: 0.05em;
-  margin-top: 1em;
+  width: 0em; height: 1px;
+  margin-top: 1.47em;
   display: block;
   right: 0;
   background: #3E8FE2;
@@ -527,10 +528,8 @@ P O R T F O L I O
   box-shadow: none;
   background: #272727;
   border-color: #272727;
-  border-top-color: #222;
-  transform:scale(1.025);
-  -webkit-transform:scale(1.025);
-
+  /* transform:scale(1);
+  -webkit-transform:scale(1); */
 }
 
 .Portfolio-badge:hover:after {
@@ -542,23 +541,22 @@ P O R T F O L I O
 .Portfolio-badge:focus {
   outline: none;
   box-shadow: none;
-  background: #272727;
+  background: #222; /* #272727; */
   border-color: none;
   color: lightgrey;
-  border-top-color: #222;
-  border-top-color: #3E8FE2;
+  border-color: #272727;
   border-bottom-color: #3E8FE2;
+  border-width: thin;
 }
 
 .Portfolio-card {
   background-color: #333;
   border-color: none;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
   box-shadow: 0px 5px 5px #111;
   margin-top: 2em;
+  max-height: 20em;
+  width: 50em;
+  overflow-y: auto;
 }
 
 .Portfolio-header {
@@ -566,7 +564,7 @@ P O R T F O L I O
   text-shadow: 1px 1px #444;
   text-align: left;
   letter-spacing: 0.05em;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 100;
 }
 
@@ -605,7 +603,7 @@ C O N T A C T
   margin: 0 auto;
   background-color: #333;
   box-shadow: 0px 5px 5px #111;
-  width: 50em;
+  width: 45em;
   padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 5em;
@@ -622,19 +620,44 @@ C O N T A C T
   margin: 0 auto;
 
   background: #222;
-  border: 2px solid #222;
   border-color: #222;
-  border-bottom-color: #3E8FE2;
   color: white;
   font-weight: 100;
 
-  font-size: 30px;
-  letter-spacing: 0.2em;
+  font-size: 25px;
+  letter-spacing: 0.05em;
   font-weight: 100;
 
   width: 10em;
   height: 2em;
   margin-top: 5em;
+}
+
+.Contact-badge:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 0.97em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
+.Contact-badge:hover {
+  outline: none;
+  box-shadow: none;
+  background: #272727;
+  border-color: #272727;
+  /* transform:scale(1);
+  -webkit-transform:scale(1); */
+}
+
+.Contact-badge:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3E8FE2;
 }
 
 .Contact-form {
@@ -709,6 +732,7 @@ F O O T E R
 
 */
 .Footer {
+  justify-content: center;
   background: url("mid-section.png");
   color: white;
   text-align: center;
@@ -746,6 +770,7 @@ F O O T E R
 }
 
 .Footer-foot {
+  justify-content: center;
   background-color: rgb(53, 53, 53) /* rgb(37, 37, 37) #292929;*/;
   font-size: 8pt;
   color: #888/*rgb(100, 100, 100)*/;
