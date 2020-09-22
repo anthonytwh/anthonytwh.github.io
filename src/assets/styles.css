@@ -269,7 +269,6 @@ A B O U T   M E
 .About-toast {
   font-size: 15px;
   font-weight: 100;
-  /* margin-left: 10em; */
   max-height: 40em;
   max-width: 40em;
   overflow: hidden;
@@ -495,6 +494,11 @@ P O R T F O L I O
   position: relative;
 } */
 
+/* .Portfolio-tabs:active {
+  background: pink;
+  border: none;
+} */
+
 .Portfolio-badge {
   display: flex;
   position: relative;
@@ -508,9 +512,10 @@ P O R T F O L I O
   border-color: #222;
   color: white;
 
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 25px;
   letter-spacing: 0.05em;
-  font-weight: 100;
+  font-weight: 50;
 
   width: 8em;
   height: 3em;
@@ -533,7 +538,8 @@ P O R T F O L I O
   outline: none;
   box-shadow: none;
   background: #272727;
-  border-color: #272727;
+  border: none;
+  /* border-color: #272727; */
   /* transform:scale(1);
   -webkit-transform:scale(1); */
 }
@@ -556,12 +562,15 @@ P O R T F O L I O
 }
 
 .Portfolio-card {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 14px;
+  font-weight: 2px;
   background-color: #333;
   border-color: none;
   box-shadow: 0px 5px 5px #111;
   margin-top: 2em;
-  max-height: 20em;
-  width: 50em;
+  max-height: 27em;
+  max-width: 50em;
   overflow-y: auto;
 }
 

@@ -22,9 +22,6 @@ class About extends Component {
 	  }
 
 	render () {
-		// const opacity = Math.min(this.state.currOpacity, 1);
-		// console.log("scrollY", window.scrollY, (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200)
-		// console.log("opacity:", opacity)
 		return (
 		    <div>
 				<Row className="About-title-row" id="about" ref={this.about}>
@@ -50,27 +47,28 @@ class About extends Component {
 							</ToastBody>
 						</Toast>
 					</Col>
-					<Col xs="6">
+					<Col xs="auto">
 						<Row>
-							<Nav tabs>
-								<NavItem Button className="Portfolio-badge" id="Employment">
-									<NavLink 
+							<Nav>
+								<NavItem className="Portfolio-badge" id="Employment">
+									<NavLink
 										className={classnames({ active: this.state.activeTab === '1' })}
 										onClick={() => { this.toggle('1'); }}>
 											<p> Employment </p> </NavLink>
 								</NavItem>
-								<NavItem Button className="Portfolio-badge" id='Education'>
+								<NavItem className="Portfolio-badge" id='Education'>
 									<NavLink
-										className={classnames({ active: this.state.activeTab === '2' })}
-										onClick={() => { this.toggle('2'); }}>
-											<p> Education </p> </NavLink>
+											className={classnames({ active: this.state.activeTab === '2' })}
+											onClick={() => { this.toggle('2'); }}>
+												<p> Education </p>
+									</NavLink>
 								</NavItem>
 							</Nav>
 							</Row>
 						<Row>
 							<TabContent activeTab={this.state.activeTab}>
 								<TabPane tabId="1">
-									{ this.state.activeTab == 1 ? 			
+									{ this.state.activeTab == 1 ? 
 										<Card className="Portfolio-card">
 											<Row className="Portfolio-row">
 												<Col>
