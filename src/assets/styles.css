@@ -130,7 +130,7 @@ H E A D E R
 */
 .Main {
   margin-top: 5em;  
-  margin-bottom: 6em;
+  margin-bottom: 5em;
 }
 
 .Main-jumbo {
@@ -183,7 +183,7 @@ TODO DESIGN:
   height: -5em;
   position: -webkit-sticky;
   position: sticky;
-  top: 0em;
+  top: 1em;
 }
 
 .Main-arrow-icon {
@@ -235,8 +235,9 @@ A B O U T   M E
 
 */
 .About {
-  background:
-    linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%);
+  /* background:
+    linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%); */
+  background: #222;
   color: white;
   padding-top: 2em;
   padding-bottom: 5em;

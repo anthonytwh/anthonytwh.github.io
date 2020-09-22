@@ -1,44 +1,18 @@
-import React, { Component, createRef } from 'react';
+import React, { Component } from 'react';
 import { Button, Row, Col, Toast, ToastBody, ToastHeader, Card, UncontrolledCollapse} from 'reactstrap';
 
 import '../assets/styles.css';
 import photo from '../assets/profilephoto.jpg';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
-
 
 class About extends Component {
 
-	constructor (props){
-		super(props);
-		this.about = createRef();
-		this.state = { currOpacity: 1 };
-	}
-
-	componentDidMount () { 
-		window.onscroll =()=>{ 
-			if (window.scrollY < 750){
-				this.setState({currOpacity: 1})
-			}
-			if (750 <= window.scrollY){
-				const newOpacity = (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200;
-				this.setState({currOpacity: newOpacity})
-			}
-		};
-		console.log("did this log?")
-		// this.clickAbout.scrollIntoView();
-	}
-
 	render () {
-		const opacity = Math.min(this.state.currOpacity, 1);
+		// const opacity = Math.min(this.state.currOpacity, 1);
 		// console.log("scrollY", window.scrollY, (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200)
 		// console.log("opacity:", opacity)
 		return (
 		    <div>
-		    	<span className="Main-arrow" style={{ opacity }}>
-					<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
-				</span>
 				<Row className="About-title-row" id="about" ref={this.about}>
 				</Row>
 				<Row xs="4">
