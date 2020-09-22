@@ -252,17 +252,18 @@ A B O U T   M E
 }
 
 .About-title {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 50px;
-  font-weight: 100;
-  letter-spacing: 0.15em;
+  font-weight: 5;
+  letter-spacing: 0.05em;
   padding-bottom: 2.5%;
 }
 
 .About-title-row {
   overflow: hidden;
   justify-content: center;
-  padding-top: 27em;
-  padding-bottom: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .About-toast {
@@ -277,8 +278,9 @@ A B O U T   M E
 }
 
 .About-animate {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 5;
   color: white;
   background: #222;
   border-color: #3E8FE2;
@@ -291,7 +293,7 @@ A B O U T   M E
 
 .About-animate span {
   letter-spacing: 0.05em;
-  font-weight: 100;
+  font-weight: 10;
   font-size: 25px;
   animation: Aboutimate 10s linear infinite 0s;
   opacity: 0;
@@ -326,6 +328,9 @@ A B O U T   M E
 }
 
 .About-body-left {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-weight: 5;
+  font-size: 15;
   background: #222;
   justify-content: left;
   width: 100em;
