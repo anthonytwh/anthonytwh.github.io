@@ -237,7 +237,7 @@ A B O U T   M E
 .About {
   /* background:
     linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%); */
-  background: #222;
+  background: #151515;
   color: white;
   padding-top: 2em;
   padding-bottom: 5em;
@@ -257,6 +257,32 @@ A B O U T   M E
   font-weight: 5;
   letter-spacing: 0.05em;
   padding-bottom: 2.5%;
+
+  background: none;
+}
+
+.About-title:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 0.97em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
+.About-title:hover {
+  outline: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+.About-title:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3E8FE2;
 }
 
 .About-title-row {
@@ -472,15 +498,6 @@ P O R T F O L I O
 
 
 */
-.Portfolio {
-  /*background: #555;*/
-  background: rgb(34, 34, 34, 1)
-    /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  text-align: center;
-  align-items: center;
-}
 
 /* .Portfolio-title{
   color: lightgrey;
@@ -613,10 +630,21 @@ C O N T A C T
 
 
 */
+
+.Portfolio {
+  background: #151515;
+  /* background: rgb(34, 34, 34, 1) */
+    /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+  align-items: center;
+}
+
 .Contact {
   align-items: center;
   margin: 0 auto;
-  background-color: #333;
+  background-color: #222;
   box-shadow: 0px 5px 5px #111;
   width: 45em;
   padding-top: 2em;
@@ -627,24 +655,25 @@ C O N T A C T
 }
 
 .Contact-badge {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
   margin: 0 auto;
 
-  background: #222;
-  border-color: #222;
-  color: white;
+  background: none;
+  border-color: #151515;
+  color: lightgrey;
   font-weight: 100;
 
-  font-size: 25px;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 30px;
   letter-spacing: 0.05em;
-  font-weight: 100;
+  font-weight: 25;
 
-  width: 10em;
-  height: 2em;
+  max-width: 5em;
+  /* height: 2em; */
   margin-top: 5em;
 }
 
@@ -663,8 +692,9 @@ C O N T A C T
 .Contact-badge:hover {
   outline: none;
   box-shadow: none;
-  background: #272727;
-  border-color: #272727;
+  cursor: default;
+  /* background: #272727;
+  border-color: #272727; */
   /* transform:scale(1);
   -webkit-transform:scale(1); */
 }
@@ -681,32 +711,34 @@ C O N T A C T
 }
 
 .Contact-label {
-  font-weight: 100;
-  font-size: 25px;
-  color: white;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 14px;
+  font-weight: 2px;
+  /* color: white; */
   letter-spacing: 0.05em;
   background-size: 0.5px 1em;
-  box-shadow:
+  /* box-shadow:
     inset 0 -0.8em #333,
-    inset 0 -0.85em white;
+    inset 0 -0.85em white; */
   display: inline;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .Contact-input {
-  background-color: #333;
-  border-color: #333;
-  border-bottom-color: #3E8FE2;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  background-color: #222;
+  border-color: #222;
+  border-bottom-color: lightgrey;
   color: white;
-  font-weight: 100;
+  font-weight: 10;
 }
 
 .Contact-input:focus {
-  background: #444;
+  background: #333;
   color: white;
-  border-color: #444;
-  border-top-color: #3E8FE2;
+  border-color: #222;
+  /* border-top-color: #3E8FE2; */
   border-bottom-color: #3E8FE2;
   cursor: default;
   box-shadow: none;
@@ -719,9 +751,9 @@ C O N T A C T
 }
 
 .Contact-button {
-  background-color: #333;
+  background-color: #252525;
   border-color: rgb(110, 117, 124);
-  color: white;
+  color: grey;
   font-weight: 100;
   height: 3em;
   width: 10em;
@@ -730,7 +762,7 @@ C O N T A C T
 .Contact-button:hover {
   background-color: #333;
   border-color: #3E8FE2;
-  color: #3E8FE2;
+  color: lightgrey;
   font-weight: 100;
   transform:scale(1.01);
 }
@@ -786,7 +818,8 @@ F O O T E R
 
 .Footer-foot {
   justify-content: center;
-  background-color: rgb(53, 53, 53) /* rgb(37, 37, 37) #292929;*/;
+  background-color:rgb(53, 53, 53) ;
+  /* background-color: rgb(53, 53, 53) rgb(37, 37, 37) #292929; */
   font-size: 8pt;
   color: #888/*rgb(100, 100, 100)*/;
   font-weight: 100;

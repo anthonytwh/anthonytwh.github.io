@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Row, Col, Toast, ToastBody, ToastHeader, Card, TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
+import { Row, Col, Toast, ToastBody, ToastHeader, Card, TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
 import classnames from 'classnames';
 
 import '../assets/styles.css';
@@ -25,7 +25,7 @@ class About extends Component {
 		return (
 		    <div>
 				<Row className="About-title-row" id="about" ref={this.about}>
-					<h1 className="About-title" id="about" ref={this.about}>$whoami</h1>
+					<Card className="About-title"> <h1>$whoami</h1> </Card>
 				</Row>
 				<Row>
 					<Col xs="6">
