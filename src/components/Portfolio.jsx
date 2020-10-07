@@ -16,7 +16,7 @@ class Portfolio extends Component {
 		return (
 		    <div>
 				<Container className="Portfolio" id="contact" ref={this.clickref}>
-			    	<Card className="Contact-badge" id='ContactMe'> <p> Contact </p> </Card>
+			    	<Card className="Contact-badge" id='ContactMe'> <h1> Contact </h1> </Card>
 			    		<ContactCard/>
 				</Container>
 		    </div>

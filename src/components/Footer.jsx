@@ -8,30 +8,26 @@ import { faGithub, faLinkedin, faInstagram, faMedium} from '@fortawesome/free-br
 
 class Footer extends Component {
 
-	constructor (props){
-		super(props);
-	}
-
 	render() {
 		return (
 			<div>
-				<Col xs="auto" >
+				<Col>
 					<Row className="Footer" id="contact">
-						<Col xs={{ size: 'auto', offset: 4 }}>
+						<Col xs={{ size: '3'}}>
 							<a href="https://github.com/anthonytwh">
 								<FontAwesomeIcon className="Footer-icons" icon={faGithub} size="lg" /></a></Col>
-						<Col xs={{ size: 'auto', offset: 0 }}>
+						<Col xs={{ size: '3'}}>
 							<a href="https://www.linkedin.com/in/anthony-tam/">
 								<FontAwesomeIcon className="Footer-icons" icon={faLinkedin} size="lg" /></a></Col>
-						<Col xs={{ size: 'auto', offset: 0 }}>
+						<Col xs={{ size: '3'}}>
 							<a href="https://www.instagram.com/anthonyclimbs/">
 								<FontAwesomeIcon className="Footer-icons" icon={faInstagram} size="lg" /></a></Col>
-						<Col xs={{ size: 'auto', offset: 0 }}>
+						<Col xs={{ size: '3'}}>
 							<a href="https://medium.com/@AnthonyTam">
 								<FontAwesomeIcon className="Footer-icons" icon={faMedium} size="lg" /></a></Col>
 					</Row>
 					<Row className="Footer-foot"> 
-						© 2017-2020, AnthonyT.ca
+						© 2020 anthonyt.ca
 					</Row>
 				</Col>
 			</div>	
