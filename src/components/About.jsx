@@ -66,7 +66,7 @@ class About extends Component {
 						<Row>
 							<TabContent activeTab={this.state.activeTab}>
 								<TabPane tabId="1">
-									{ this.state.activeTab === 1 ? 
+									{ this.state.activeTab == 1 ? 
 										<Card className="Portfolio-card">
 											<Row className="Portfolio-row">
 												<Col>
@@ -108,7 +108,7 @@ class About extends Component {
 									: null }
 								</TabPane>
 								<TabPane tabId="2">
-									{ this.state.activeTab === 2 ? 
+									{ this.state.activeTab == 2 ? 
 										
 									<Card className="Portfolio-card">
 										<Row className="Portfolio-row">
