@@ -130,7 +130,7 @@ H E A D E R
 */
 .Main {
   margin-top: 5em;  
-  margin-bottom: 6em;
+  margin-bottom: 5em;
 }
 
 .Main-jumbo {
@@ -162,12 +162,44 @@ H E A D E R
   text-shadow: 1px 1px 1px black;
   margin-left: 0.1em;
   margin-right: 0.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .Main-icons:hover {
   color: #3E8FE2;
   transform:scale(1.075);
 }
+
+.Main-modal {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  text-align: center;
+}
+
+.Main-modal-body {
+  font-size: 15px;
+  font-weight: 50;
+  letter-spacing: 1px;
+  background-color: #222;
+  color: white;
+}
+
+.Main-modal-footer {
+  justify-content: center;
+  background-color: #222;
+  border: none;
+}
+
+.Main-modal-button {
+  backgroud-color: grey;
+}
+
+.Main-modal-button:hover {
+  backgroud-color:#3E8FE2;
+}
+
+
+
 
 /* 
 
@@ -183,14 +215,15 @@ TODO DESIGN:
   height: -5em;
   position: -webkit-sticky;
   position: sticky;
-  top: 0em;
+  top: 1em;
 }
 
 .Main-arrow-icon {
   color: #333;
-  -webkit-animation: FadeInOut 1.5s linear infinite, ZoomInOut 1.5s linear infinite;
-  animation: FadeInOut 1.5s linear infinite, ZoomInOut 1.5s linear infinite;
+  -webkit-animation: FadeInOut 1.75s linear infinite, ZoomInOut 1.75s linear infinite;
+  animation: FadeInOut 1.75s linear infinite, ZoomInOut 1.75s linear infinite;
   margin: 0;
+  transition: color 0.5s ease;
 }
 
 @keyframes FadeInOut {
@@ -211,18 +244,22 @@ TODO DESIGN:
 
 @keyframes ZoomInOut {
   0%  { transform:scale(1.0); }
-  25%  { transform:scale(0.75); }
-  50%  { transform:scale(0.6); }
-  75%  { transform:scale(0.80); }
+  25%  { transform:scale(0.8); }
+  50%  { transform:scale(0.7); }
+  75%  { transform:scale(0.85); }
   100%  { transform:scale(1.1); }
 }
 
 @-webkit-keyframes ZoomInOut {
   0%  { transform:scale(1.0); }
-  25%  { transform:scale(0.75); }
-  50%  { transform:scale(0.6); }
-  75%  { transform:scale(0.80); }
+  25%  { transform:scale(0.8); }
+  50%  { transform:scale(0.7); }
+  75%  { transform:scale(0.85); }
   100%  { transform:scale(1.1); }
+}
+
+.Main-arrow-icon:hover {
+  color: #3E8FE2;
 }
 
 
@@ -235,11 +272,16 @@ A B O U T   M E
 
 */
 .About {
-  background:
-    linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%);
+  /* background:
+    linear-gradient(175deg, transparent 14.9%, #222 15.1%, #222 74.9%, #222 75.1%); */
+  background: #151515;
   color: white;
-  /*padding-top: 25%;*/
-  padding-bottom: 20em;
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+
+.About-col {
+  justify-content: center;
 }
 
 .About:after {
@@ -247,46 +289,78 @@ A B O U T   M E
 }
 
 .About-title {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 50px;
-  font-weight: 100;
-  letter-spacing: 0.15em;
+  font-weight: 5;
+  letter-spacing: 0.1em;
   padding-bottom: 2.5%;
+
+  background: none;
+}
+
+.About-title:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 0.97em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
+.About-title:hover {
+  outline: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+.About-title:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3E8FE2;
 }
 
 .About-title-row {
   overflow: hidden;
   justify-content: center;
-  padding-top: 27em;
-  padding-bottom: 2em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.About-content-row {
+  justify-content: center;
 }
 
 .About-toast {
   font-size: 15px;
   font-weight: 100;
-  margin-left: 10em;
   max-height: 40em;
   max-width: 40em;
   overflow: hidden;
   box-shadow: -2px 2px 5px #111;
   border-color: #222;
+  /* margin-left: 5em; */
 }
 
 .About-animate {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 5;
   color: white;
   background: #222;
   border-color: #3E8FE2;
   height: 4em;
   width: 50em;
   padding-bottom: 2em;
-  padding-left: 2em; 
-  padding-right: 2em;
+  padding-left: 1em; 
+  padding-right: 1em;
 }
 
 .About-animate span {
   letter-spacing: 0.05em;
-  font-weight: 100;
+  font-weight: 10;
   font-size: 25px;
   animation: Aboutimate 10s linear infinite 0s;
   opacity: 0;
@@ -320,36 +394,19 @@ A B O U T   M E
   100% { opacity: 0; }
 }
 
-.About-body-left {
+.About-body {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-weight: 25;
+  font-size: 14;
   background: #222;
-  justify-content: left;
-  width: 100em;
-  padding-top: 1em;   
-  padding-bottom: 1em;
-  padding-left: 2em; 
-  padding-right: 2em;
-}
+  justify-items: center;
 
-.About-body-paragraph {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+
   letter-spacing: 0.05em;
   text-align: justify;
-  max-width: 35em;
 }
-
-.About-body-right {
-  font-size: 15px;
-  float: right;
-  margin-right: 10em;
-}
-
-.About-body-photo {
-  border: 1px solid #222;
-  box-shadow: 2px 2px 5px #111;
-  width: 23.73em;
-  height: 19em;
-}
-
-
 
 /* 
 
@@ -463,17 +520,8 @@ P O R T F O L I O
 
 
 */
-.Portfolio {
-  /*background: #555;*/
-  background: rgb(34, 34, 34, 1)
-    /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
-  padding-top: 2em;
-  padding-bottom: 10em;
-  text-align: center;
-  align-items: center;
-}
 
-.Portfolio-title{
+/* .Portfolio-title{
   color: lightgrey;
   font-size: 50px;
   letter-spacing: 0.2em;
@@ -483,6 +531,15 @@ P O R T F O L I O
   text-align: right;
   display: flex;
   position: relative;
+} */
+
+/* .Portfolio-tabs:active {
+  background: pink;
+  border: none;
+} */
+
+.Portfolio-BadgeNav {
+  margin-left: 25.5em;
 }
 
 .Portfolio-badge {
@@ -490,91 +547,94 @@ P O R T F O L I O
   position: relative;
   justify-content: center;
   align-items: center;
-  text-align: center;
   cursor: pointer;
   margin: 0 auto;
 
   background: #222;
-  border: 2px solid #222;
   border-color: #222;
-  border-top-color: #222;
-  /*border-bottom-color: #3E8FE2;*/
-  color: lightgrey;
+  border-bottom-color: pink;
+  color: white;
 
-  font-size: 40px;
-  letter-spacing: 0.2em;
-  font-weight: 100;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  font-weight: 10;
 
   width: 8em;
-  height: 2em;
-  margin-top: 3em;
-}
-
-.Portfolio-badge:after {
-  position: absolute;
-  content: '';
-  width: 0em; height: 0.05em;
-  margin-top: 1em;
-  display: block;
-  right: 0;
-  background: #3E8FE2;
-  transition: width .25s ease;
-  -webkit-transition: width .25s ease;
+  height: 3em;
+  padding-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 .Portfolio-badge:hover {
   outline: none;
   box-shadow: none;
   background: #272727;
+  border: none;
   border-color: #272727;
-  border-top-color: #222;
-  transform:scale(1.025);
-  -webkit-transform:scale(1.025);
-
+  transform:scale(1);
+  -webkit-transform:scale(1);
 }
 
 .Portfolio-badge:hover:after {
   width: 100%;
   left: 0;
-  background: #3E8FE2;
+  background-color: #3E8FE2;
+}
+
+.Portfolio-badge:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 2.5em;
+  display: block;
+  right: 0;
+  background-color: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
 }
 
 .Portfolio-badge:focus {
   outline: none;
   box-shadow: none;
-  background: #272727;
+  background: #222; /* #272727; */
   border-color: none;
   color: lightgrey;
-  border-top-color: #222;
-  border-top-color: #3E8FE2;
+  border-color: #272727;
   border-bottom-color: #3E8FE2;
+  border-width: thin;
 }
 
 .Portfolio-card {
-  background-color: #333;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 15px;
+  font-weight: 1px;
+  letter-spacing: 0.05em;
+  background-color: #222;
   border-color: none;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  box-shadow: 0px 5px 5px #111;
-  margin-top: 2em;
+  box-shadow: -2px 2px 5px #111;
+  margin-top: 1em;
+  max-height: 23em;
+  max-width: 54em;
+  overflow-y: auto;
 }
 
 .Portfolio-header {
-  color: white;
+  color: lightgrey;
   text-shadow: 1px 1px #444;
   text-align: left;
   letter-spacing: 0.05em;
-  font-size: 25px;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 50;
 }
 
 .Portfolio-body {
   color: white;
   text-align: left;
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 14px;
+  font-weight: 25;
 }
 
 .Portfolio-row {
@@ -600,61 +660,78 @@ C O N T A C T
 
 
 */
+
+.Portfolio {
+  background: #151515;
+  /* background: rgb(34, 34, 34, 1) */
+    /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+  align-items: center;
+}
+
 .Contact {
   align-items: center;
   margin: 0 auto;
-  background-color: #333;
+  background-color: #222;
   box-shadow: 0px 5px 5px #111;
-  width: 50em;
+  width: 45em;
   padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 5em;
   padding-right: 5em;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .Contact-badge {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
   margin: 0 auto;
 
-  background: #222;
-  border: 2px solid #222;
-  border-color: #222;
-  /*border-bottom-color: #3E8FE2;*/
-  color: white;
-  font-weight: 100;
+  background: none;
+  border-color: #151515;
+  color: lightgrey;
 
-  font-size: 30px;
-  letter-spacing: 0.2em;
-  font-weight: 100;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 50px;
+  font-weight: 5;
+  letter-spacing: 0.1em;
 
-  width: 5em;
-  height: 2em;
-  margin-top: 5em;
+  max-width: 5em;
+  /* height: 2em; */
+  margin-top: 3em;
+}
+
+.Contact-badge:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 0.97em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
 }
 
 .Contact-badge:hover {
   outline: none;
   box-shadow: none;
-  background: #272727;
-  border-color: #272727;
-  color: white;
-  border-bottom-color: #3E8FE2;
-  transform:scale(1.025);
+  cursor: default;
+  /* background: #272727;
+  border-color: #272727; */
+  /* transform:scale(1);
+  -webkit-transform:scale(1); */
 }
 
-.Contact-badge:focus {
-  outline: none;
-  box-shadow: none;
-  background: #272727;
-  border-color: none;
-  color: white;
-  border-top-color: #3E8FE2;
-  border-bottom-color: #3E8FE2;
+.Contact-badge:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3E8FE2;
 }
 
 .Contact-form {
@@ -663,34 +740,36 @@ C O N T A C T
 }
 
 .Contact-label {
-  font-weight: 100;
-  font-size: 25px;
-  color: white;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 14px;
+  font-weight: 2px;
+  /* color: white; */
   letter-spacing: 0.05em;
   background-size: 0.5px 1em;
-  box-shadow:
+  /* box-shadow:
     inset 0 -0.8em #333,
-    inset 0 -0.85em white;
+    inset 0 -0.85em white; */
   display: inline;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .Contact-input {
-  background-color: #333;
-  border-color: #333;
-  border-bottom-color: #3E8FE2;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  background-color: #222;
+  border-color: #222;
+  border-bottom-color: lightgrey;
   color: white;
-  font-weight: 100;
+  font-weight: 10;
 }
 
 .Contact-input:focus {
-  background: #444;
+  background: #252525;
   color: white;
-  border-color: #444;
-  border-top-color: #3E8FE2;
+  border-color: #222;
+  /* border-top-color: #3E8FE2; */
   border-bottom-color: #3E8FE2;
-  cursor: default;
+  cursor: auto;
   box-shadow: none;
   outline: none;
 }
@@ -701,20 +780,23 @@ C O N T A C T
 }
 
 .Contact-button {
-  background-color: #333;
+  background-color: #252525;
   border-color: rgb(110, 117, 124);
-  color: white;
-  font-weight: 100;
+  color: grey;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 14px;
+  font-weight: 25;
   height: 3em;
   width: 10em;
+  transition: all 0.5s ease;
 }
 
 .Contact-button:hover {
-  background-color: #444;
+  background-color: #333;
   border-color: #3E8FE2;
-  color: white;
+  color: lightgrey;
   font-weight: 100;
-  transform:scale(1.025);
+  transform:scale(1.01);
 }
 
 .Contact-honey{
@@ -729,10 +811,14 @@ F O O T E R
 
 */
 .Footer {
+  display: absolute;
+  justify-content: center;
   background: url("mid-section.png");
   color: white;
-  text-align: center;
-  padding-top: 1%
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  fill-opacity: 80%;
 }
 
 .Footer-head {
@@ -757,20 +843,22 @@ F O O T E R
 
 .Footer-icons {
   color: white;
+  transition: all 0.3s ease;
 }
 
 .Footer-icons:hover {
-  color: #3E8FE2;
+  color: lightgrey; /* #3E8FE2 */
   transform:scale(1.1);
   opacity: 0.9;
 }
 
 .Footer-foot {
-  background-color: rgb(53, 53, 53) /* rgb(37, 37, 37) #292929;*/;
+  justify-content: center;
+  background-color: none;
+  /* background-color:rgb(53, 53, 53) ; */
+  /* background-color: rgb(53, 53, 53) rgb(37, 37, 37) #292929; */
   font-size: 8pt;
   color: #888/*rgb(100, 100, 100)*/;
   font-weight: 100;
   bottom: 0;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
 }

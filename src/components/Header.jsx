@@ -45,13 +45,13 @@ class Header extends Component {
 
 	click = (link) => {
 		window.location = link;
-		console.log("Link: ", link);
+		// console.log("Link: ", link);
 		let clickhash = link.replace('/#', '');
-		console.log("ClickHash: ", clickhash);
-		console.log("Clicked: ", link);
+		// console.log("ClickHash: ", clickhash);
+		// console.log("Clicked: ", link);
 
 		if (clickhash) {
-			console.log("Yo.");
+			console.log("Jump to ", clickhash);
 		}
 
 		// if (clickhash) {
@@ -91,9 +91,6 @@ class Header extends Component {
 							<Nav className="ml-auto" navbar>
 								<NavItem>
 									<NavLink><Link className="Header-link" onClick={() => this.click('/#about')}> About </Link></NavLink>
-								</NavItem>
-								<NavItem>
-									<NavLink><Link to='/#portfolio' className="Header-link" onClick={() => this.click('/#portfolio')}> Portfolio </Link></NavLink>
 								</NavItem>
 								<NavItem>
 									<NavLink><Link to='/#contact' className="Header-link" onClick={() => this.click('/#contact')}> Contact </Link></NavLink>

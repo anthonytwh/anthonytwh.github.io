@@ -1,76 +1,142 @@
-import React, { Component, createRef } from 'react';
-import { Row, Col, Toast, ToastBody, ToastHeader } from 'reactstrap';
+import React, { Component } from 'react';
+import { Row, Col, Toast, ToastBody, ToastHeader, Card, TabContent, TabPane, Nav, NavItem, NavLink} from 'reactstrap';
+import classnames from 'classnames';
 
 import '../assets/styles.css';
-import photo from '../assets/profilephoto.jpg';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
-
 
 class About extends Component {
 
-	constructor (props){
+	constructor(props) {
 		super(props);
-		this.about = createRef();
-		this.state = { currOpacity: 1 };
-	}
-
-	componentDidMount () { 
-		window.onscroll =()=>{ 
-			if (window.scrollY < 750){
-				this.setState({currOpacity: 1})
-			}
-			if (750 <= window.scrollY){
-				const newOpacity = (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200;
-				this.setState({currOpacity: newOpacity})
-			}
+	
+		this.toggleTab = this.toggleTab.bind(this);
+		this.state = {
+		  activeTab: '1'
 		};
-		console.log("did this log?")
-		// this.clickAbout.scrollIntoView();
-	}
+	  }
+	
+	  toggleTab(tab) {
+		if (this.state.activeTab !== tab) {
+		  this.setState({ activeTab: tab });
+		}
+	  }
 
 	render () {
-		const opacity = Math.min(this.state.currOpacity, 1);
-		// console.log("scrollY", window.scrollY, (200 - ((Math.ceil(window.scrollY/ 25)*25) - 750))/200)
-		// console.log("opacity:", opacity)
 		return (
 		    <div>
-		    	<span className="Main-arrow" style={{ opacity }}>
-					<FontAwesomeIcon className="Main-arrow-icon" icon={faAngleDoubleDown} size="3x" />
-				</span>
-				<Row className="About-title-row">
-					<h1 className="About-title" id="about" ref={this.about}>About Me</h1>
+				<Row className="About-title-row" id="about" ref={this.about}>
+					<Card className="About-title"> <h1>$whoami</h1> </Card>
 				</Row>
-				<Row>
-					<Col>
+				<Row className="About-content-row">
+					<Col xs="5">
 						<Toast className="About-toast">
 							<ToastHeader className="About-animate">
-								<span> <p> Product Design and Software Development </p></span>
-								<span> <p> Cyber Security and analytics</p></span>
-								<span> <p> Finance and Investing </p></span>
-								<span> <p> Food + Travel </p></span>
+								<span> <p> Software Development </p></span>
+								<span> <p> Data Science </p></span>
+								<span> <p> Cyber Security</p></span>
+								<span> <p> Product Design </p></span>
 							</ToastHeader>
-							<ToastBody className="About-body-left">
-									<p className="About-body-paragraph"> 
-									Anthony is currently a Cyber Security Threat Analyst and Developer at Darktrace, an AI/ML cyber security company, based in Toronto. 
+							<ToastBody className="About-body">
+									Anthony is a Lead Security Developer at Darktrace, a high-growth cyber security company using artificial intelligence (AI) and machine learning (ML) to detect and respond to anomalous threats and real-time attacks.
 									<br></br><br></br>
-									His primary role is to support the Canadian offices in pre sales, post sales and threat intelligence as the lead analyst, and North 
-									American operations as the lead model developer.
-									He has also worked on multiple internal tools and customer-facing software for improving integrations and custom use-cases of the Darktrace 
-									product for strategic accounts. He is always working on solutions to provide improvements in this product space.
+									He leads the threat model development team in North America, working in research and development to expand threat detection capabilities in the network, cloud, and SaaS platforms. He also supports consultancy efforts and technical sales operations as a subjet matter expert. 
 									<br></br><br></br>
-									Anthony is always open to learning about new and exciting opportunities in the tech and fintech fields. Please feel free to reach out and connect! 
-									</p>
+									Anthony is always happy to connect about new or exciting opportunities, or anything tech!
 							</ToastBody>
 						</Toast>
 					</Col>
-
-					<Col>
-						<div className="About-body-right">
-							<br></br><br></br>
-							<img src={photo} width="320" height="256" className="About-body-photo" alt="Anthony Tam" />
-						</div>
+					<Col xs="auto">
+						<Row>
+							<Nav className="Portfolio-BadgeNav">
+								<NavItem className="Portfolio-badge" id="Employment">
+									<NavLink
+										className={classnames({ active: this.state.activeTab === '1' })}
+										onClick={() => { this.toggleTab('1'); }}>
+											<p> Experience </p> </NavLink>
+								</NavItem>
+								<NavItem className="Portfolio-badge" id='Education'>
+									<NavLink
+											className={classnames({ active: this.state.activeTab === '2' })}
+											onClick={() => { this.toggleTab('2'); }}>
+												<p> Education </p>
+									</NavLink>
+								</NavItem>
+							</Nav>
+							</Row>
+						<Row>
+							<TabContent activeTab={this.state.activeTab}>
+								<TabPane tabId="1">
+									{ this.state.activeTab == 1 ? 
+										<Card className="Portfolio-card">
+											<Row className="Portfolio-row">
+												<Col>
+													<p className="Portfolio-header"> Darktrace </p>
+													<Row>
+														<Col><p className="Portfolio-body" style={{ textAlign: "left", color: "lightgrey" }}> Lead Model Developer </p></Col>
+														<Col><p className="Portfolio-body" style={{ textAlign: "right", color: "lightgrey" }}> Toronto/Remote, 2019 - present </p></Col>
+													</Row>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Maintain over 500 threat models, covering detections in the network, cloud (ex. AWS, Azure, GCP, etc.) and SaaS (ex. M365, GSuite, Okta, etc.) platforms.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Develop and manage the data infrastructure and custom analytical tools used by the global threat model development team.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Work closely with product software developers to resolve bugs, provide customer feedback and general product improvements.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developer and maintainer of the Python Darktrace API library, a simplification of the Darktrace REST API for Python.</p>
+												</Col>
+											</Row>
+											<Row className="Portfolio-row">
+												<Col>
+													<Row>
+														<Col><p className="Portfolio-body" style={{ textAlign: "left", color: "lightgrey" }}> Cyber Threat Analyst </p></Col>
+														<Col><p className="Portfolio-body" style={{ textAlign: "right", color: "lightgrey" }}> Toronto, 2018 - 2019</p></Col>
+													</Row>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Lead analyst in Canada, supporting strategic accounts and pre/post-sale engagements as a subject matter Expert.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Investigated active threats and live compromises in customer environments, compiling highly-detailed threat reports for executives and technical clients.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Contributed over hundreds of IOC's to the internal Darktrace threat intelligence feed from threat research activities.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Presented at customer events, providing knowledge and expertise of the Darktrace product to clients.</p>
+												</Col>
+											</Row>
+											<Row className="Portfolio-row">
+												<Col>
+													<Row>
+														<Col><p className="Portfolio-body" style={{ textAlign: "left", color: "lightgrey" }}> Cyber Security Engineer </p></Col>
+														<Col><p className="Portfolio-body" style={{ textAlign: "right", color: "lightgrey" }}> Toronto, 2017 - 2018 </p></Col>
+													</Row>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Managed Darktrace enterprise integrations for customers in network, virtual and cloud environments.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Traveled weekly to lead onsite technical integrations with the customer security teams, managers and executives.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }}>  • Contributed to over 30% growth of the Canadian customer base from proof-of-value customer trials in one year.</p>
+												</Col>
+											</Row>
+										</Card>
+									: null }
+								</TabPane>
+								<TabPane tabId="2">
+									{ this.state.activeTab == 2 ? 
+										
+									<Card className="Portfolio-card">
+										<Row className="Portfolio-row">
+											<Col>
+												<p className="Portfolio-header"> McMaster University</p>
+												<Row>
+													<Col><p className="Portfolio-body" style={{ textAlign: "left", color: "lightgrey" }}> Bachelor of Engineering & Management </p></Col>
+													<Col><p className="Portfolio-body" style={{ textAlign: "right", color: "lightgrey" }}> Hamilton ON, 2012 - 2017 </p></Col>
+												</Row>	
+												<p className="Portfolio-body" style={{ textIndent: "1em" }}> • Engineering and business management minor with a specilization in robotics and design. </p>												
+											</Col>
+										</Row>
+										<Row className="Portfolio-row">
+											<Col>
+												<p className="Portfolio-header"> Nanyang Technological University </p>
+												<Row>
+													<Col><p className="Portfolio-body" style={{ textAlign: "left", color: "lightgrey" }}> International Exchange Program </p></Col>
+													<Col><p className="Portfolio-body" style={{ textAlign: "right", color: "lightgrey" }}> Singapore SG, 2014 - 2015 </p></Col>
+												</Row>
+												<p className="Portfolio-body" style={{ textIndent: "1em" }}> • Mostly traveled, sometimes studied, and had an awesome time. </p>
+											</Col>
+										</Row>
+									</Card>
+									
+									: null }
+								</TabPane>
+							</TabContent>
+						</Row>
 					</Col>
 				</Row>
 		    </div>

@@ -4,7 +4,7 @@ import { Card, Col, Row, Button, Form, FormGroup, Input } from 'reactstrap';
 import '../assets/styles.css';
 
 
-class Contact extends Component {
+class ContactCard extends Component {
 
 	constructor (props){
 		super(props);
@@ -65,4 +65,4 @@ class Contact extends Component {
 	}
 }
 
-export default Contact;
+export default ContactCard;
