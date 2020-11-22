@@ -75,10 +75,10 @@ class About extends Component {
 														<Col><p className="Portfolio-body" style={{ textAlign: "left", color: "lightgrey" }}> Lead Model Developer </p></Col>
 														<Col><p className="Portfolio-body" style={{ textAlign: "right", color: "lightgrey" }}> Toronto/Remote, 2019 - present </p></Col>
 													</Row>
-													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Maintain over 500 threat models, covering detections in the network, cloud (ex. AWS, Azure, GCP, etc.) and SaaS (ex. M365, GSuite, Okta, etc.) platforms.</p>
-													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Develop and manage the data infrastructure and custom analytical tools used by the global threat model development team.</p>
-													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Work closely with product software developers to resolve bugs, provide customer feedback and general product improvements.</p>
-													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Developer and maintainer of the Python Darktrace API library, a simplification of the Darktrace REST API for Python.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Research and develop models to detect adversarial attacks in enterprise networks, cloud, and saas environments.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Develop and maintain analytical tools and infrastructure (full-stack) for data analysis/research and development.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Maintainer of the Darktrace Python library, a closed-source library for integration with Darktrace REST API.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Work closely with product development teams to resolve issues, provide feedback and general feature improvements.</p>
 												</Col>
 											</Row>
 											<Row className="Portfolio-row">
@@ -89,7 +89,7 @@ class About extends Component {
 													</Row>
 													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Lead analyst in Canada, supporting strategic accounts and pre/post-sale engagements as a subject matter Expert.</p>
 													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Investigated active threats and live compromises in customer environments, compiling highly-detailed threat reports for executives and technical clients.</p>
-													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Contributed over hundreds of IOC's to the internal Darktrace threat intelligence feed from threat research activities.</p>
+													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Contributed hundreds of IOC's to the internal threat intel repository through research and post-morten investigations.</p>
 													<p className="Portfolio-body" style={{ textIndent: "5%" }} > • Presented at customer events, providing knowledge and expertise of the Darktrace product to clients.</p>
 												</Col>
 											</Row>
