@@ -129,16 +129,14 @@ H E A D E R
 
 */
 .Main {
-  margin-top: 5em;  
+  /* margin-top: 5em;   */
+  padding-top: 2em;
   margin-bottom: 5em;
 }
 
 .Main-jumbo {
+  /* padding-top: 5em;   */
   background: none;
-}
-
-.Main-heading {
-  /*placeholder*/
 }
 
 .Main-title {
@@ -146,8 +144,13 @@ H E A D E R
   font-weight: 100;
 }
 
-.Main-subtitle {
-  /*placeholder*/
+.Main-title-mobile {
+  font-size: 80px;
+  font-weight: 100;
+}
+
+.Main-subtitle-mobile {
+  font-size: 15px;
 }
 
 .Main-body {
@@ -155,6 +158,13 @@ H E A D E R
   padding-bottom: 5em;
   margin-left: 25em;
   margin-right: 25em;
+}
+
+.Main-body-mobile {
+  padding-top: 2em;
+  padding-bottom: 5em;
+  margin-left: 10em;
+  margin-right: 10em;
 }
 
 .Main-icons {
@@ -386,10 +396,10 @@ A B O U T   M E
 
 @keyframes Aboutimate {
   0% { opacity: 0; }
-  5% { opacity: 0; transform: translateX(-50px); }
+  5% { opacity: 0; transform: translateX(-25px); }
   10% { opacity: 1; transform: translateX(0px); }
   25% { opacity: 1; transform: translateX(0px); }
-  30% { opacity: 0; transform: translateX(50px); }
+  30% { opacity: 0; transform: translateX(25px); }
   80% { opacity: 0; }
   100% { opacity: 0; }
 }
