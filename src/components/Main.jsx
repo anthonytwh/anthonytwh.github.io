@@ -86,12 +86,12 @@ class Main extends Component {
                         <Row className="Main-body-mobile">
                             <Col>
                                 <a href="https://www.linkedin.com/in/anthony-tam/">
-                                <FontAwesomeIcon className="Main-icons" icon={faLinkedin} size="2x"/></a></Col>
+                                <FontAwesomeIcon className="Main-icons-mobile" icon={faLinkedin} size="2x"/></a></Col>
                             <Col>
                                 <a href="https://github.com/anthonytwh">
-                                <FontAwesomeIcon className="Main-icons" icon={faGithub} size="2x" /></a></Col>
+                                <FontAwesomeIcon className="Main-icons-mobile" icon={faGithub} size="2x" /></a></Col>
                             <Col>
-                                <FontAwesomeIcon onClick={this.toggleModal} className="Main-icons" icon={faFileAlt} size="2x"/>
+                                <FontAwesomeIcon onClick={this.toggleModal} className="Main-icons-mobile" icon={faFileAlt} size="2x"/>
                                 <Modal className="Main-modal" isOpen={this.state.showModal} toggle={this.toggleModal}>
                                         <ModalBody className="Main-modal-body"> Anthony's resume is currently unavailable. Please reach out below for information.</ModalBody>
                                         <ModalFooter className="Main-modal-footer">
@@ -100,7 +100,7 @@ class Main extends Component {
                                     </Modal></Col>
                             <Col>
                                 <a href="mailto:contact@anthonyt.ca">
-                                <FontAwesomeIcon className="Main-icons" icon={faEnvelope} size="2x" /></a></Col>
+                                <FontAwesomeIcon className="Main-icons-mobile" icon={faEnvelope} size="2x" /></a></Col>
                         </Row>
                         </Jumbotron>
                         <span className="Main-arrow" style={{ opacity }}>

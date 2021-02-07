@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react';
-import { Card, Container } from 'reactstrap';
+import { Card, Container, Row } from 'reactstrap';
 import Responsive from 'react-responsive-decorator';
 
 import ContactCard from '../components/ContactCard.jsx'
@@ -37,15 +37,19 @@ class Portfolio extends Component {
             <div>
                 {isMobile ?
                 // Mobile //
-                    <Container className="Portfolio-mobile" id="contact" ref={this.clickref}>
-                        <Card className="Contact-badge-mobile" id='ContactMe'> <h1> Contact </h1> </Card>
-                            <ContactCard/>
-                    </Container>:
+                    <Row className="Contact-row-mobile">
+                        <Container className="Portfolio-mobile" id="contact" ref={this.clickref}>
+                            <Card className="Contact-badge-mobile" id='ContactMe'> <h1> Contact </h1> </Card>
+                                <ContactCard/>
+                        </Container>
+                    </Row>:
                 // Not Mobile //
+                    <Row className="Contact-row">
                         <Container className="Portfolio" id="contact" ref={this.clickref}>
                             <Card className="Contact-badge" id='ContactMe'> <h1> Contact </h1> </Card>
                                 <ContactCard/>
                         </Container>
+                    </Row>
                 }
             </div>
             )

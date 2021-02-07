@@ -163,8 +163,8 @@ H E A D E R
 .Main-body-mobile {
   padding-top: 2em;
   padding-bottom: 5em;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 8em;
+  margin-right: 8em;
 }
 
 .Main-icons {
@@ -173,12 +173,26 @@ H E A D E R
   margin-left: 0.1em;
   margin-right: 0.1em;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.12s ease;
+}
+
+.Main-icons-mobile {
+  color: #333;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 0.05em;
+  margin-right: 0.05em;
+  cursor: pointer;
+  transition: all 0.12s ease;
 }
 
 .Main-icons:hover {
   color: #3E8FE2;
-  transform:scale(1.075);
+  transform:scale(1.1);
+}
+
+.Main-icons-mobile:hover {
+  color: #3E8FE2;
+  transform:scale(1.1);
 }
 
 .Main-modal {
@@ -859,6 +873,16 @@ C O N T A C T
 
 */
 
+.Contact-row {
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.Contact-row-mobile {
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
 .Portfolio {
   background: #151515;
   /* background: rgb(34, 34, 34, 1) */
@@ -870,11 +894,15 @@ C O N T A C T
 }
 
 .Portfolio-mobile {
+  display:grid; 
   background: #151515;
   /* background: rgb(34, 34, 34, 1) */
     /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
   padding-top: 3em;
   padding-bottom: 3em;
+  margin-right: 5em;
+  margin-left: 5em;
+  justify-content: center;
   text-align: center;
   align-items: center;
 }
@@ -1176,13 +1204,13 @@ F O O T E R
 
 .Footer-icons {
   color: white;
-  transition: all 0.3s ease;
+  transition: all 0.12s ease;
 }
 
 .Footer-icons:hover {
   color: lightgrey; /* #3E8FE2 */
-  transform:scale(1.1);
-  opacity: 0.9;
+  transform:scale(1.25);
+  opacity: 0.95;
 }
 
 .Footer-foot {
@@ -1191,6 +1219,17 @@ F O O T E R
   /* background-color:rgb(53, 53, 53) ; */
   /* background-color: rgb(53, 53, 53) rgb(37, 37, 37) #292929; */
   font-size: 8pt;
+  color: #888/*rgb(100, 100, 100)*/;
+  font-weight: 100;
+  bottom: 0;
+}
+
+.Footer-foot-mobile {
+  justify-content: center;
+  background-color: none;
+  /* background-color:rgb(53, 53, 53) ; */
+  /* background-color: rgb(53, 53, 53) rgb(37, 37, 37) #292929; */
+  font-size: 7pt;
   color: #888/*rgb(100, 100, 100)*/;
   font-weight: 100;
   bottom: 0;
