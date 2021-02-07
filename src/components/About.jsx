@@ -180,7 +180,6 @@ class About extends Component {
                                     </Toast>
                                 </Col>
                                 <Col xs="auto">
-                                    <Row>
                                         <Nav className="Portfolio-BadgeNav">
                                             <NavItem className="Portfolio-badge" id="Employment">
                                                 <NavLink
@@ -196,8 +195,6 @@ class About extends Component {
                                                 </NavLink>
                                             </NavItem>
                                         </Nav>
-                                    </Row>
-                                    <Row>
                                         <TabContent activeTab={this.state.activeTab}>
                                             <TabPane tabId="1">
                                                 { this.state.activeTab == 1 ? 
@@ -266,11 +263,9 @@ class About extends Component {
                                                         </Col>
                                                     </Row>
                                                 </Card>
-                                                
                                                 : null }
                                             </TabPane>
                                         </TabContent>
-                                    </Row>
                                 </Col>
                             </Row>
                         </div>

@@ -672,14 +672,16 @@ P O R T F O L I O
 
 .Portfolio-BadgeNav {
   margin-left: 25.5em;
+  /* justify-self: right; */
 }
 
 .Portfolio-BadgeNav-mobile {
   /* position: absolute; */
   /* display: grid; */
-  margin-left: 30.5em;
+  /* margin-left: 29.3em; */
   /* padding-left:25.5em; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  justify-self: right;
   margin-top: 2em;
   /* width: 20em; */
   /* background-color:red; */
