@@ -36,6 +36,18 @@ G L O B A L
   margin-right: 0;
 }
 
+.nav-link {
+  color: inherit;
+}
+
+.nav-link:active {
+  color: inherit;
+}
+
+.nav-link:hover {
+  color: inherit;
+}
+
 
 
 
