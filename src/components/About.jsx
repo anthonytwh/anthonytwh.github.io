@@ -67,7 +67,6 @@ class About extends Component {
                         </Row>
                         <Row className="About-content-lower-row-mobile">
                             <Col className="Portfolio-Center-Col-Mobile">
-                                <Row>
                                     <Nav className="Portfolio-BadgeNav-mobile">
                                         <NavItem className="Portfolio-badge-mobile" id="Employment">
                                             <NavLink
@@ -83,8 +82,6 @@ class About extends Component {
                                             </NavLink>
                                         </NavItem>
                                     </Nav>
-                                </Row>
-                                <Row>
                                     <TabContent activeTab={this.state.activeTab}>
                                         <TabPane tabId="1">
                                             { this.state.activeTab == 1 ? 
@@ -156,7 +153,6 @@ class About extends Component {
                                             : null }
                                         </TabPane>
                                     </TabContent>
-                                </Row>
                             </Col>
                         </Row>
                     </div>:
