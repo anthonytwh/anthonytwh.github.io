@@ -45,7 +45,6 @@ class About extends Component {
                 {isMobile ?
                     // Mobile //
                     <div>
-                        
                         <Row className="About-title-row" id="about" ref={this.about}>
                             <Card className="About-title-mobile"> <h1>$whoami</h1> </Card>
                         </Row>

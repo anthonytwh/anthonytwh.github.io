@@ -13,8 +13,11 @@ import './assets/styles.css';
 
 class App extends Component {
 
-    state = {
-        isMobile: false
+    constructor (props){
+        super(props);
+        this.state = {
+            isMobile: false
+        };
     }
     
     componentDidMount() {
@@ -29,10 +32,6 @@ class App extends Component {
                 isMobile: true
             });
         });
-    }
-
-    constructor (props){
-        super(props);
     }
 
     render() {

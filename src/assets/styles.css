@@ -869,12 +869,35 @@ C O N T A C T
   align-items: center;
 }
 
+.Portfolio-mobile {
+  background: #151515;
+  /* background: rgb(34, 34, 34, 1) */
+    /*linear-gradient(185deg, rgba(0, 0, 0, 0) 10.9%, rgb(34, 34, 34, 1) 11.1%)*/;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  align-items: center;
+}
+
 .Contact {
   align-items: center;
   margin: 0 auto;
   background-color: #222;
   box-shadow: 0px 5px 5px #111;
   width: 45em;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin-top: 3em;
+}
+
+.Contact-mobile {
+  align-items: center;
+  margin: 0 auto;
+  background-color: #222;
+  box-shadow: 0px 5px 5px #111;
+  width: 37.5em;
   padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 5em;
@@ -904,7 +927,41 @@ C O N T A C T
   margin-top: 3em;
 }
 
+.Contact-badge-mobile {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+
+  background: none;
+  border-color: #151515;
+  color: lightgrey;
+
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 35px;
+  font-weight: 5;
+  letter-spacing: 0.1em;
+
+  max-width: 7em;
+  /* height: 2em; */
+  margin-top: 3em;
+}
+
 .Contact-badge:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 0.97em;
+  display: block;
+  right: 0;
+  background: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
+.Contact-badge-mobile:after {
   position: absolute;
   content: '';
   width: 0em; height: 1px;
@@ -926,7 +983,23 @@ C O N T A C T
   -webkit-transform:scale(1); */
 }
 
+.Contact-badge-mobile:hover {
+  outline: none;
+  box-shadow: none;
+  cursor: default;
+  /* background: #272727;
+  border-color: #272727; */
+  /* transform:scale(1);
+  -webkit-transform:scale(1); */
+}
+
 .Contact-badge:hover:after {
+  width: 100%;
+  left: 0;
+  background: #3E8FE2;
+}
+
+.Contact-badge-mobile:hover:after {
   width: 100%;
   left: 0;
   background: #3E8FE2;
@@ -952,6 +1025,21 @@ C O N T A C T
   padding-bottom: 1em;
 }
 
+.Contact-label-mobile {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 12px;
+  font-weight: 2px;
+  /* color: white; */
+  letter-spacing: 0.05em;
+  background-size: 0.5px 1em;
+  /* box-shadow:
+    inset 0 -0.8em #333,
+    inset 0 -0.85em white; */
+  display: inline;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .Contact-input {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   background-color: #222;
@@ -959,6 +1047,16 @@ C O N T A C T
   border-bottom-color: lightgrey;
   color: white;
   font-weight: 10;
+}
+
+.Contact-input-mobile {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  background-color: #222;
+  border-color: #222;
+  border-bottom-color: lightgrey;
+  color: white;
+  font-weight: 10;
+  font-size: 12px;
 }
 
 .Contact-input:focus {
@@ -972,7 +1070,24 @@ C O N T A C T
   outline: none;
 }
 
+.Contact-input-mobile:focus {
+  background: #252525;
+  color: white;
+  border-color: #222;
+  /* border-top-color: #3E8FE2; */
+  border-bottom-color: #3E8FE2;
+  cursor: auto;
+  box-shadow: none;
+  outline: none;
+  font-size: 12px;
+}
+
 .Contact-input:-webkit-autofill {
+  transition: background-color 99999s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
+}
+
+.Contact-input-mobile:-webkit-autofill {
   transition: background-color 99999s ease-in-out 0s;
   -webkit-text-fill-color: white !important;
 }
@@ -986,15 +1101,35 @@ C O N T A C T
   font-weight: 25;
   height: 3em;
   width: 10em;
-  transition: all 0.5s ease;
+  transition: all 0.12s ease;
+}
+
+.Contact-button-mobile {
+  background-color: #252525;
+  border-color: rgb(110, 117, 124);
+  color: grey;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 12px;
+  font-weight: 25;
+  height: 3em;
+  width: 8em;
+  transition: all 0.12s ease;
 }
 
 .Contact-button:hover {
   background-color: #333;
   border-color: #3E8FE2;
-  color: lightgrey;
+  color: #3E8FE2;
   font-weight: 100;
-  transform:scale(1.01);
+  transform:scale(1.05);
+}
+
+.Contact-button-mobile:hover {
+  background-color: #333;
+  border-color: #3E8FE2;
+  color: #3E8FE2;
+  font-weight: 100;
+  transform:scale(1.05);
 }
 
 .Contact-honey{
