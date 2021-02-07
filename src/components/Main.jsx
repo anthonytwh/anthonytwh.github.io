@@ -49,7 +49,7 @@ class Main extends Component {
                 this.setState({currOpacity: newOpacity})
             }
         };
-        console.log("did this log?")
+        // console.log("did this log?")
         // this.clickAbout.scrollIntoView();
     }
 

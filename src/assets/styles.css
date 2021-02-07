@@ -33,7 +33,11 @@ G L O B A L
 .Global-mobile {
   text-align: center;
   display:grid;
-  zoom: 50%;
+  zoom: 0.5;
+  -ms-zoom: 0.5;
+  -webkit-zoom: 0.5;
+  /* -moz-transform: scale(0.5,0.5);
+  -moz-transform-origin: left center; */
 }
 
 .row {
@@ -671,6 +675,7 @@ P O R T F O L I O
 }
 
 .Portfolio-BadgeNav-mobile {
+  position: relative;
   margin-left: 17.5em;
   margin-top: 2em;
 }
