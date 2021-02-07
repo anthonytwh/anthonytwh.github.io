@@ -308,6 +308,16 @@ A B O U T   M E
   background: none;
 }
 
+.About-title-mobile {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 40px;
+  font-weight: 5;
+  letter-spacing: 0.1em;
+  padding-bottom: 2.5%;
+
+  background: none;
+}
+
 .About-title:after {
   position: absolute;
   content: '';
@@ -343,6 +353,16 @@ A B O U T   M E
   justify-content: center;
 }
 
+.About-content-upper-row-mobile {
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+.About-content-lower-row-mobile {
+  justify-content: center;
+  padding-top: 2em;
+}
+
 .About-toast {
   font-size: 15px;
   font-weight: 100;
@@ -354,9 +374,34 @@ A B O U T   M E
   /* margin-left: 5em; */
 }
 
+.About-toast-mobile {
+  font-size: 12px;
+  font-weight: 100;
+  max-height: 30em;
+  min-width: 50em;
+  overflow: hidden;
+  box-shadow: -2px 2px 5px #111;
+  border-color: #222;
+  /* margin-left: 5em; */
+}
+
 .About-animate {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: 20px;
+  font-weight: 5;
+  color: white;
+  background: #222;
+  border-color: #3E8FE2;
+  height: 4em;
+  width: 50em;
+  padding-bottom: 2em;
+  padding-left: 1em; 
+  padding-right: 1em;
+}
+
+.About-animate-mobile {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 16px;
   font-weight: 5;
   color: white;
   background: #222;
@@ -378,6 +423,16 @@ A B O U T   M E
   position: absolute;
 }
 
+.About-animate-mobile span {
+  letter-spacing: 0.05em;
+  font-weight: 10;
+  font-size: 20px;
+  animation: Aboutimate-mobile 10s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
 .About-animate span:nth-child(2){
   animation-delay: 2s;
 }
@@ -394,12 +449,38 @@ A B O U T   M E
   animation-delay: 8s;
 }
 
+.About-animate-mobile span:nth-child(2){
+  animation-delay: 2s;
+}
+
+.About-animate-mobile span:nth-child(3){
+  animation-delay: 4s;
+}
+
+.About-animate-mobile span:nth-child(4){
+  animation-delay: 6s;
+}
+
+.About-animate-mobile span:nth-child(5){
+  animation-delay: 8s;
+}
+
 @keyframes Aboutimate {
   0% { opacity: 0; }
   5% { opacity: 0; transform: translateX(-25px); }
   10% { opacity: 1; transform: translateX(0px); }
   25% { opacity: 1; transform: translateX(0px); }
   30% { opacity: 0; transform: translateX(25px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes Aboutimate-mobile {
+  0% { opacity: 0; }
+  5% { opacity: 0; transform: translateX(-20px); }
+  10% { opacity: 1; transform: translateX(0px); }
+  25% { opacity: 1; transform: translateX(0px); }
+  30% { opacity: 0; transform: translateX(20px); }
   80% { opacity: 0; }
   100% { opacity: 0; }
 }
@@ -548,8 +629,19 @@ P O R T F O L I O
   border: none;
 } */
 
+.Portfolio-Center-Col-Mobile {
+  display: grid;
+  max-width: 50em;
+  justify-content: center;
+}
+
 .Portfolio-BadgeNav {
   margin-left: 25.5em;
+}
+
+.Portfolio-BadgeNav-mobile {
+  margin-left: 17.5em;
+  margin-top: 2em;
 }
 
 .Portfolio-badge {
@@ -578,6 +670,32 @@ P O R T F O L I O
   padding-bottom: 1em;
 }
 
+.Portfolio-badge-mobile {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 auto;
+
+  background: #222;
+  border-color: #222;
+  border-bottom-color: pink;
+  color: white;
+
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 10;
+
+  width: 8em;
+  height: 3em;
+  padding-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
 .Portfolio-badge:hover {
   outline: none;
   box-shadow: none;
@@ -588,7 +706,23 @@ P O R T F O L I O
   -webkit-transform:scale(1);
 }
 
+.Portfolio-badge-mobile:hover {
+  outline: none;
+  box-shadow: none;
+  background: #272727;
+  border: none;
+  border-color: #272727;
+  transform:scale(1);
+  -webkit-transform:scale(1);
+}
+
 .Portfolio-badge:hover:after {
+  width: 100%;
+  left: 0;
+  background-color: #3E8FE2;
+}
+
+.Portfolio-badge-mobile:hover:after {
   width: 100%;
   left: 0;
   background-color: #3E8FE2;
@@ -606,7 +740,31 @@ P O R T F O L I O
   -webkit-transition: width .25s ease;
 }
 
+.Portfolio-badge-mobile:after {
+  position: absolute;
+  content: '';
+  width: 0em; height: 1px;
+  margin-top: 2.5em;
+  display: block;
+  right: 0;
+  color: lightgrey;
+  background-color: #3E8FE2;
+  transition: width .25s ease;
+  -webkit-transition: width .25s ease;
+}
+
 .Portfolio-badge:focus {
+  outline: none;
+  box-shadow: none;
+  background: #222; /* #272727; */
+  border-color: none;
+  color: lightgrey;
+  border-color: #272727;
+  border-bottom-color: #3E8FE2;
+  border-width: thin;
+}
+
+.Portfolio-badge-mobile:focus {
   outline: none;
   box-shadow: none;
   background: #222; /* #272727; */
@@ -626,8 +784,22 @@ P O R T F O L I O
   border-color: none;
   box-shadow: -2px 2px 5px #111;
   margin-top: 1em;
-  max-height: 23em;
+  height: 22em;
   max-width: 54em;
+  overflow-y: auto;
+}
+
+.Portfolio-card-mobile {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 12px;
+  font-weight: 1px;
+  letter-spacing: 0.05em;
+  background-color: #222;
+  border-color: none;
+  box-shadow: -2px 2px 5px #111;
+  margin-top: 1em;
+  max-height: 30em;
+  max-width: 50em;
   overflow-y: auto;
 }
 
@@ -640,10 +812,26 @@ P O R T F O L I O
   font-weight: 50;
 }
 
+.Portfolio-header-mobile {
+  color: lightgrey;
+  text-shadow: 1px 1px #444;
+  text-align: left;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  font-weight: 50;
+}
+
 .Portfolio-body {
   color: white;
   text-align: left;
   font-size: 14px;
+  font-weight: 25;
+}
+
+.Portfolio-body-mobile {
+  color: white;
+  text-align: left;
+  font-size: 12px;
   font-weight: 25;
 }
 
