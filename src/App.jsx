@@ -26,24 +26,28 @@ class App extends Component {
             this.setState({
                 isTablet: false
             });
+            console.log("Render for desktop.");
         });
 
         this.props.media({ maxWidth: 768 }, () => {
             this.setState({ 
                 isTablet: true
             });
+            console.log("Render for tablet.");
         });
 
         this.props.media({ minWidth: 320 }, () => {
             this.setState({
                 isMobile: false
             });
+            console.log("Render too small for mobile.");
         });
 
         this.props.media({ maxWidth: 767 }, () => {
             this.setState({ 
                 isMobile: true
             });
+            console.log("Render for mobile.");
         });
     }
 
@@ -83,7 +87,6 @@ class App extends Component {
                     // Mobile //
                     <div className="Global-mobile">
                         <div className="BG-1">
-                            MOBILE
                             <div className="Main"><Main/></div>
                             <div className="About"><About/></div>
                         </div>
@@ -96,7 +99,6 @@ class App extends Component {
                         // Tablet //
                         <div className="Global">
                             <div className="BG-1">
-                                TABLET
                                 <div className="Main"><Main/></div>
                                 <div className="About"><About/></div>
                             </div>
@@ -109,7 +111,6 @@ class App extends Component {
                             // Not Mobile or Tablet //
                             <div className="Global">
                                 <div className="BG-1">
-                                    DESKTOP
                                     <div className="Header"><Header/></div>
                                     <div className="Main"><Main/></div>
                                     <div className="About"><About/></div>
