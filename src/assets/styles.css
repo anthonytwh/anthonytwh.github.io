@@ -30,6 +30,11 @@ G L O B A L
 .Global {
   text-align: center;
 }
+.Global-mobile {
+  text-align: center;
+  display:grid;
+  zoom: 50%;
+}
 
 .row {
   margin-left: 0;
@@ -1184,6 +1189,17 @@ F O O T E R
 
 */
 .Footer {
+  display: absolute;
+  justify-content: center;
+  background: url("mid-section.png");
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  fill-opacity: 80%;
+}
+
+.Footer-mobile {
   display: absolute;
   justify-content: center;
   background: url("mid-section.png");
