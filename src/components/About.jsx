@@ -57,7 +57,7 @@ class About extends Component {
                                     <span> <p> Product Design </p></span>
                                 </ToastHeader>
                                 <ToastBody className="About-body">
-                                        Anthony is a Lead Security Developer at Darktrace, a high-growth cyber security company using artificial intelligence (AI) and machine learning (ML) to detect and respond to anomalous threats and real-time attacks.
+                                        Anthony is a Lead Security Developer at Darktrace, a high-growth cyber security company using AI and machine learning to detect and respond to anomalous threats and real-time attacks.
                                         <br></br><br></br>
                                         He leads the threat model development team in North America, working in research and development to expand threat detection capabilities in the network, cloud, and SaaS platforms. He also supports consultancy efforts and technical sales operations as a subjet matter expert. 
                                         <br></br><br></br>
@@ -95,7 +95,7 @@ class About extends Component {
                                                             </Row>
                                                             <p className="Portfolio-body-mobile" style={{ textIndent: "5%" }} > • Research and develop models to detect adversarial attacks in enterprise networks, cloud, and saas environments.</p>
                                                             <p className="Portfolio-body-mobile" style={{ textIndent: "5%" }} > • Develop and maintain analytical tools and infrastructure (full-stack) for data analysis/research and development.</p>
-                                                            <p className="Portfolio-body-mobile" style={{ textIndent: "5%" }} > • Maintainer of the Darktrace Python library, a closed-source library for integration with Darktrace REST API.</p>
+                                                            <p className="Portfolio-body-mobile" style={{ textIndent: "5%" }} > • Maintainer of the Darktrace Python library, a closed-source library for a simple python interface with Darktrace REST API.</p>
                                                             <p className="Portfolio-body-mobile" style={{ textIndent: "5%" }} > • Work closely with product development teams to resolve issues, provide feedback and general feature improvements.</p>
                                                         </Col>
                                                     </Row>

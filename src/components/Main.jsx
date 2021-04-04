@@ -3,7 +3,7 @@ import { Button, Jumbotron, Row, Col, Modal, ModalBody, ModalFooter} from 'react
 import Responsive from 'react-responsive-decorator';
 
 import '../assets/styles.css';
-import Resume from '../resources/Anthony_Resume.pdf';
+import Resume from '../resources/AnthonyTam_Resume_public.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -91,13 +91,15 @@ class Main extends Component {
                                 <a href="https://github.com/anthonytwh">
                                 <FontAwesomeIcon className="Main-icons-mobile" icon={faGithub} size="2x" /></a></Col>
                             <Col>
-                                <FontAwesomeIcon onClick={this.toggleModal} className="Main-icons-mobile" icon={faFileAlt} size="2x"/>
+                                <a href={Resume}>
+                                <FontAwesomeIcon className="Main-icons-mobile" icon={faFileAlt} size="2x" /></a></Col>
+                                {/* <FontAwesomeIcon onClick={this.toggleModal} className="Main-icons-mobile" icon={faFileAlt} size="2x"/>
                                 <Modal className="Main-modal" isOpen={this.state.showModal} toggle={this.toggleModal}>
                                         <ModalBody className="Main-modal-body"> Anthony's resume is currently unavailable. Please reach out below for information.</ModalBody>
                                         <ModalFooter className="Main-modal-footer">
                                             <Button classname="Main-modal-button" style={{ fontSize: "12px", color: "lightgrey" }} onClick={this.toggleModal}>Close</Button>
                                         </ModalFooter>
-                                    </Modal></Col>
+                                    </Modal></Col> */}
                             <Col>
                                 <a href="mailto:contact@anthonyt.ca">
                                 <FontAwesomeIcon className="Main-icons-mobile" icon={faEnvelope} size="2x" /></a></Col>
@@ -124,13 +126,15 @@ class Main extends Component {
                                 <a href="https://github.com/anthonytwh">
                                 <FontAwesomeIcon className="Main-icons" icon={faGithub} size="3x" /></a></Col>
                             <Col>
-                                <FontAwesomeIcon onClick={this.toggleModal} className="Main-icons" icon={faFileAlt} size="3x"/>
+                                <a href={Resume}>
+                                <FontAwesomeIcon className="Main-icons-mobile" icon={faFileAlt} size="3x" /></a></Col>
+                                {/* <FontAwesomeIcon onClick={this.toggleModal} className="Main-icons" icon={faFileAlt} size="3x"/>
                                 <Modal className="Main-modal" isOpen={this.state.showModal} toggle={this.toggleModal}>
                                         <ModalBody className="Main-modal-body"> Anthony's resume is currently unavailable. Please reach out below for information.</ModalBody>
                                         <ModalFooter className="Main-modal-footer">
                                             <Button classname="Main-modal-button" style={{ fontSize: "12px", color: "lightgrey" }} onClick={this.toggleModal}>Close</Button>
                                         </ModalFooter>
-                                    </Modal></Col>
+                                    </Modal></Col> */}
                             <Col>
                                 <a href="mailto:contact@anthonyt.ca">
                                 <FontAwesomeIcon className="Main-icons" icon={faEnvelope} size="3x" /></a></Col>
