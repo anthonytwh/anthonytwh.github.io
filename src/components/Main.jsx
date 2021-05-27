@@ -3,7 +3,7 @@ import { Button, Jumbotron, Row, Col, Modal, ModalBody, ModalFooter} from 'react
 import Responsive from 'react-responsive-decorator';
 
 import '../assets/styles.css';
-import Resume from '../resources/AnthonyTam_Resume_public.pdf';
+import Resume from '../resources/AnthonyTam.pdf';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
