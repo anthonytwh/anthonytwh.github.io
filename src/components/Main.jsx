@@ -80,7 +80,7 @@ class Main extends Component {
                         <Row className="Main-heading">
                             <Col>
                                 <h1 className="Main-title-mobile"> Anthony Tam </h1>
-                                <p className="Main-subtitle-mobile"> Data Science, Cyber Security, Software Development </p>
+                                <p className="Main-subtitle-mobile"> Cyber Security, Data Science & Software Development </p>
                             </Col>
                         </Row>
                         <Row className="Main-body-mobile">
