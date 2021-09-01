@@ -115,7 +115,7 @@ class Main extends Component {
                         <Row className="Main-heading">
                             <Col>
                                 <h1 className="Main-title"> Anthony Tam </h1>
-                                <p className="Main-subtitle"> Cyber Security Research, Software Development, Data Science </p>
+                                <p className="Main-subtitle"> Security & Software Engineer</p>
                             </Col>
                         </Row>
                         <Row className="Main-body">
