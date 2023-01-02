@@ -22,7 +22,7 @@
     "react-responsive-decorator": "0.0.1",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.0.0",
+    "react-scripts": "5.0.1",
     "reactstrap": "^8.9.0",
     "ts-pnp": "^1.2.0",
     "ts-utils": "^6.1.0",
