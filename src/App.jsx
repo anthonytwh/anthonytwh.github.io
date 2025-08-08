@@ -33,7 +33,7 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>Anthony Tam</h1>
-        <p>Did you come here from LinkedIn? If so, you're in the right place.</p>
+        <p>---</p>
         <p>Github: <a href="https://github.com/anthonytwh" onClick={handleGitHubClick}>anthonytwh</a></p>
         <p>Contact me: <SpamFilter emailAddress="contact@anthonyt.ca" /></p>
       </div>
