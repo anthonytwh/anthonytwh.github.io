@@ -67,15 +67,14 @@ B A C K G R O U N D S
 
 
 */
-.BG-1 {
+/* .BG-1 {
   background: url("background2.png");
   background-color: #999;
 }
 
 .BG-2 {
   background: url("background.png");
-  /*background-color: #111;*/
-}
+} */
 
 
 
@@ -1202,7 +1201,7 @@ F O O T E R
 
 
 */
-.Footer {
+/* .Footer {
   display: absolute;
   justify-content: center;
   background: url("mid-section.png");
@@ -1222,7 +1221,7 @@ F O O T E R
   padding-bottom: 0.5em;
 
   fill-opacity: 80%;
-}
+} */
 
 .Footer-head {
   font-size: 20px;
