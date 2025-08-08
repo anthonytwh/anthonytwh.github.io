@@ -1276,3 +1276,21 @@ F O O T E R
   font-weight: 100;
   bottom: 0;
 }
+
+/* Default link styling */
+a {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #551A8B;
+}
+
+a:visited {
+  color: #551A8B;
+}
+
+a:active {
+  color: #FF0000;
+}
