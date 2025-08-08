@@ -1,130 +1,35 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
-import Responsive from 'react-responsive-decorator';
-
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import Main from './components/Main.jsx'
-import About from './components/About.jsx'
-import Content from './components/Content.jsx'
-import Portfolio from './components/Portfolio.jsx'
-
+import React from 'react';
 import './assets/styles.css';
+import SpamFilter from './components/SpamFilter';
 
-class App extends Component {
-
-    constructor (props){
-        super(props);
-        this.state = {
-            isMobile: false,
-            isTablet: false
-        };
+function App() {
+  const handleGitHubClick = (e) => {
+    e.preventDefault();
+    
+    // Track the GitHub link click
+    if (typeof window !== 'undefined' && window.ga) {
+      window.ga('send', 'event', {
+        eventCategory: 'Outbound Link',
+        eventAction: 'click',
+        eventLabel: 'GitHub Profile',
+        eventValue: 1
+      });
     }
     
-    componentDidMount() {
-        this.props.media({ minWidth: 768 }, () => {
-            this.setState({
-                isTablet: false
-            });
-            console.log("Render for desktop.");
-        });
+    // Navigate to GitHub
+    window.location.href = 'https://github.com/anthonytwh';
+  };
 
-        this.props.media({ maxWidth: 768 }, () => {
-            this.setState({ 
-                isTablet: true
-            });
-            console.log("Render for tablet.");
-        });
-
-        this.props.media({ minWidth: 320 }, () => {
-            this.setState({
-                isMobile: false
-            });
-            console.log("Render too small for mobile.");
-        });
-
-        this.props.media({ maxWidth: 767 }, () => {
-            this.setState({ 
-                isMobile: true
-            });
-            console.log("Render for mobile.");
-        });
-    }
-
-    // componentDidUpdate() {
-    //     this.props.media({ minWidth: 768 }, () => {
-    //         this.setState({
-    //             isTablet: false
-    //         });
-    //     });
-
-    //     this.props.media({ maxWidth: 768 }, () => {
-    //         this.setState({ 
-    //             isTablet: true
-    //         });
-    //     });
-
-    //     this.props.media({ minWidth: 320 }, () => {
-    //         this.setState({
-    //             isMobile: false
-    //         });
-    //     });
-
-    //     this.props.media({ maxWidth: 767 }, () => {
-    //         this.setState({ 
-    //             isMobile: true
-    //         });
-    //     });
-    // }
-
-    render() {
-        const { isMobile } = this.state;
-        const { isTablet } = this.state;
-
-        return (
-            <Router>
-                {isMobile ? 
-                    // Mobile //
-                    <div className="Global-mobile">
-                        <div className="BG-1">
-                            <div className="Main"><Main/></div>
-                            <div className="About"><About/></div>
-                        </div>
-
-                        <div className="BG-2">
-                            <div className="Portfolio"><Portfolio/></div>
-                        </div>
-                        <div className="Footer-mobile"><Footer /></div>
-                    </div>: isTablet ?
-                        // Tablet //
-                        <div className="Global">
-                            <div className="BG-1">
-                                <div className="Main"><Main/></div>
-                                <div className="About"><About/></div>
-                            </div>
-
-                            <div className="BG-2">
-                                <div className="Portfolio"><Portfolio/></div>
-                            </div>
-                            <div className="Footer"><Footer /></div>
-                        </div>:
-                            // Not Mobile or Tablet //
-                            <div className="Global">
-                                <div className="BG-1">
-                                    <div className="Header"><Header/></div>
-                                    <div className="Main"><Main/></div>
-                                    <div className="About"><About/></div>
-                                </div>
-
-                                <div className="BG-2">
-                                    <div className="Portfolio"><Portfolio/></div>
-                                </div>
-                                <div className="Footer"><Footer /></div>
-                            </div>
-                }
-            </Router>
-        );
-    }
+  return (
+    <div className="App">
+      <div className="container">
+        <h1>Anthony Tam</h1>
+        <p>Did you come here from LinkedIn? Here are links to some of my work and contact info.</p>
+        <p>Github: <a href="https://github.com/anthonytwh" onClick={handleGitHubClick}>anthonytwh</a></p>
+        <p>Contact me: <SpamFilter emailAddress="contact@anthonyt.ca" /></p>
+      </div>
+    </div>
+  );
 }
 
-export default Responsive(App);
+export default App;
