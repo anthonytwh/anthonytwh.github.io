@@ -9,9 +9,19 @@ const SpamFilter = ({ emailAddress }) => {
 
   // Google Analytics tracking functions
   const trackEvent = (action, label = null) => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      // Google Tag Manager tracking
+      window.gtag('event', action, {
+        event_category: 'Email Spam Filter',
+        event_label: label,
+        value: 1
+      });
+    }
+    
+    // Also track with legacy Google Analytics if available
     if (typeof window !== 'undefined' && window.ga) {
       window.ga('send', 'event', {
-        eventCategory: 'Reveal Email Contact',
+        eventCategory: 'Email Spam Filter',
         eventAction: action,
         eventLabel: label,
         eventValue: 1
