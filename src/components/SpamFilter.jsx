@@ -7,6 +7,18 @@ const SpamFilter = ({ emailAddress }) => {
   const [attempts, setAttempts] = useState(0);
   const [emailRevealed, setEmailRevealed] = useState(false);
 
+  // Google Analytics tracking functions
+  const trackEvent = (action, label = null) => {
+    if (typeof window !== 'undefined' && window.ga) {
+      window.ga('send', 'event', {
+        eventCategory: 'Reveal Email Contact',
+        eventAction: action,
+        eventLabel: label,
+        eventValue: 1
+      });
+    }
+  };
+
   // Generate a simple math CAPTCHA
   const generateCaptcha = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
@@ -36,6 +48,8 @@ const SpamFilter = ({ emailAddress }) => {
 
   const handleRevealClick = (e) => {
     e.preventDefault();
+    // Track reveal button click
+    trackEvent('reveal_clicked', 'email_reveal_initiated');
     setShowCaptcha(true);
     setCaptchaResult(null);
     setCaptchaInput('');
@@ -46,23 +60,33 @@ const SpamFilter = ({ emailAddress }) => {
     const userAnswer = parseInt(captchaInput);
     
     if (userAnswer === captcha.result) {
+      // Track successful CAPTCHA completion
+      trackEvent('captcha_success', `captcha_solved_${captcha.num1}${captcha.operator}${captcha.num2}`);
       setCaptchaResult('success');
       setTimeout(() => {
         setShowCaptcha(false);
         setEmailRevealed(true);
+        // Track email revealed
+        trackEvent('email_revealed', emailAddress);
       }, 1000);
     } else {
+      // Track failed CAPTCHA attempt
+      trackEvent('captcha_failed', `attempt_${attempts + 1}`);
       setCaptchaResult('error');
       setAttempts(attempts + 1);
       if (attempts >= 2) {
         // Generate new CAPTCHA after 3 failed attempts
         setCaptcha(generateCaptcha());
         setAttempts(0);
+        // Track CAPTCHA reset
+        trackEvent('captcha_reset', 'max_attempts_reached');
       }
     }
   };
 
   const handleCancel = () => {
+    // Track CAPTCHA cancellation
+    trackEvent('captcha_cancelled', 'user_cancelled');
     setShowCaptcha(false);
     setCaptchaInput('');
     setCaptchaResult(null);
@@ -70,14 +94,20 @@ const SpamFilter = ({ emailAddress }) => {
   };
 
   const generateNewCaptcha = () => {
+    // Track manual CAPTCHA regeneration
+    trackEvent('captcha_regenerated', 'user_requested');
     setCaptcha(generateCaptcha());
     setCaptchaInput('');
     setCaptchaResult(null);
     setAttempts(0);
   };
 
-  const handleEmailClick = () => {
-    window.location.href = `mailto:${emailAddress}`;
+  const handleEmailClick = (e) => {
+    // Track email link click
+    trackEvent('email_clicked', emailAddress);
+    
+    // Let the default mailto behavior happen
+    // The mailto link will open the user's email client
   };
 
   return (

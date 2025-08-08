@@ -1283,7 +1283,7 @@ a {
   text-decoration: underline;
 }
 
-a:hover {
+/* a:hover {
   color: #551A8B;
 }
 
@@ -1293,4 +1293,4 @@ a:visited {
 
 a:active {
   color: #FF0000;
-}
+} */
